@@ -235,8 +235,11 @@ nav button.on{color:var(--main); font-weight:700}
         </select>
       </div>
       <div class="row" style="justify-content:space-between; margin-top:10px">
-        <span>测试含拼写题</span>
-        <input type="checkbox" id="set-spell" checked style="width:20px;height:20px;accent-color:var(--main)">
+        <span>训练方式</span>
+        <select id="set-mode" style="font-size:15px; padding:6px; border-radius:10px; border:1px solid #d5dbd9">
+          <option value="interfill">中英互填（推荐）</option>
+          <option value="choice">选择题</option>
+        </select>
       </div>
       <div style="height:10px"></div>
       <button class="btn btn-ghost" id="btn-reset">重置学习进度</button>
@@ -273,9 +276,16 @@ const KEY='vocab_forest_v1';
 let S=null;
 function todayStr(){const d=new Date();return d.getFullYear()+'-'+(d.getMonth()+1)+'-'+d.getDate();}
 function defaultState(){
-  return {learned:[], wrong:{}, known:[], daily:{}, settings:{perDay:20, spell:true}, firstDate:todayStr()};
+  return {learned:[], wrong:{}, known:[], daily:{}, settings:{perDay:20, mode:'interfill'}, firstDate:todayStr()};
 }
-function load(){try{S=JSON.parse(localStorage.getItem(KEY))||defaultState();}catch(e){S=defaultState();}}
+function load(){
+  try{S=JSON.parse(localStorage.getItem(KEY))||defaultState();}catch(e){S=defaultState();}
+  // 旧版本设置迁移：spell 布尔 → mode
+  if(S.settings && S.settings.spell!==undefined && !S.settings.mode){
+    S.settings.mode = S.settings.spell ? 'interfill' : 'choice';
+  }
+  if(!S.settings) S.settings={perDay:20, mode:'interfill'};
+}
 function save(){localStorage.setItem(KEY, JSON.stringify(S));}
 
 /* ============ 工具 ============ */
@@ -364,6 +374,12 @@ function renderHome(){
   $('st-days').textContent=Object.keys(S.daily).length;
 }
 function weekLearned(){let n=0;for(const k in S.daily)n+=S.daily[k].newWords||0;return n;}
+function normCn(s){return (s||'').toLowerCase().replace(/[\s，,、；;（）()·。.·"'':：!！?？]/g,'');}
+function cnMatch(input, def){
+  const a=normCn(input); if(!a) return false;
+  const parts=normCn(def).split(/[;；]/).filter(Boolean);
+  return parts.some(p=>a===p || (a.length>=2 && (a.includes(p)||p.includes(a))));
+}
 function bind(id,fn){const el=$(id);if(el)el.onclick=fn;}
 
 /* ============ 学习流程 ============ */
@@ -402,8 +418,15 @@ function bindLearn(){
 function buildQuiz(words){
   const qs=[];
   for(const w of words){
-    if(S.settings.spell && Math.random()<.4) qs.push({type:'spell', w});
-    else qs.push({type:'choice', w, dir:Math.random()<.5?'en2zh':'zh2en'});
+    if(S.settings.mode==='choice'){
+      // 选择题模式：40%拼写 + 60%选择
+      if(Math.random()<.4) qs.push({type:'cn2en', w});
+      else qs.push({type:'choice', w, dir:Math.random()<.5?'en2zh':'zh2en'});
+    }else{
+      // 中英互填（默认推荐）：每词双向各一题
+      qs.push({type:'en2cn', w});
+      qs.push({type:'cn2en', w});
+    }
   }
   return shuffle(qs);
 }
@@ -413,21 +436,34 @@ function openTest(){
   const q=flow.testQ[i];
   $('test-progress').textContent=(i+1)+' / '+flow.testQ.length;
   $('test-bar').style.width=Math.round((i+1)/flow.testQ.length*100)+'%';
-  $('test-mode').textContent='测试 · '+(q.type==='spell'?'拼写':'选择');
+  $('test-mode').textContent='训练 · '+({choice:'选择',cn2en:'中→英',en2cn:'英→中'}[q.type]||'互填');
   const card=$('test-card');
-  if(q.type==='spell'){
-    card.innerHTML='<div class="q-head"><span class="q-idx">听发音，写出英文单词</span></div>'+
-      '<div class="center"><div class="q-def">'+q.w.def+'</div><div class="pos">'+ (q.w.pos||'') +'</div>'+
-      '<button class="speak" id="q-speak" style="margin:14px auto">🔊</button></div>'+
-      '<input class="spell" id="q-input" placeholder="输入英文" autocomplete="off" autocapitalize="off" spellcheck="false">'+
+  if(q.type==='cn2en' || q.type==='spell'){
+    card.innerHTML='<div class="q-head"><span class="q-idx">看中文，拼出英文单词</span></div>'+
+      '<div class="center"><div class="q-def">'+q.w.def+'</div><div class="pos">'+ (q.w.pos||'') +'</div></div>'+
+      '<input class="spell" id="q-input" placeholder="输入英文单词" autocomplete="off" autocapitalize="off" spellcheck="false">'+
+      '<div style="height:12px"></div><button class="btn btn-main" id="q-submit">确定</button>'+
+      '<div class="fb" id="q-fb"></div>';
+    $('q-input').focus();
+    $('q-submit').onclick=()=>{
+      const val=$('q-input').value.trim();
+      if(!val)return;
+      const ok=val.toLowerCase()===q.w.word.toLowerCase();
+      answer(ok, q, val);
+    };
+    $('q-input').onkeydown=e=>{if(e.key==='Enter')$('q-submit').click();};
+  }else if(q.type==='en2cn'){
+    card.innerHTML='<div class="q-head"><span class="q-idx">看英文，输入中文意思</span></div>'+
+      '<div class="center"><div class="q-word">'+q.w.word+'</div><button class="speak" id="q-speak">🔊</button></div>'+
+      '<input class="spell" id="q-input" placeholder="输入中文意思" autocomplete="off">'+
       '<div style="height:12px"></div><button class="btn btn-main" id="q-submit">确定</button>'+
       '<div class="fb" id="q-fb"></div>';
     $('q-speak').onclick=()=>speak(q.w.word);
     $('q-input').focus();
     $('q-submit').onclick=()=>{
-      const val=$('q-input').value.trim().toLowerCase();
+      const val=$('q-input').value.trim();
       if(!val)return;
-      const ok=val===q.w.word.toLowerCase();
+      const ok=cnMatch(val, q.w.def);
       answer(ok, q, val);
     };
     $('q-input').onkeydown=e=>{if(e.key==='Enter')$('q-submit').click();};
@@ -463,7 +499,8 @@ function answer(ok, q, input){
 function fb(ok,q,input){
   const el=document.createElement('div');
   el.className='fb '+(ok?'ok':'no');
-  el.textContent=ok?'✓ 正确！':('✗ 正确答案：'+q.w.word+'  '+q.w.def+(input?'（你写了：'+input+'）':''));
+  const right = q.type==='en2cn' ? q.w.def : (q.w.word+'  '+q.w.def);
+  el.textContent=ok?'✓ 正确！':('✗ 正确答案：'+right+(input?'（你写了：'+input+'）':''));
   const card=$('test-card');card.appendChild(el);
 }
 function finishDay(){
@@ -569,11 +606,11 @@ function renderStats(){
   }
   $('week-lab').textContent='最近14天 · 绿色=已完成（数字=当天新词数）';
   $('set-perday').value=S.settings.perDay;
-  $('set-spell').checked=S.settings.spell;
+  $('set-mode').value=S.settings.mode||'interfill';
 }
 function bindSettings(){
   $('set-perday').onchange=e=>{S.settings.perDay=+e.target.value;save();};
-  $('set-spell').onchange=e=>{S.settings.spell=e.target.checked;save();};
+  $('set-mode').onchange=e=>{S.settings.mode=e.target.value;save();};
   $('btn-reset').onclick=()=>{if(confirm('确定要清空所有学习记录吗？')){localStorage.removeItem(KEY);location.reload();}};
 }
 
