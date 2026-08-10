@@ -1,0 +1,559 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>飞宫小奇门在线排盘</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body {
+    font-family: "KaiTi","STKaiti","SimSun",serif;
+    background:#f5f0e6;
+    color:#2b2b2b;
+    padding:20px;
+  }
+  .wrap { max-width:900px; margin:0 auto; }
+  h1 { text-align:center; font-size:26px; letter-spacing:6px; margin-bottom:6px; color:#333; }
+  .sub { text-align:center; font-size:13px; color:#777; margin-bottom:18px; }
+  .panel {
+    background:#fffdf7;
+    border:1px solid #c9b98a;
+    border-radius:8px;
+    padding:16px 20px;
+    margin-bottom:16px;
+    box-shadow:0 2px 6px rgba(0,0,0,.06);
+  }
+  .panel-title { font-size:15px; color:#8a2f2f; letter-spacing:2px; margin-bottom:10px; text-align:center; }
+  .pillar-row {
+    display:flex; flex-wrap:wrap; gap:10px; justify-content:center; align-items:flex-end;
+  }
+  .pillar { text-align:center; }
+  .pillar .lbl { font-size:13px; color:#8a7a4a; margin-bottom:4px; }
+  .pillar select {
+    font-family:inherit; font-size:17px; padding:4px 6px; border:1px solid #b8a86e;
+    border-radius:4px; background:#fff; width:62px; text-align:center;
+  }
+  .pillar select.stem { width:56px; }
+  .btn-row { text-align:center; margin-top:14px; }
+  button {
+    font-family:inherit; font-size:16px; padding:8px 28px; border:none; border-radius:6px;
+    background:#8a2f2f; color:#fff; cursor:pointer; letter-spacing:3px;
+  }
+  button:hover { background:#a53a3a; }
+  button.ghost {
+    background:#fff; color:#8a2f2f; border:1px solid #8a2f2f; margin-left:10px;
+  }
+  button.ghost:hover { background:#f7ecec; }
+  .shi-row { display:flex; flex-wrap:wrap; gap:8px; justify-content:center; align-items:center; margin-top:14px; }
+  .shi-row .lbl { font-size:13px; color:#8a7a4a; }
+  button.shi-btn {
+    font-size:14px; padding:5px 12px; border:1px solid #b8a86e; border-radius:4px;
+    background:#fff; color:#333; cursor:pointer; letter-spacing:1px;
+  }
+  button.shi-btn:hover { background:#f7f0dd; border-color:#8a2f2f; color:#8a2f2f; }
+  button.shi-btn.active { background:#8a2f2f; color:#fff; border-color:#8a2f2f; }
+  .info {
+    margin-top:12px; font-size:14px; color:#555; text-align:center; line-height:1.8;
+  }
+  .info b { color:#8a2f2f; }
+  /* 公历输入 */
+  .gongli-row { display:flex; flex-wrap:wrap; gap:8px; justify-content:center; align-items:flex-end; }
+  .gongli-row select, .gongli-row input {
+    font-family:inherit; font-size:16px; padding:4px 6px; border:1px solid #b8a86e;
+    border-radius:4px; background:#fff; text-align:center;
+  }
+  .gongli-row input[type=number] { width:70px; }
+  .gongli-row .unit { font-size:13px; color:#8a7a4a; }
+  .hint { font-size:12px; color:#999; text-align:center; margin-top:8px; line-height:1.7; }
+  /* 盘面 */
+  #chartArea { margin-top:10px; }
+  #chartHead { text-align:center; font-size:16px; letter-spacing:2px; margin-bottom:10px; color:#333; }
+  #chartHead .pillars { font-size:18px; margin-bottom:4px; }
+  #chartHead .meta { font-size:13px; color:#666; }
+  .grid {
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    grid-template-rows:repeat(3,auto);
+    border:2px solid #333;
+    background:#333;
+    gap:2px;
+    max-width:640px;
+    margin:0 auto;
+  }
+  .cell {
+    background:#fffdf7;
+    min-height:200px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    padding:8px;
+    position:relative;
+  }
+  .cell .gong { position:absolute; top:4px; left:6px; font-size:13px; color:#8a7a4a; }
+  .cell .txt { font-size:19px; line-height:1.75; letter-spacing:2px; text-align:center; }
+  .cell .txt .pair { display:block; }
+  .cell .txt .men { display:block; margin-top:4px; }
+  .cell .txt .gan { display:block; margin-top:4px; font-size:22px; }
+  .cell .txt .ys { color:#1565c0; }   /* 十二原神 蓝（每宫第一个） */
+  .cell .txt .ys2 { color:#2b2b2b; }  /* 十二原神 黑（每宫第二个） */
+  .cell .txt .jx { color:#2e9e44; }   /* 十二建星 绿 */
+  .cell .txt .jx2 { color:#2b2b2b; }  /* 每宫第一排建星 黑 */
+  .cell .txt .men { color:#9c27b0; }  /* 八门 紫 */
+  .cell.center { background:#fbf6e8; }
+  .cell.center .gan { font-size:26px; letter-spacing:8px; }
+  .note { font-size:12px; color:#999; text-align:center; margin-top:10px; }
+  .legend {
+    max-width:640px; margin:14px auto 0; font-size:13px; color:#666; line-height:1.9;
+    border-top:1px dashed #c9b98a; padding-top:10px;
+  }
+  .predict {
+    max-width:640px; margin:16px auto 0; border:1px dashed #c9b98a; border-radius:8px;
+    padding:12px 14px; background:#fffdf7;
+  }
+  .predict .p-title { font-size:14px; color:#8a2f2f; letter-spacing:2px; margin-bottom:8px; text-align:center; }
+  .predict textarea {
+    width:100%; min-height:64px; font-family:inherit; font-size:14px; line-height:1.7;
+    border:1px solid #c9b98a; border-radius:6px; padding:8px; background:#fff; resize:vertical;
+  }
+  .predict .p-row { display:flex; justify-content:center; align-items:center; gap:10px; margin-top:8px; }
+  .predict .p-status { font-size:12px; color:#999; }
+  .h-item { border:1px solid #e3d9b8; border-radius:6px; padding:8px 12px; margin-bottom:8px; cursor:pointer; background:#fff; }
+  .h-item:hover { border-color:#8a2f2f; background:#fdf8ef; }
+  .h-pillars { font-size:14px; color:#8a2f2f; }
+  .h-text { font-size:13px; color:#333; margin-top:3px; }
+  .h-time { font-size:12px; color:#999; margin-top:3px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>飞宫小奇门</h1>
+  <div class="sub">在线排盘 · 张冠武传 / 霍斐然整理体系</div>
+
+  <div class="panel">
+    <div class="panel-title">一、按公历时间换算四柱（万年历）</div>
+    <div class="gongli-row">
+      <select id="gYear"></select><span class="unit">年</span>
+      <select id="gMonth"></select><span class="unit">月</span>
+      <select id="gDay"></select><span class="unit">日</span>
+      <select id="gHour"></select><span class="unit">时</span>
+      <select id="gMin"></select><span class="unit">分</span>
+      <button onclick="convertFromGongli()">换算并起局</button>
+    </div>
+    <div class="hint">按北京时间、东八区；立春为年柱分界、节气为月柱分界（精确到当天）；23:00 后按晚子时算次日。换算结果自动填入下方四柱。</div>
+    <div class="predict" style="margin-top:14px;">
+      <div class="p-title">预测事项</div>
+      <textarea id="predictText" placeholder="记录本次要预测的事项，例如：台风什么时候走？/ 这事能不能成？"></textarea>
+      <div class="p-row">
+        <button style="padding:6px 22px; font-size:14px;" onclick="savePredict()">保存事项</button>
+        <span class="p-status" id="predictStatus"></span>
+      </div>
+    </div>
+  </div>
+
+  <div class="panel">
+    <div class="panel-title">二、或直接手选四柱</div>
+    <div class="pillar-row">
+      <div class="pillar"><div class="lbl">年</div><select class="stem" id="yGan"></select><select id="yZhi"></select></div>
+      <div class="pillar"><div class="lbl">月</div><select class="stem" id="mGan"></select><select id="mZhi"></select></div>
+      <div class="pillar"><div class="lbl">日</div><select class="stem" id="dGan"></select><select id="dZhi"></select></div>
+      <div class="pillar"><div class="lbl">时</div><select class="stem" id="tGan"></select><select id="tZhi"></select></div>
+    </div>
+    <div class="btn-row">
+      <button onclick="paipan()">起 局</button>
+      <button class="ghost" onclick="savePng()">存为图片</button>
+    </div>
+    <div class="shi-row"><span class="lbl">或直接按时辰调局：</span></div>
+    <div class="shi-row" id="shiBtns"></div>
+  </div>
+
+  <div class="panel">
+    <div class="panel-title">三、历史记录（一事一盘）</div>
+    <div id="historyList"></div>
+    <div class="hint">点击任意一条记录可载入该盘并查看当时的预测事项；记录保存在本机浏览器。</div>
+  </div>
+
+  <div class="info" id="info"></div>
+
+  <div id="chartArea" style="display:none;">
+    <div id="chartHead"></div>
+    <div class="grid" id="grid"></div>
+    <div class="note">※ 盘面仅供术数学习与案例分析，涉及健康、法律、投资等现实决定请以专业意见为准。</div>
+    <div class="legend" id="legend"></div>
+  </div>
+</div>
+
+<script>
+// ========== 基础数据 ==========
+const GAN = ['甲','乙','丙','丁','戊','己','庚','辛','壬','癸'];
+const ZHI = ['子','丑','寅','卯','辰','巳','午','未','申','酉','戌','亥'];
+const YUANSHEN = ['青龙','明堂','天刑','朱雀','金匮','天德','白虎','玉堂','天牢','玄武','司命','勾陈'];
+const JIANXING = ['建','除','满','平','定','执','破','危','成','收','开','闭'];
+const MEN = ['休','生','伤','杜','景','死','惊','开'];
+
+const zhiGong = {子:1,丑:8,寅:8,卯:3,辰:4,巳:4,午:9,未:2,申:2,酉:7,戌:6,亥:6};
+const gongName = {1:'坎',2:'坤',3:'震',4:'巽',5:'中',6:'乾',7:'兑',8:'艮',9:'离'};
+const heGan = {甲:'己',乙:'庚',丙:'辛',丁:'壬',戊:'癸',己:'甲',庚:'乙',辛:'丙',壬:'丁',癸:'戊'};
+// 中宫合化对：按青龙宫固定（十二局盘，不随月干变）
+// 坎1/乾6→戊癸，艮8/震3→丙辛，巽4/离9→乙庚，坤2/兑7→丁壬（洛书数差5成对）
+// 中宫两干按用户要求整体顚序：戊癸→癸戊，丙辛→辛丙，乙庚→庚乙，丁壬→壬丁
+function zhongGanForGong(g){
+  if(g===1||g===6) return ['癸','戊'];
+  if(g===8||g===3) return ['辛','丙'];
+  if(g===4||g===9) return ['庚','乙'];
+  return ['壬','丁']; // 2,7
+}
+const jianKouJue = {子:'申',午:'申',卯:'寅',酉:'寅',寅:'子',申:'子',巳:'午',亥:'午',丑:'戌',未:'戌',辰:'辰',戌:'辰'};
+const baguaOrder = [1,8,3,4,9,2,7,6];
+const gongZhi = {1:['子'],8:['丑','寅'],3:['卯'],4:['辰','巳'],9:['午'],2:['未','申'],7:['酉'],6:['戌','亥']};
+const gridLayout = [[4,9,2],[3,5,7],[8,1,6]];
+
+// ========== 公历 → 四柱（万年历） ==========
+function julianDay(y,m,d){
+  if(m<=2){ y-=1; m+=12; }
+  const A=Math.floor(y/100), B=2-A+Math.floor(A/4);
+  return Math.floor(365.25*(y+4716))+Math.floor(30.6001*(m+1))+d+B-1524.5;
+}
+function sunLon(jd){
+  const T=(jd-2451545.0)/36525.0;
+  const L0=280.46646+36000.76983*T+0.0003032*T*T;
+  const M=357.52911+35999.05029*T-0.0001537*T*T;
+  const C=(1.914602-0.004817*T-0.000014*T*T)*Math.sin(M*Math.PI/180)
+        +(0.019993-0.000101*T)*Math.sin(2*M*Math.PI/180)
+        +0.000289*Math.sin(3*M*Math.PI/180);
+  return ((L0+C)%360+360)%360;
+}
+function findJieQi(year,targetLon){
+  // 按节气所在公历月份锁定窄搜索窗口（窗口内太阳黄经单调，只含目标一次，无需绕圈取模）
+  const R = {315:[1,20,3,5],345:[2,20,4,5],15:[3,20,5,5],45:[4,20,6,5],75:[5,20,7,5],
+             105:[6,20,8,5],135:[7,20,9,5],165:[8,20,10,5],195:[9,20,11,5],225:[10,20,12,5],
+             255:[11,20,1,5],285:[12,20,2,5]};
+  const r=R[targetLon];
+  let lo, hi;
+  if(r[0]>r[2]){ lo=julianDay(year,r[0],r[1]); hi=julianDay(year+1,r[2],r[3]); }
+  else { lo=julianDay(year,r[0],r[1]); hi=julianDay(year,r[2],r[3]); }
+  for(let i=0;i<60;i++){
+    const mid=(lo+hi)/2, lon=sunLon(mid);
+    if(lon>targetLon) hi=mid; else lo=mid;
+  }
+  return (lo+hi)/2;
+}
+// 月支分界的12个节（黄经）
+const JIE_LON = {立春:315,惊蛰:345,清明:15,立夏:45,芒种:75,小暑:105,立秋:135,白露:165,寒露:195,立冬:225,大雪:255,小寒:285};
+const JIE_SEQ = [['立春','寅'],['惊蛰','卯'],['清明','辰'],['立夏','巳'],['芒种','午'],['小暑','未'],['立秋','申'],['白露','酉'],['寒露','戌'],['立冬','亥'],['大雪','子'],['小寒','丑']];
+
+function pillarsFromGongli(y,mo,d,hh,mm){
+  // 北京时间 → UTC
+  const jd=julianDay(y,mo,d)+((hh+mm/60-8)/24);
+  // 日柱（23点后算次日）
+  const jdDay = hh>=23 ? julianDay(y,mo,d)+1 : julianDay(y,mo,d);
+  const diff = Math.round(jdDay - julianDay(2000,1,7));
+  const dayIdx=((diff%60)+60)%60;
+  const dg=GAN[dayIdx%10], dz=ZHI[dayIdx%12];
+  // 年柱（立春分界）
+  const lc=findJieQi(y,315);
+  let yg,yz;
+  if(jd<lc){ const i=(((y-1-4)%60)+60)%60; yg=GAN[i%10]; yz=ZHI[i%12]; }
+  else { const i=(((y-4)%60)+60)%60; yg=GAN[i%10]; yz=ZHI[i%12]; }
+  // 月柱（节气分界）
+  const marks=[findJieQi(y-1,285)]; // 上一年小寒
+  const names=[['小寒','丑']];
+  for(const [n,z] of JIE_SEQ){ marks.push(findJieQi(y,JIE_LON[n])); names.push([n,z]); }
+  let mz=names[0][1];
+  for(let i=1;i<marks.length;i++){ if(jd>=marks[i]) mz=names[i][1]; else break; }
+  const mg=GAN[(GAN.indexOf(yg)*2+2+(((ZHI.indexOf(mz)-2)%12)+12)%12)%10];
+  // 时柱（五鼠遁）
+  const hzIdx=Math.floor((hh+1)/2)%12;
+  const hz=ZHI[hzIdx];
+  const tg=GAN[(GAN.indexOf(dg)*2+hzIdx)%10];
+  return [yg+yz, mg+mz, dg+dz, tg+hz];
+}
+
+// ========== 初始化控件 ==========
+function fillSelect(id, items, def){
+  const el=document.getElementById(id);
+  items.forEach((v,i)=>{ const o=document.createElement('option'); o.value=v; o.text=v; el.appendChild(o); });
+  el.value=def;
+}
+function initSelects(){
+  fillSelect('yGan',GAN,'丙'); fillSelect('yZhi',ZHI,'午');
+  fillSelect('mGan',GAN,'丙'); fillSelect('mZhi',ZHI,'申');
+  fillSelect('dGan',GAN,'乙'); fillSelect('dZhi',ZHI,'卯');
+  fillSelect('tGan',GAN,'乙'); fillSelect('tZhi',ZHI,'酉');
+  // 公历控件
+  const ySel=document.getElementById('gYear');
+  for(let y=1900;y<=2100;y++){ const o=document.createElement('option'); o.value=y; o.text=y; ySel.appendChild(o); }
+  ySel.value=2026;
+  fillSelect('gMonth',Array.from({length:12},(_,i)=>String(i+1).padStart(2,'0')),'08');
+  fillSelect('gDay',Array.from({length:31},(_,i)=>String(i+1).padStart(2,'0')),'09');
+  const hSel=document.getElementById('gHour');
+  for(let h=0;h<24;h++){ const o=document.createElement('option'); o.value=String(h).padStart(2,'0'); o.text=String(h).padStart(2,'0'); hSel.appendChild(o); }
+  hSel.value='18';
+  fillSelect('gMin',Array.from({length:60},(_,i)=>String(i).padStart(2,'0')),'30');
+}
+function getVal(id){ return document.getElementById(id).value; }
+function setVal(id,v){ document.getElementById(id).value=v; }
+
+function convertFromGongli(){
+  const y=+getVal('gYear'), mo=+getVal('gMonth'), d=+getVal('gDay'), hh=+getVal('gHour'), mm=+getVal('gMin');
+  // 日期合法性
+  const maxD=new Date(y,mo,0).getDate();
+  if(d>maxD){ alert('该月没有'+d+'日'); return; }
+  const [yp,mp,dp,tp]=pillarsFromGongli(y,mo,d,hh,mm);
+  setVal('yGan',yp[0]); setVal('yZhi',yp[1]);
+  setVal('mGan',mp[0]); setVal('mZhi',mp[1]);
+  setVal('dGan',dp[0]); setVal('dZhi',dp[1]);
+  setVal('tGan',tp[0]); setVal('tZhi',tp[1]);
+  paipan();
+}
+
+// 直接选时辰调局（十二局固定盘：盘面随时支而定，年月日干仅作断局参考）
+function setShiZhi(zhi){
+  const dg=getVal('dGan');
+  const hzIdx=ZHI.indexOf(zhi);
+  const tg=GAN[(GAN.indexOf(dg)*2+hzIdx)%10];
+  setVal('tGan',tg); setVal('tZhi',zhi);
+  // 高亮当前时辰按钮
+  document.querySelectorAll('.shi-btn').forEach(b=>{ b.classList.toggle('active', b.dataset.zhi===zhi); });
+  paipan();
+}
+function initShiBtns(){
+  const box=document.getElementById('shiBtns');
+  ZHI.forEach(z=>{
+    const b=document.createElement('button');
+    b.className='shi-btn'; b.dataset.zhi=z; b.textContent=z+'时局';
+    b.onclick=()=>setShiZhi(z);
+    box.appendChild(b);
+  });
+}
+
+// ========== 排盘核心 ==========
+function paipan(){
+  const yG=getVal('yGan'), yZ=getVal('yZhi');
+  const mG=getVal('mGan'), mZ=getVal('mZhi');
+  const dG=getVal('dGan'), dZ=getVal('dZhi');
+  const tG=getVal('tGan'), tZ=getVal('tZhi');
+
+  const shiZhi=tZ;
+  const longGong=zhiGong[shiZhi];
+  const longZhi=shiZhi;
+
+  // 十二原神
+  const ysByZhi={};
+  const start=ZHI.indexOf(shiZhi);
+  for(let i=0;i<12;i++){ ysByZhi[ZHI[(start+i)%12]]=YUANSHEN[i]; }
+
+  // 十二建星
+  const jianZhi=jianKouJue[longZhi];
+  const jxByZhi={};
+  const js=ZHI.indexOf(jianZhi);
+  for(let i=0;i<12;i++){ jxByZhi[ZHI[(js+i)%12]]=JIANXING[i]; }
+
+  // 天干（甲乘龙而飞九宫，中宫合化对按青龙宫固定，余干按洛书序飞布、跳过中宫）
+  const ganByGong={};
+  ganByGong[longGong]=['甲'];
+  const zhongGan=zhongGanForGong(longGong);
+  ganByGong[5]=zhongGan.slice();
+  const rest=GAN.filter(g=>g!=='甲' && !zhongGan.includes(g));
+  const luoshu=[1,2,3,4,5,6,7,8,9];
+  const idx=luoshu.indexOf(longGong);
+  let ri=0;
+  for(let k=1;k<=9;k++){
+    const num=luoshu[(idx+k)%9];
+    if(num===5) continue;
+    if(ri<rest.length){ ganByGong[num]=[rest[ri++]]; }
+  }
+
+  // 八门
+  const menByGong={};
+  let huiNum=longGong+1; if(huiNum===5) huiNum++; if(huiNum>9) huiNum-=9;
+  const bi=baguaOrder.indexOf(huiNum);
+  for(let i=0;i<8;i++){ menByGong[baguaOrder[(bi+i)%8]]=MEN[i]; }
+
+  // 组装
+  const cells={};
+  for(let g=1;g<=9;g++){
+    if(g===5){ cells[g]={gan:ganByGong[5]||[], pairs:[], men:null}; continue; }
+    const zhis=gongZhi[g];
+    let pairs=zhis.map(z=>({zhi:z, ys:ysByZhi[z], jx:jxByZhi[z]}));
+    // 巽艮两宫：两个原神+建星对互换顺序（对照十二局图：巽、艮逆序，坤、乾顺序）
+    if(g===4||g===8) pairs=pairs.reverse();
+    cells[g]={gan:ganByGong[g]||[], pairs, men:menByGong[g]};
+  }
+
+  render(yG,yZ,mG,mZ,dG,dZ,tG,tZ,shiZhi,longGong,longZhi,jianZhi,cells);
+}
+
+// ========== 渲染 ==========
+function render(yG,yZ,mG,mZ,dG,dZ,tG,tZ,shiZhi,longGong,longZhi,jianZhi,cells){
+  const area=document.getElementById('chartArea');
+  area.style.display='block';
+
+  const head=document.getElementById('chartHead');
+  head.innerHTML =
+    '<div class="pillars">'+yG+yZ+'年　'+mG+mZ+'月　'+dG+dZ+'日　'+tG+tZ+'时</div>'+
+    '<div class="meta">'+shiZhi+'时局 · 青龙起'+shiZhi+'（'+gongName[longGong]+'宫） · 建星起'+jianZhi+'</div>';
+
+  const grid=document.getElementById('grid');
+  grid.innerHTML='';
+  for(let r=0;r<3;r++){
+    for(let c=0;c<3;c++){
+      const g=gridLayout[r][c];
+      const cell=document.createElement('div');
+      cell.className='cell'+(g===5?' center':'');
+      let html='<span class="gong">'+gongName[g]+'</span><span class="txt">';
+      const data=cells[g];
+      if(g===5){
+        html+='<span class="gan">'+(data.gan.join('')||'')+'</span>';
+      }else{
+        data.pairs.forEach((p,i)=>{ const jxCls=(i===0?'jx2':'jx'); html+='<span class="pair"><span class="'+(i===0?'ys':'ys2')+'">'+p.ys+'</span><span class="'+jxCls+'">'+p.jx+'</span></span>'; });
+        if(data.men) html+='<span class="men">'+data.men+'门</span>';
+        if(data.gan.length) html+='<span class="gan">'+data.gan.join('')+'</span>';
+      }
+      html+='</span>';
+      cell.innerHTML=html;
+      grid.appendChild(cell);
+    }
+  }
+
+  const info=document.getElementById('info');
+  let dGanGong=null;
+  for(let g=1;g<=9;g++){ if(cells[g].gan && cells[g].gan.includes(dG)){ dGanGong=g; break; } }
+  info.innerHTML='四柱：<b>'+yG+yZ+'年 '+mG+mZ+'月 '+dG+dZ+'日 '+tG+tZ+'时</b>；起局为 <b>'+shiZhi+'时局</b>（青龙起'+shiZhi+'，落'+gongName[longGong]+'宫）。'+
+    '日干 <b>'+dG+'</b> 落 <b>'+gongName[dGanGong]+'宫</b>（主），日支 <b>'+dZ+'</b> 按地支配宫落 <b>'+gongName[zhiGong[dZ]]+'宫</b>（客）。'+
+    '中宫置本局合化对（'+zhongGan.join('')+'，按青龙宫固定）。';
+
+  // 载入此局的预测事项（按四柱存 localStorage）
+  const pKey='xqm_predict_'+yG+yZ+mG+mZ+dG+dZ+tG+tZ;
+  const pSaved=localStorage.getItem(pKey);
+  document.getElementById('predictText').value=pSaved||'';
+  document.getElementById('predictStatus').textContent=pSaved? '此局已保存过预测事项' : '';
+
+  const legend=document.getElementById('legend');
+  legend.innerHTML='<b>排盘依据（张冠武传·霍斐然整理）：</b>①时上起青龙，十二原神依地支顺时针环布；'+
+    '②乘龙见天星，建星按口诀定位后顺时针环布（龙居'+longZhi+'，建星起'+jianZhi+'）；'+
+    '③甲乘龙而飞九宫，中宫按青龙宫置固定合化对（坎/乾戊癸，艮/震丙辛，巽/离乙庚，坤/兑丁壬），余干按洛书序飞布；'+
+    '④龙头开八门，休门起青龙下一宫，依后天八卦序环布。';
+}
+
+// 保存预测事项（按四柱存 localStorage，并维护历史索引）
+function getHistory(){
+  try{ return JSON.parse(localStorage.getItem('xqm_history')||'[]'); }catch(e){ return []; }
+}
+function esc(s){ return (s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+function savePredict(){
+  const key='xqm_predict_'+getVal('yGan')+getVal('yZhi')+getVal('mGan')+getVal('mZhi')+getVal('dGan')+getVal('dZhi')+getVal('tGan')+getVal('tZhi');
+  const text=document.getElementById('predictText').value;
+  localStorage.setItem(key, text);
+  const now=new Date().toLocaleString('zh-CN');
+  const pillars=getVal('yGan')+getVal('yZhi')+'年 '+getVal('mGan')+getVal('mZhi')+'月 '+getVal('dGan')+getVal('dZhi')+'日 '+getVal('tGan')+getVal('tZhi')+'时';
+  const hist=getHistory();
+  const idx=hist.findIndex(h=>h.key===key);
+  if(idx>=0){ hist[idx]={key:key,pillars:pillars,text:text,time:now}; }
+  else { hist.unshift({key:key,pillars:pillars,text:text,time:now}); }
+  localStorage.setItem('xqm_history', JSON.stringify(hist));
+  document.getElementById('predictStatus').textContent='已保存（'+now+'）';
+  renderHistory();
+}
+function renderHistory(){
+  const hist=getHistory();
+  const box=document.getElementById('historyList');
+  if(!box) return;
+  if(hist.length===0){ box.innerHTML='<div class="hint">暂无记录——保存一次预测事项后，这里会出现历史记录。</div>'; return; }
+  box.innerHTML='';
+  hist.forEach(h=>{
+    const row=document.createElement('div');
+    row.className='h-item';
+    row.innerHTML='<div class="h-pillars">'+esc(h.pillars)+'</div>'+
+      '<div class="h-text">'+(esc(h.text)||'（未写事项）')+'</div>'+
+      '<div class="h-time">'+esc(h.time)+'</div>';
+    row.onclick=()=>loadHistory(h.key);
+    box.appendChild(row);
+  });
+}
+function loadHistory(key){
+  const p=key.replace('xqm_predict_','');
+  setVal('yGan',p[0]); setVal('yZhi',p[1]);
+  setVal('mGan',p[2]); setVal('mZhi',p[3]);
+  setVal('dGan',p[4]); setVal('dZhi',p[5]);
+  setVal('tGan',p[6]); setVal('tZhi',p[7]);
+  document.querySelectorAll('.shi-btn').forEach(b=>{ b.classList.toggle('active', b.dataset.zhi===p[7]); });
+  paipan();
+}
+
+// ========== 导出 PNG ==========
+function savePng(){
+  const area=document.getElementById('chartArea');
+  const grid=document.getElementById('grid');
+  if(!area || area.style.display==='none'){ alert('请先起局再保存'); return; }
+  const scale=3;
+  const W=680*scale, H=760*scale;
+  const cv=document.createElement('canvas');
+  cv.width=W; cv.height=H;
+  const ctx=cv.getContext('2d');
+  ctx.fillStyle='#fffdf7'; ctx.fillRect(0,0,W,H);
+  ctx.fillStyle='#333';
+  ctx.font=Math.round(26*scale)+'px "KaiTi","STKaiti","SimSun"';
+  ctx.textAlign='center';
+  ctx.fillText('飞 宫 小 奇 门', W/2, 50*scale);
+  const head=document.getElementById('chartHead');
+  const p=head.querySelector('.pillars')?head.querySelector('.pillars').textContent:'';
+  ctx.font=Math.round(20*scale)+'px "KaiTi","SimSun"';
+  ctx.fillText(p, W/2, 90*scale);
+  const m=head.querySelector('.meta')?head.querySelector('.meta').textContent:'';
+  ctx.font=Math.round(15*scale)+'px "KaiTi","SimSun"';
+  ctx.fillText(m, W/2, 120*scale);
+  // 预测事项
+  const pv=document.getElementById('predictText').value.trim();
+  if(pv){
+    ctx.fillStyle='#8a2f2f';
+    ctx.font=Math.round(15*scale)+'px "KaiTi","SimSun"';
+    ctx.fillText('预测事项：'+pv, W/2, 132*scale);
+  }
+  const oyBase=140*scale + (pv?14*scale:0);
+
+  const cellW=210*scale, cellH=200*scale, gap=4*scale;
+  const ox=(W-cellW*3-gap*2)/2, oy=oyBase;
+  const pos={4:[0,0],9:[1,0],2:[2,0],3:[0,1],5:[1,1],7:[2,1],8:[0,2],1:[1,2],6:[2,2]};
+  const cells=grid.children;
+  for(let i=0;i<9;i++){
+    const gNum=gridLayout.flat()[i];
+    const [cx,cy]=pos[gNum];
+    const x=ox+cx*(cellW+gap), y=oy+cy*(cellH+gap);
+    ctx.strokeStyle='#333'; ctx.lineWidth=2*scale;
+    ctx.strokeRect(x,y,cellW,cellH);
+    ctx.fillStyle='#8a7a4a';
+    ctx.font=Math.round(13*scale)+'px "KaiTi","SimSun"';
+    ctx.textAlign='left';
+    ctx.fillText(gongName[gNum], x+8*scale, y+20*scale);
+    const cellEl=grid.children[i];
+    const lines=[];
+    const txt=cellEl.querySelector('.txt');
+    if(txt){
+      txt.querySelectorAll('.ys,.ys2,.jx,.jx2,.men,.gan').forEach(el=>{
+        const c=el.classList.contains('ys')?'#1565c0':el.classList.contains('ys2')?'#2b2b2b':el.classList.contains('jx2')?'#2b2b2b':el.classList.contains('jx')?'#2e9e44':el.classList.contains('men')?'#9c27b0':'#2b2b2b';
+        lines.push({t:el.textContent, c:c});
+      });
+    }
+    ctx.textAlign='center';
+    ctx.font=Math.round(19*scale)+'px "KaiTi","SimSun"';
+    lines.forEach((ln,li)=>{ ctx.fillStyle=ln.c; ctx.fillText(ln.t, x+cellW/2, y+60*scale+li*34*scale); });
+  }
+
+  const a=document.createElement('a');
+  a.download='飞宫小奇门_'+getVal('yGan')+getVal('yZhi')+'_'+getVal('tZhi')+'时.png';
+  a.href=cv.toDataURL('image/png');
+  a.click();
+}
+
+initSelects();
+initShiBtns();
+renderHistory();
+paipan();
+</script>
+</body>
+</html>
+
+
+
+
