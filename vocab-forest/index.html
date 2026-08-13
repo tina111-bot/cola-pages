@@ -241,6 +241,13 @@ nav button.on{color:var(--main); font-weight:700}
           <option value="choice">选择题</option>
         </select>
       </div>
+      <div class="row" style="justify-content:space-between; margin-top:10px">
+        <span>开始方式</span>
+        <select id="set-startmode" style="font-size:15px; padding:6px; border-radius:10px; border:1px solid #d5dbd9">
+          <option value="direct">直接做题（推荐）</option>
+          <option value="learnfirst">先认单词再做题</option>
+        </select>
+      </div>
       <div style="height:10px"></div>
       <button class="btn btn-ghost" id="btn-reset">重置学习进度</button>
     </div>
@@ -276,7 +283,7 @@ const KEY='vocab_forest_v1';
 let S=null;
 function todayStr(){const d=new Date();return d.getFullYear()+'-'+(d.getMonth()+1)+'-'+d.getDate();}
 function defaultState(){
-  return {learned:[], wrong:{}, known:[], daily:{}, settings:{perDay:20, mode:'interfill'}, firstDate:todayStr()};
+  return {learned:[], wrong:{}, known:[], daily:{}, settings:{perDay:20, mode:'interfill', startMode:'direct'}, firstDate:todayStr()};
 }
 function load(){
   try{S=JSON.parse(localStorage.getItem(KEY))||defaultState();}catch(e){S=defaultState();}
@@ -284,7 +291,8 @@ function load(){
   if(S.settings && S.settings.spell!==undefined && !S.settings.mode){
     S.settings.mode = S.settings.spell ? 'interfill' : 'choice';
   }
-  if(!S.settings) S.settings={perDay:20, mode:'interfill'};
+  if(!S.settings) S.settings={perDay:20, mode:'interfill', startMode:'direct'};
+  if(!S.settings.startMode) S.settings.startMode='direct';
 }
 function save(){localStorage.setItem(KEY, JSON.stringify(S));}
 
@@ -387,8 +395,13 @@ function startFlow(){
   const newWords=todayNew();
   if(!newWords.length){return;}
   S.daily[todayStr()]=S.daily[todayStr()]||{done:false,newWords:0,reviewed:[]};
-  flow={step:'learn', learnIdx:0, newWords, wrongN:0, correct:0};
-  go('learn'); openLearn();
+  if(S.settings.startMode==='learnfirst'){
+    flow={step:'learn', learnIdx:0, newWords, wrongN:0, correct:0};
+    go('learn'); openLearn();
+  }else{
+    flow={step:'test', testIdx:0, testQ:buildQuiz(newWords), newWords, wrongN:0, correct:0};
+    go('test'); openTest();
+  }
 }
 function continueFlow(){
   if(!flow)return startFlow();
@@ -607,10 +620,12 @@ function renderStats(){
   $('week-lab').textContent='最近14天 · 绿色=已完成（数字=当天新词数）';
   $('set-perday').value=S.settings.perDay;
   $('set-mode').value=S.settings.mode||'interfill';
+  $('set-startmode').value=S.settings.startMode||'direct';
 }
 function bindSettings(){
   $('set-perday').onchange=e=>{S.settings.perDay=+e.target.value;save();};
   $('set-mode').onchange=e=>{S.settings.mode=e.target.value;save();};
+  $('set-startmode').onchange=e=>{S.settings.startMode=e.target.value;save();};
   $('btn-reset').onclick=()=>{if(confirm('确定要清空所有学习记录吗？')){localStorage.removeItem(KEY);location.reload();}};
 }
 
