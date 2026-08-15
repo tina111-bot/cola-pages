@@ -1,0 +1,7517 @@
+window.PRIMARY_WORDS = [
+  {
+    "word": "ruler",
+    "phonetic": "/ˈruːlər/",
+    "def": "尺",
+    "grade": 3,
+    "semester": 1,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 三年级上"
+  },
+  {
+    "word": "pencil",
+    "phonetic": "/ˈpensl/",
+    "def": "铅笔",
+    "grade": 3,
+    "semester": 1,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 三年级上"
+  },
+  {
+    "word": "eraser",
+    "phonetic": "/ɪˈreɪsər/",
+    "def": "橡皮",
+    "grade": 3,
+    "semester": 1,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 三年级上"
+  },
+  {
+    "word": "crayon",
+    "phonetic": "/ˈkreɪən; ˈkreɪɑːn/",
+    "def": "蜡笔，有色粉笔",
+    "grade": 3,
+    "semester": 1,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 三年级上"
+  },
+  {
+    "word": "bag",
+    "phonetic": "/bæɡ/",
+    "def": "袋",
+    "grade": 3,
+    "semester": 1,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 三年级上"
+  },
+  {
+    "word": "pen",
+    "phonetic": "/pen/",
+    "def": "钢笔",
+    "grade": 3,
+    "semester": 1,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 三年级上"
+  },
+  {
+    "word": "pencil box",
+    "phonetic": "",
+    "def": "铅笔盒",
+    "grade": 3,
+    "semester": 1,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 三年级上"
+  },
+  {
+    "word": "book",
+    "phonetic": "/bʊk/",
+    "def": "书籍",
+    "grade": 3,
+    "semester": 1,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 三年级上"
+  },
+  {
+    "word": "no",
+    "phonetic": "/noʊ/",
+    "def": "不",
+    "grade": 3,
+    "semester": 1,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 三年级上"
+  },
+  {
+    "word": "your",
+    "phonetic": "/jʊr; jər/",
+    "def": "你的，你们的",
+    "grade": 3,
+    "semester": 1,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 三年级上"
+  },
+  {
+    "word": "red",
+    "phonetic": "/red/",
+    "def": "红色，红颜料",
+    "grade": 3,
+    "semester": 1,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 三年级上"
+  },
+  {
+    "word": "green",
+    "phonetic": "/ɡriːn/",
+    "def": "绿色",
+    "grade": 3,
+    "semester": 1,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 三年级上"
+  },
+  {
+    "word": "yellow",
+    "phonetic": "/ˈjeloʊ/",
+    "def": "黄色",
+    "grade": 3,
+    "semester": 1,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 三年级上"
+  },
+  {
+    "word": "blue",
+    "phonetic": "/bluː/",
+    "def": "蓝色的",
+    "grade": 3,
+    "semester": 1,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 三年级上"
+  },
+  {
+    "word": "black",
+    "phonetic": "/blæk/",
+    "def": "黑色",
+    "grade": 3,
+    "semester": 1,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 三年级上"
+  },
+  {
+    "word": "brown",
+    "phonetic": "/braʊn/",
+    "def": "褐色，棕色",
+    "grade": 3,
+    "semester": 1,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 三年级上"
+  },
+  {
+    "word": "white",
+    "phonetic": "/waɪt/",
+    "def": "白色",
+    "grade": 3,
+    "semester": 1,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 三年级上"
+  },
+  {
+    "word": "orange",
+    "phonetic": "/ˈɔrɪndʒ/",
+    "def": "橙色的",
+    "grade": 3,
+    "semester": 1,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 三年级上"
+  },
+  {
+    "word": "OK",
+    "phonetic": "/ˌoʊ'keɪ/",
+    "def": "好的",
+    "grade": 3,
+    "semester": 1,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 三年级上"
+  },
+  {
+    "word": "mum",
+    "phonetic": "/mʌm/",
+    "def": "沉默的",
+    "grade": 3,
+    "semester": 1,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 三年级上"
+  },
+  {
+    "word": "face",
+    "phonetic": "/feɪs/",
+    "def": "脸",
+    "grade": 3,
+    "semester": 1,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 三年级上"
+  },
+  {
+    "word": "ear",
+    "phonetic": "/ɪr/",
+    "def": "耳朵",
+    "grade": 3,
+    "semester": 1,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 三年级上"
+  },
+  {
+    "word": "eye",
+    "phonetic": "/aɪ/",
+    "def": "眼睛",
+    "grade": 3,
+    "semester": 1,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 三年级上"
+  },
+  {
+    "word": "nose",
+    "phonetic": "/noʊz/",
+    "def": "鼻子",
+    "grade": 3,
+    "semester": 1,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 三年级上"
+  },
+  {
+    "word": "mouth",
+    "phonetic": "/maʊθ/",
+    "def": "口，嘴",
+    "grade": 3,
+    "semester": 1,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 三年级上"
+  },
+  {
+    "word": "arm",
+    "phonetic": "/ɑːrm/",
+    "def": "手臂",
+    "grade": 3,
+    "semester": 1,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 三年级上"
+  },
+  {
+    "word": "hand",
+    "phonetic": "/hænd/",
+    "def": "手，手艺",
+    "grade": 3,
+    "semester": 1,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 三年级上"
+  },
+  {
+    "word": "head",
+    "phonetic": "/hed/",
+    "def": "头",
+    "grade": 3,
+    "semester": 1,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 三年级上"
+  },
+  {
+    "word": "body",
+    "phonetic": "/ˈbɑːdi/",
+    "def": "身体",
+    "grade": 3,
+    "semester": 1,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 三年级上"
+  },
+  {
+    "word": "leg",
+    "phonetic": "/leɡ/",
+    "def": "腿",
+    "grade": 3,
+    "semester": 1,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 三年级上"
+  },
+  {
+    "word": "foot",
+    "phonetic": "/fʊt/",
+    "def": "脚",
+    "grade": 3,
+    "semester": 1,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 三年级上"
+  },
+  {
+    "word": "school",
+    "phonetic": "/skuːl/",
+    "def": "学校",
+    "grade": 3,
+    "semester": 1,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 三年级上"
+  },
+  {
+    "word": "duck",
+    "phonetic": "/dʌk/",
+    "def": "鸭子",
+    "grade": 3,
+    "semester": 1,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 三年级上"
+  },
+  {
+    "word": "pig",
+    "phonetic": "/pɪɡ/",
+    "def": "猪",
+    "grade": 3,
+    "semester": 1,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 三年级上"
+  },
+  {
+    "word": "cat",
+    "phonetic": "/kæt/",
+    "def": "猫，猫科动物",
+    "grade": 3,
+    "semester": 1,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 三年级上"
+  },
+  {
+    "word": "bear",
+    "phonetic": "/ber/",
+    "def": "熊",
+    "grade": 3,
+    "semester": 1,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 三年级上"
+  },
+  {
+    "word": "dog",
+    "phonetic": "/dɔːɡ/",
+    "def": "狗",
+    "grade": 3,
+    "semester": 1,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 三年级上"
+  },
+  {
+    "word": "elephant",
+    "phonetic": "/ˈelɪfənt/",
+    "def": "象",
+    "grade": 3,
+    "semester": 1,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 三年级上"
+  },
+  {
+    "word": "monkey",
+    "phonetic": "/ˈmʌŋki/",
+    "def": "猴子",
+    "grade": 3,
+    "semester": 1,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 三年级上"
+  },
+  {
+    "word": "bird",
+    "phonetic": "/bɜːrd/",
+    "def": "鸟",
+    "grade": 3,
+    "semester": 1,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 三年级上"
+  },
+  {
+    "word": "tiger",
+    "phonetic": "/ˈtaɪɡər/",
+    "def": "老虎",
+    "grade": 3,
+    "semester": 1,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 三年级上"
+  },
+  {
+    "word": "panda",
+    "phonetic": "/ˈpændə/",
+    "def": "熊猫",
+    "grade": 3,
+    "semester": 1,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 三年级上"
+  },
+  {
+    "word": "zoo",
+    "phonetic": "/zuː/",
+    "def": "动物园",
+    "grade": 3,
+    "semester": 1,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 三年级上"
+  },
+  {
+    "word": "funny",
+    "phonetic": "/ˈfʌni/",
+    "def": "滑稽人物",
+    "grade": 3,
+    "semester": 1,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 三年级上"
+  },
+  {
+    "word": "bread",
+    "phonetic": "/bred/",
+    "def": "面包",
+    "grade": 3,
+    "semester": 1,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 三年级上"
+  },
+  {
+    "word": "juice",
+    "phonetic": "/dʒuːs/",
+    "def": "（水果）汁，液",
+    "grade": 3,
+    "semester": 1,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 三年级上"
+  },
+  {
+    "word": "egg",
+    "phonetic": "/eɡ/",
+    "def": "蛋",
+    "grade": 3,
+    "semester": 1,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 三年级上"
+  },
+  {
+    "word": "milk",
+    "phonetic": "/mɪlk/",
+    "def": "牛奶",
+    "grade": 3,
+    "semester": 1,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 三年级上"
+  },
+  {
+    "word": "water",
+    "phonetic": "/ˈwɔːtər/",
+    "def": "水",
+    "grade": 3,
+    "semester": 1,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 三年级上"
+  },
+  {
+    "word": "cake",
+    "phonetic": "/keɪk/",
+    "def": "蛋糕",
+    "grade": 3,
+    "semester": 1,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 三年级上"
+  },
+  {
+    "word": "fish",
+    "phonetic": "/fɪʃ/",
+    "def": "鱼，鱼类",
+    "grade": 3,
+    "semester": 1,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 三年级上"
+  },
+  {
+    "word": "rice",
+    "phonetic": "/raɪs/",
+    "def": "稻",
+    "grade": 3,
+    "semester": 1,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 三年级上"
+  },
+  {
+    "word": "one",
+    "phonetic": "/wʌn/",
+    "def": "一个人",
+    "grade": 3,
+    "semester": 1,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 三年级上"
+  },
+  {
+    "word": "two",
+    "phonetic": "/tuː/",
+    "def": "二",
+    "grade": 3,
+    "semester": 1,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 三年级上"
+  },
+  {
+    "word": "three",
+    "phonetic": "/θriː/",
+    "def": "三",
+    "grade": 3,
+    "semester": 1,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 三年级上"
+  },
+  {
+    "word": "four",
+    "phonetic": "/fɔːr/",
+    "def": "四",
+    "grade": 3,
+    "semester": 1,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 三年级上"
+  },
+  {
+    "word": "five",
+    "phonetic": "/faɪv/",
+    "def": "五，五个",
+    "grade": 3,
+    "semester": 1,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 三年级上"
+  },
+  {
+    "word": "six",
+    "phonetic": "/sɪks/",
+    "def": "六，六个",
+    "grade": 3,
+    "semester": 1,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 三年级上"
+  },
+  {
+    "word": "seven",
+    "phonetic": "/ˈsev(ə)n/",
+    "def": "七个，七",
+    "grade": 3,
+    "semester": 1,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 三年级上"
+  },
+  {
+    "word": "eight",
+    "phonetic": "/eɪt/",
+    "def": "八",
+    "grade": 3,
+    "semester": 1,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 三年级上"
+  },
+  {
+    "word": "nine",
+    "phonetic": "/naɪn/",
+    "def": "九，九个",
+    "grade": 3,
+    "semester": 1,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 三年级上"
+  },
+  {
+    "word": "ten",
+    "phonetic": "/ten/",
+    "def": "十个，十",
+    "grade": 3,
+    "semester": 1,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 三年级上"
+  },
+  {
+    "word": "brother",
+    "phonetic": "/ˈbrʌðər/",
+    "def": "兄弟",
+    "grade": 3,
+    "semester": 1,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 三年级上"
+  },
+  {
+    "word": "plate",
+    "phonetic": "/pleɪt/",
+    "def": "碟",
+    "grade": 3,
+    "semester": 1,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 三年级上"
+  },
+  {
+    "word": "UK",
+    "phonetic": "/ˌjuː ˈkeɪ/",
+    "def": "英国",
+    "grade": 3,
+    "semester": 2,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 三年级下"
+  },
+  {
+    "word": "Canada",
+    "phonetic": "/ˈkænədə/",
+    "def": "加拿大（北美洲国家）",
+    "grade": 3,
+    "semester": 2,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 三年级下"
+  },
+  {
+    "word": "USA",
+    "phonetic": "",
+    "def": "abbr. 美国",
+    "grade": 3,
+    "semester": 2,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 三年级下"
+  },
+  {
+    "word": "China",
+    "phonetic": "/ˈtʃaɪnə/",
+    "def": "中国",
+    "grade": 3,
+    "semester": 2,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 三年级下"
+  },
+  {
+    "word": "she",
+    "phonetic": "/ʃi; ʃiː/",
+    "def": "女人",
+    "grade": 3,
+    "semester": 2,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 三年级下"
+  },
+  {
+    "word": "student",
+    "phonetic": "/ˈstuːdnt/",
+    "def": "学生",
+    "grade": 3,
+    "semester": 2,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 三年级下"
+  },
+  {
+    "word": "pupil",
+    "phonetic": "/ˈpjuːpl/",
+    "def": "学生",
+    "grade": 3,
+    "semester": 2,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 三年级下"
+  },
+  {
+    "word": "he",
+    "phonetic": "/hi; iː; i; hiː/",
+    "def": "男孩，男人",
+    "grade": 3,
+    "semester": 2,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 三年级下"
+  },
+  {
+    "word": "teacher",
+    "phonetic": "/ˈtiːtʃər/",
+    "def": "教师",
+    "grade": 3,
+    "semester": 2,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 三年级下"
+  },
+  {
+    "word": "boy",
+    "phonetic": "/bɔɪ/",
+    "def": "男孩",
+    "grade": 3,
+    "semester": 2,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 三年级下"
+  },
+  {
+    "word": "and",
+    "phonetic": "/ənd; ən; n; ænd/",
+    "def": "和，与",
+    "grade": 3,
+    "semester": 2,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 三年级下"
+  },
+  {
+    "word": "girl",
+    "phonetic": "/ɡɜːrl/",
+    "def": "女孩",
+    "grade": 3,
+    "semester": 2,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 三年级下"
+  },
+  {
+    "word": "new",
+    "phonetic": "/nuː/",
+    "def": "新的，新鲜的",
+    "grade": 3,
+    "semester": 2,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 三年级下"
+  },
+  {
+    "word": "friend",
+    "phonetic": "/frend/",
+    "def": "朋友",
+    "grade": 3,
+    "semester": 2,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 三年级下"
+  },
+  {
+    "word": "today",
+    "phonetic": "/təˈdeɪ/",
+    "def": "今天",
+    "grade": 3,
+    "semester": 2,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 三年级下"
+  },
+  {
+    "word": "father",
+    "phonetic": "/ˈfɑːðər/",
+    "def": "父亲，爸爸",
+    "grade": 3,
+    "semester": 2,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 三年级下"
+  },
+  {
+    "word": "dad",
+    "phonetic": "/dæd/",
+    "def": "爸爸",
+    "grade": 3,
+    "semester": 2,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 三年级下"
+  },
+  {
+    "word": "man",
+    "phonetic": "/mæn/",
+    "def": "人",
+    "grade": 3,
+    "semester": 2,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 三年级下"
+  },
+  {
+    "word": "woman",
+    "phonetic": "/ˈwʊmən/",
+    "def": "妇女",
+    "grade": 3,
+    "semester": 2,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 三年级下"
+  },
+  {
+    "word": "mother",
+    "phonetic": "/ˈmʌðər/",
+    "def": "母亲",
+    "grade": 3,
+    "semester": 2,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 三年级下"
+  },
+  {
+    "word": "sister",
+    "phonetic": "/ˈsɪstər/",
+    "def": "姐妹",
+    "grade": 3,
+    "semester": 2,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 三年级下"
+  },
+  {
+    "word": "grandmother",
+    "phonetic": "/ˈɡrænmʌðər/",
+    "def": "祖母",
+    "grade": 3,
+    "semester": 2,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 三年级下"
+  },
+  {
+    "word": "grandma",
+    "phonetic": "/ˈɡrænmɑː/",
+    "def": "奶奶",
+    "grade": 3,
+    "semester": 2,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 三年级下"
+  },
+  {
+    "word": "grandfather",
+    "phonetic": "/ˈɡrænfɑːðər/",
+    "def": "祖父",
+    "grade": 3,
+    "semester": 2,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 三年级下"
+  },
+  {
+    "word": "grandpa",
+    "phonetic": "/ˈɡrænpɑː/",
+    "def": "爷爷",
+    "grade": 3,
+    "semester": 2,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 三年级下"
+  },
+  {
+    "word": "family",
+    "phonetic": "/ˈfæməli/",
+    "def": "家庭",
+    "grade": 3,
+    "semester": 2,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 三年级下"
+  },
+  {
+    "word": "thin",
+    "phonetic": "/θɪn/",
+    "def": "细小部分",
+    "grade": 3,
+    "semester": 2,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 三年级下"
+  },
+  {
+    "word": "fat",
+    "phonetic": "/fæt/",
+    "def": "脂肪，肥肉",
+    "grade": 3,
+    "semester": 2,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 三年级下"
+  },
+  {
+    "word": "tall",
+    "phonetic": "/tɔːl/",
+    "def": "高的",
+    "grade": 3,
+    "semester": 2,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 三年级下"
+  },
+  {
+    "word": "short",
+    "phonetic": "/ʃɔːrt/",
+    "def": "短",
+    "grade": 3,
+    "semester": 2,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 三年级下"
+  },
+  {
+    "word": "long",
+    "phonetic": "/lɔːŋ/",
+    "def": "长时间",
+    "grade": 3,
+    "semester": 2,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 三年级下"
+  },
+  {
+    "word": "small",
+    "phonetic": "/smɔːl/",
+    "def": "小件物品",
+    "grade": 3,
+    "semester": 2,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 三年级下"
+  },
+  {
+    "word": "big",
+    "phonetic": "/bɪɡ/",
+    "def": "大的",
+    "grade": 3,
+    "semester": 2,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 三年级下"
+  },
+  {
+    "word": "giraffe",
+    "phonetic": "/dʒəˈræf/",
+    "def": "长颈鹿",
+    "grade": 3,
+    "semester": 2,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 三年级下"
+  },
+  {
+    "word": "so",
+    "phonetic": "/soʊ/",
+    "def": "所以",
+    "grade": 3,
+    "semester": 2,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 三年级下"
+  },
+  {
+    "word": "children",
+    "phonetic": "/ˈtʃɪldrən/",
+    "def": "孩子们（child的复数）",
+    "grade": 3,
+    "semester": 2,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 三年级下"
+  },
+  {
+    "word": "tail",
+    "phonetic": "/teɪl/",
+    "def": "尾巴",
+    "grade": 3,
+    "semester": 2,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 三年级下"
+  },
+  {
+    "word": "on",
+    "phonetic": "/ɑːn/",
+    "def": "向前地",
+    "grade": 3,
+    "semester": 2,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 三年级下"
+  },
+  {
+    "word": "in",
+    "phonetic": "/ɪn/",
+    "def": "按照（表示方式）",
+    "grade": 3,
+    "semester": 2,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 三年级下"
+  },
+  {
+    "word": "under",
+    "phonetic": "/ˈʌndər/",
+    "def": "低于，少于",
+    "grade": 3,
+    "semester": 2,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 三年级下"
+  },
+  {
+    "word": "chair",
+    "phonetic": "/tʃer/",
+    "def": "椅子",
+    "grade": 3,
+    "semester": 2,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 三年级下"
+  },
+  {
+    "word": "desk",
+    "phonetic": "/desk/",
+    "def": "办公桌",
+    "grade": 3,
+    "semester": 2,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 三年级下"
+  },
+  {
+    "word": "cap",
+    "phonetic": "/kæp/",
+    "def": "盖",
+    "grade": 3,
+    "semester": 2,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 三年级下"
+  },
+  {
+    "word": "ball",
+    "phonetic": "/bɔːl/",
+    "def": "球",
+    "grade": 3,
+    "semester": 2,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 三年级下"
+  },
+  {
+    "word": "car",
+    "phonetic": "/kɑːr/",
+    "def": "汽车",
+    "grade": 3,
+    "semester": 2,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 三年级下"
+  },
+  {
+    "word": "boat",
+    "phonetic": "/boʊt/",
+    "def": "小船",
+    "grade": 3,
+    "semester": 2,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 三年级下"
+  },
+  {
+    "word": "map",
+    "phonetic": "/mæp/",
+    "def": "映射",
+    "grade": 3,
+    "semester": 2,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 三年级下"
+  },
+  {
+    "word": "toy",
+    "phonetic": "/tɔɪ/",
+    "def": "玩具",
+    "grade": 3,
+    "semester": 2,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 三年级下"
+  },
+  {
+    "word": "box",
+    "phonetic": "/bɑːks/",
+    "def": "箱，盒子",
+    "grade": 3,
+    "semester": 2,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 三年级下"
+  },
+  {
+    "word": "pear",
+    "phonetic": "/per/",
+    "def": "[园艺] 梨树",
+    "grade": 3,
+    "semester": 2,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 三年级下"
+  },
+  {
+    "word": "apple",
+    "phonetic": "/ˈæpl/",
+    "def": "苹果，苹果树，苹果似的东西",
+    "grade": 3,
+    "semester": 2,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 三年级下"
+  },
+  {
+    "word": "banana",
+    "phonetic": "/bəˈnænə/",
+    "def": "香蕉",
+    "grade": 3,
+    "semester": 2,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 三年级下"
+  },
+  {
+    "word": "watermelon",
+    "phonetic": "/ˈwɔːtərmelən/",
+    "def": "西瓜",
+    "grade": 3,
+    "semester": 2,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 三年级下"
+  },
+  {
+    "word": "strawberry",
+    "phonetic": "/ˈstrɔːberi/",
+    "def": "草莓",
+    "grade": 3,
+    "semester": 2,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 三年级下"
+  },
+  {
+    "word": "grape",
+    "phonetic": "/ɡreɪp/",
+    "def": "葡萄",
+    "grade": 3,
+    "semester": 2,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 三年级下"
+  },
+  {
+    "word": "buy",
+    "phonetic": "/baɪ/",
+    "def": "购买，买卖",
+    "grade": 3,
+    "semester": 2,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 三年级下"
+  },
+  {
+    "word": "fruit",
+    "phonetic": "/fruːt/",
+    "def": "水果",
+    "grade": 3,
+    "semester": 2,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 三年级下"
+  },
+  {
+    "word": "eleven",
+    "phonetic": "/ɪˈlevn/",
+    "def": "十一",
+    "grade": 3,
+    "semester": 2,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 三年级下"
+  },
+  {
+    "word": "twelve",
+    "phonetic": "/twelv/",
+    "def": "十二",
+    "grade": 3,
+    "semester": 2,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 三年级下"
+  },
+  {
+    "word": "thirteen",
+    "phonetic": "/ˌθɜːrˈtiːn/",
+    "def": "十三",
+    "grade": 3,
+    "semester": 2,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 三年级下"
+  },
+  {
+    "word": "fourteen",
+    "phonetic": "/ˌfɔːrˈtiːn/",
+    "def": "十四",
+    "grade": 3,
+    "semester": 2,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 三年级下"
+  },
+  {
+    "word": "fifteen",
+    "phonetic": "/ˌfɪfˈtiːn/",
+    "def": "十五",
+    "grade": 3,
+    "semester": 2,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 三年级下"
+  },
+  {
+    "word": "sixteen",
+    "phonetic": "/ˌsɪksˈtiːn/",
+    "def": "十六",
+    "grade": 3,
+    "semester": 2,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 三年级下"
+  },
+  {
+    "word": "seventeen",
+    "phonetic": "/ˌsevnˈtiːn/",
+    "def": "十七，十七个",
+    "grade": 3,
+    "semester": 2,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 三年级下"
+  },
+  {
+    "word": "eighteen",
+    "phonetic": "/ˌeɪˈtiːn/",
+    "def": "十八，十八个",
+    "grade": 3,
+    "semester": 2,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 三年级下"
+  },
+  {
+    "word": "nineteen",
+    "phonetic": "/ˌnaɪnˈtiːn/",
+    "def": "十九",
+    "grade": 3,
+    "semester": 2,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 三年级下"
+  },
+  {
+    "word": "twenty",
+    "phonetic": "/ˈtwenti/",
+    "def": "二十",
+    "grade": 3,
+    "semester": 2,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 三年级下"
+  },
+  {
+    "word": "kite",
+    "phonetic": "/kaɪt/",
+    "def": "风筝",
+    "grade": 3,
+    "semester": 2,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 三年级下"
+  },
+  {
+    "word": "beautiful",
+    "phonetic": "/ˈbjuːtɪf(ə)l/",
+    "def": "美丽的",
+    "grade": 3,
+    "semester": 2,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 三年级下"
+  },
+  {
+    "word": "classroom",
+    "phonetic": "/ˈklæsruːm; ˈklæsrʊm/",
+    "def": "教室",
+    "grade": 4,
+    "semester": 1,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 四年级上"
+  },
+  {
+    "word": "window",
+    "phonetic": "/ˈwɪndoʊ/",
+    "def": "窗",
+    "grade": 4,
+    "semester": 1,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 四年级上"
+  },
+  {
+    "word": "blackboard",
+    "phonetic": "/ˈblækbɔːrd/",
+    "def": "黑板",
+    "grade": 4,
+    "semester": 1,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 四年级上"
+  },
+  {
+    "word": "light",
+    "phonetic": "/laɪt/",
+    "def": "光",
+    "grade": 4,
+    "semester": 1,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 四年级上"
+  },
+  {
+    "word": "picture",
+    "phonetic": "/ˈpɪktʃər/",
+    "def": "照片，图画",
+    "grade": 4,
+    "semester": 1,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 四年级上"
+  },
+  {
+    "word": "door",
+    "phonetic": "/dɔːr/",
+    "def": "门",
+    "grade": 4,
+    "semester": 1,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 四年级上"
+  },
+  {
+    "word": "teacher's desk",
+    "phonetic": "",
+    "def": "讲台",
+    "grade": 4,
+    "semester": 1,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 四年级上"
+  },
+  {
+    "word": "computer",
+    "phonetic": "/kəmˈpjuːtər/",
+    "def": "计算机",
+    "grade": 4,
+    "semester": 1,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 四年级上"
+  },
+  {
+    "word": "fan",
+    "phonetic": "/fæn/",
+    "def": "迷",
+    "grade": 4,
+    "semester": 1,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 四年级上"
+  },
+  {
+    "word": "wall",
+    "phonetic": "/wɔːl/",
+    "def": "墙壁，围墙",
+    "grade": 4,
+    "semester": 1,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 四年级上"
+  },
+  {
+    "word": "floor",
+    "phonetic": "/flɔːr/",
+    "def": "地板，地面",
+    "grade": 4,
+    "semester": 1,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 四年级上"
+  },
+  {
+    "word": "really",
+    "phonetic": "/ˈriːəli/",
+    "def": "实际上，事实上",
+    "grade": 4,
+    "semester": 1,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 四年级上"
+  },
+  {
+    "word": "near",
+    "phonetic": "/nɪr/",
+    "def": "近的",
+    "grade": 4,
+    "semester": 1,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 四年级上"
+  },
+  {
+    "word": "TV",
+    "phonetic": "/ˌtiː ˈviː/",
+    "def": "abbr. 电视（television）",
+    "grade": 4,
+    "semester": 1,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 四年级上"
+  },
+  {
+    "word": "clean",
+    "phonetic": "/kliːn/",
+    "def": "打扫",
+    "grade": 4,
+    "semester": 1,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 四年级上"
+  },
+  {
+    "word": "help",
+    "phonetic": "/help/",
+    "def": "帮助",
+    "grade": 4,
+    "semester": 1,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 四年级上"
+  },
+  {
+    "word": "schoolbag",
+    "phonetic": "/ˈskuːlˌbæɡ/",
+    "def": "书包",
+    "grade": 4,
+    "semester": 1,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 四年级上"
+  },
+  {
+    "word": "maths book",
+    "phonetic": "",
+    "def": "无",
+    "grade": 4,
+    "semester": 1,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 四年级上"
+  },
+  {
+    "word": "English book",
+    "phonetic": "",
+    "def": "英语书",
+    "grade": 4,
+    "semester": 1,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 四年级上"
+  },
+  {
+    "word": "Chinese book",
+    "phonetic": "",
+    "def": "语文书",
+    "grade": 4,
+    "semester": 1,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 四年级上"
+  },
+  {
+    "word": "storybook",
+    "phonetic": "/ˈstɔːribʊk/",
+    "def": "故事书",
+    "grade": 4,
+    "semester": 1,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 四年级上"
+  },
+  {
+    "word": "candy",
+    "phonetic": "/ˈkændi/",
+    "def": "糖果（等于sweets）",
+    "grade": 4,
+    "semester": 1,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 四年级上"
+  },
+  {
+    "word": "notebook",
+    "phonetic": "/ˈnoʊtbʊk/",
+    "def": "笔记本，笔记簿",
+    "grade": 4,
+    "semester": 1,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 四年级上"
+  },
+  {
+    "word": "toy",
+    "phonetic": "/tɔɪ/",
+    "def": "玩具",
+    "grade": 4,
+    "semester": 1,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 四年级上"
+  },
+  {
+    "word": "key",
+    "phonetic": "/kiː/",
+    "def": "（打字机等的）键",
+    "grade": 4,
+    "semester": 1,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 四年级上"
+  },
+  {
+    "word": "wow",
+    "phonetic": "/waʊ/",
+    "def": "极大的成功",
+    "grade": 4,
+    "semester": 1,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 四年级上"
+  },
+  {
+    "word": "lost",
+    "phonetic": "/lɔːst/",
+    "def": "失去的",
+    "grade": 4,
+    "semester": 1,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 四年级上"
+  },
+  {
+    "word": "so much",
+    "phonetic": "/soʊ mʌtʃ/",
+    "def": "na. 和…一样多",
+    "grade": 4,
+    "semester": 1,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 四年级上"
+  },
+  {
+    "word": "cute",
+    "phonetic": "/kjuːt/",
+    "def": "可爱的",
+    "grade": 4,
+    "semester": 1,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 四年级上"
+  },
+  {
+    "word": "strong",
+    "phonetic": "/strɔːŋ/",
+    "def": "坚强的",
+    "grade": 4,
+    "semester": 1,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 四年级上"
+  },
+  {
+    "word": "friendly",
+    "phonetic": "/ˈfrendli/",
+    "def": "友好的",
+    "grade": 4,
+    "semester": 1,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 四年级上"
+  },
+  {
+    "word": "quiet",
+    "phonetic": "/ˈkwaɪət/",
+    "def": "安静",
+    "grade": 4,
+    "semester": 1,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 四年级上"
+  },
+  {
+    "word": "hair",
+    "phonetic": "/her/",
+    "def": "头发",
+    "grade": 4,
+    "semester": 1,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 四年级上"
+  },
+  {
+    "word": "shoe",
+    "phonetic": "/ʃuː/",
+    "def": "鞋",
+    "grade": 4,
+    "semester": 1,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 四年级上"
+  },
+  {
+    "word": "glasses",
+    "phonetic": "/ˈɡlæsɪz/",
+    "def": "[轻] 眼镜",
+    "grade": 4,
+    "semester": 1,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 四年级上"
+  },
+  {
+    "word": "his",
+    "phonetic": "/hɪz; ɪz/",
+    "def": "他的",
+    "grade": 4,
+    "semester": 1,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 四年级上"
+  },
+  {
+    "word": "or",
+    "phonetic": "/ɔːr/",
+    "def": "或，或者",
+    "grade": 4,
+    "semester": 1,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 四年级上"
+  },
+  {
+    "word": "right",
+    "phonetic": "/raɪt/",
+    "def": "正确",
+    "grade": 4,
+    "semester": 1,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 四年级上"
+  },
+  {
+    "word": "hat",
+    "phonetic": "/hæt/",
+    "def": "帽子",
+    "grade": 4,
+    "semester": 1,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 四年级上"
+  },
+  {
+    "word": "her",
+    "phonetic": "/hər; ɜːr; ər; hɜːr/",
+    "def": "她（she的宾格）",
+    "grade": 4,
+    "semester": 1,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 四年级上"
+  },
+  {
+    "word": "bedroom",
+    "phonetic": "/ˈbedruːm; ˈbedrʊm/",
+    "def": "卧室",
+    "grade": 4,
+    "semester": 1,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 四年级上"
+  },
+  {
+    "word": "living room",
+    "phonetic": "/ˈlɪvɪŋ ruːm/",
+    "def": "客厅",
+    "grade": 4,
+    "semester": 1,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 四年级上"
+  },
+  {
+    "word": "study",
+    "phonetic": "/ˈstʌdi/",
+    "def": "学习，研究",
+    "grade": 4,
+    "semester": 1,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 四年级上"
+  },
+  {
+    "word": "kitchen",
+    "phonetic": "/ˈkɪtʃɪn/",
+    "def": "厨房",
+    "grade": 4,
+    "semester": 1,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 四年级上"
+  },
+  {
+    "word": "bathroom",
+    "phonetic": "/ˈbæθruːm/",
+    "def": "浴室",
+    "grade": 4,
+    "semester": 1,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 四年级上"
+  },
+  {
+    "word": "bed",
+    "phonetic": "/bed/",
+    "def": "床",
+    "grade": 4,
+    "semester": 1,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 四年级上"
+  },
+  {
+    "word": "phone",
+    "phonetic": "/foʊn/",
+    "def": "电话",
+    "grade": 4,
+    "semester": 1,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 四年级上"
+  },
+  {
+    "word": "table",
+    "phonetic": "/ˈteɪbl/",
+    "def": "桌子",
+    "grade": 4,
+    "semester": 1,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 四年级上"
+  },
+  {
+    "word": "sofa",
+    "phonetic": "/ˈsoʊfə/",
+    "def": "沙发",
+    "grade": 4,
+    "semester": 1,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 四年级上"
+  },
+  {
+    "word": "fridge",
+    "phonetic": "/frɪdʒ/",
+    "def": "电冰箱",
+    "grade": 4,
+    "semester": 1,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 四年级上"
+  },
+  {
+    "word": "find",
+    "phonetic": "/faɪnd/",
+    "def": "发现",
+    "grade": 4,
+    "semester": 1,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 四年级上"
+  },
+  {
+    "word": "them",
+    "phonetic": "/ðəm; ðem/",
+    "def": "他们",
+    "grade": 4,
+    "semester": 1,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 四年级上"
+  },
+  {
+    "word": "beef",
+    "phonetic": "/biːf/",
+    "def": "牛肉",
+    "grade": 4,
+    "semester": 1,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 四年级上"
+  },
+  {
+    "word": "chicken",
+    "phonetic": "/ˈtʃɪkɪn/",
+    "def": "鸡肉",
+    "grade": 4,
+    "semester": 1,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 四年级上"
+  },
+  {
+    "word": "noodles",
+    "phonetic": "/ˈnuːd(ə)lz/",
+    "def": "面条，挂面（noodle的复数形式)",
+    "grade": 4,
+    "semester": 1,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 四年级上"
+  },
+  {
+    "word": "soup",
+    "phonetic": "/suːp/",
+    "def": "汤，羹",
+    "grade": 4,
+    "semester": 1,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 四年级上"
+  },
+  {
+    "word": "vegetable",
+    "phonetic": "/ˈvedʒtəbl/",
+    "def": "蔬菜",
+    "grade": 4,
+    "semester": 1,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 四年级上"
+  },
+  {
+    "word": "chopsticks",
+    "phonetic": "/ˈtʃɑːpstɪks/",
+    "def": "筷子",
+    "grade": 4,
+    "semester": 1,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 四年级上"
+  },
+  {
+    "word": "bowl",
+    "phonetic": "/boʊl/",
+    "def": "碗",
+    "grade": 4,
+    "semester": 1,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 四年级上"
+  },
+  {
+    "word": "fork",
+    "phonetic": "/fɔːrk/",
+    "def": "叉",
+    "grade": 4,
+    "semester": 1,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 四年级上"
+  },
+  {
+    "word": "knife",
+    "phonetic": "/naɪf/",
+    "def": "刀",
+    "grade": 4,
+    "semester": 1,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 四年级上"
+  },
+  {
+    "word": "spoon",
+    "phonetic": "/spuːn/",
+    "def": "匙，勺子",
+    "grade": 4,
+    "semester": 1,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 四年级上"
+  },
+  {
+    "word": "dinner",
+    "phonetic": "/ˈdɪnər/",
+    "def": "晚餐，晚宴",
+    "grade": 4,
+    "semester": 1,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 四年级上"
+  },
+  {
+    "word": "ready",
+    "phonetic": "/ˈredi/",
+    "def": "现款",
+    "grade": 4,
+    "semester": 1,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 四年级上"
+  },
+  {
+    "word": "help yourself",
+    "phonetic": "",
+    "def": "别客气",
+    "grade": 4,
+    "semester": 1,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 四年级上"
+  },
+  {
+    "word": "pass",
+    "phonetic": "/pæs/",
+    "def": "及格",
+    "grade": 4,
+    "semester": 1,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 四年级上"
+  },
+  {
+    "word": "try",
+    "phonetic": "/traɪ/",
+    "def": "尝试",
+    "grade": 4,
+    "semester": 1,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 四年级上"
+  },
+  {
+    "word": "parents",
+    "phonetic": "/'perənts/",
+    "def": "父母",
+    "grade": 4,
+    "semester": 1,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 四年级上"
+  },
+  {
+    "word": "cousin",
+    "phonetic": "/ˈkʌzn/",
+    "def": "堂兄弟姊妹",
+    "grade": 4,
+    "semester": 1,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 四年级上"
+  },
+  {
+    "word": "uncle",
+    "phonetic": "/ˈʌŋkl/",
+    "def": "叔叔",
+    "grade": 4,
+    "semester": 1,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 四年级上"
+  },
+  {
+    "word": "aunt",
+    "phonetic": "/ænt/",
+    "def": "阿姨",
+    "grade": 4,
+    "semester": 1,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 四年级上"
+  },
+  {
+    "word": "baby brother",
+    "phonetic": "",
+    "def": "小弟弟",
+    "grade": 4,
+    "semester": 1,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 四年级上"
+  },
+  {
+    "word": "doctor",
+    "phonetic": "/ˈdɑːktər/",
+    "def": "修理",
+    "grade": 4,
+    "semester": 1,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 四年级上"
+  },
+  {
+    "word": "cook",
+    "phonetic": "/kʊk/",
+    "def": "厨师，厨子",
+    "grade": 4,
+    "semester": 1,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 四年级上"
+  },
+  {
+    "word": "driver",
+    "phonetic": "/ˈdraɪvər/",
+    "def": "驾驶员",
+    "grade": 4,
+    "semester": 1,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 四年级上"
+  },
+  {
+    "word": "farmer",
+    "phonetic": "/ˈfɑːrmər/",
+    "def": "农夫，农民",
+    "grade": 4,
+    "semester": 1,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 四年级上"
+  },
+  {
+    "word": "nurse",
+    "phonetic": "/nɜːrs/",
+    "def": "看护，护理",
+    "grade": 4,
+    "semester": 1,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 四年级上"
+  },
+  {
+    "word": "people",
+    "phonetic": "/ˈpiːpl/",
+    "def": "人",
+    "grade": 4,
+    "semester": 1,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 四年级上"
+  },
+  {
+    "word": "but",
+    "phonetic": "/bət; bʌt/",
+    "def": "但是",
+    "grade": 4,
+    "semester": 1,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 四年级上"
+  },
+  {
+    "word": "little",
+    "phonetic": "/ˈlɪtl/",
+    "def": "小的",
+    "grade": 4,
+    "semester": 1,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 四年级上"
+  },
+  {
+    "word": "puppy",
+    "phonetic": "/ˈpʌpi/",
+    "def": "小狗，幼犬",
+    "grade": 4,
+    "semester": 1,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 四年级上"
+  },
+  {
+    "word": "football player",
+    "phonetic": "",
+    "def": "足球运动员",
+    "grade": 4,
+    "semester": 1,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 四年级上"
+  },
+  {
+    "word": "job",
+    "phonetic": "/dʒɑːb/",
+    "def": "工作",
+    "grade": 4,
+    "semester": 1,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 四年级上"
+  },
+  {
+    "word": "basketball",
+    "phonetic": "/ˈbæskɪtbɔːl/",
+    "def": "篮球",
+    "grade": 4,
+    "semester": 1,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 四年级上"
+  },
+  {
+    "word": "first floor",
+    "phonetic": "/fɝ​st flɔr/",
+    "def": "地面以上的一层",
+    "grade": 4,
+    "semester": 2,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 四年级下"
+  },
+  {
+    "word": "second floor",
+    "phonetic": "",
+    "def": "na. 〈美〉二楼",
+    "grade": 4,
+    "semester": 2,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 四年级下"
+  },
+  {
+    "word": "teacher's office",
+    "phonetic": "",
+    "def": "无",
+    "grade": 4,
+    "semester": 2,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 四年级下"
+  },
+  {
+    "word": "library",
+    "phonetic": "/ˈlaɪbreri/",
+    "def": "图书馆，藏书室",
+    "grade": 4,
+    "semester": 2,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 四年级下"
+  },
+  {
+    "word": "playground",
+    "phonetic": "/ˈpleɪɡraʊnd/",
+    "def": "运动场，操场",
+    "grade": 4,
+    "semester": 2,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 四年级下"
+  },
+  {
+    "word": "computer room",
+    "phonetic": "",
+    "def": "un. 计算机机房",
+    "grade": 4,
+    "semester": 2,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 四年级下"
+  },
+  {
+    "word": "art room",
+    "phonetic": "",
+    "def": "绘画教室",
+    "grade": 4,
+    "semester": 2,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 四年级下"
+  },
+  {
+    "word": "music room",
+    "phonetic": "",
+    "def": "音乐教室",
+    "grade": 4,
+    "semester": 2,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 四年级下"
+  },
+  {
+    "word": "next to",
+    "phonetic": "",
+    "def": "紧邻",
+    "grade": 4,
+    "semester": 2,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 四年级下"
+  },
+  {
+    "word": "homework",
+    "phonetic": "/ˈhoʊmwɜːrk/",
+    "def": "家庭作业，课外作业",
+    "grade": 4,
+    "semester": 2,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 四年级下"
+  },
+  {
+    "word": "class",
+    "phonetic": "/klæs/",
+    "def": "阶级",
+    "grade": 4,
+    "semester": 2,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 四年级下"
+  },
+  {
+    "word": "forty",
+    "phonetic": "/ˈfɔːrti/",
+    "def": "四十",
+    "grade": 4,
+    "semester": 2,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 四年级下"
+  },
+  {
+    "word": "way",
+    "phonetic": "/weɪ/",
+    "def": "方法",
+    "grade": 4,
+    "semester": 2,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 四年级下"
+  },
+  {
+    "word": "breakfast",
+    "phonetic": "/ˈbrekfəst/",
+    "def": "早餐",
+    "grade": 4,
+    "semester": 2,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 四年级下"
+  },
+  {
+    "word": "English class",
+    "phonetic": "",
+    "def": "英语课",
+    "grade": 4,
+    "semester": 2,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 四年级下"
+  },
+  {
+    "word": "lunch",
+    "phonetic": "/lʌntʃ/",
+    "def": "午餐",
+    "grade": 4,
+    "semester": 2,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 四年级下"
+  },
+  {
+    "word": "music class",
+    "phonetic": "",
+    "def": "无",
+    "grade": 4,
+    "semester": 2,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 四年级下"
+  },
+  {
+    "word": "PE class",
+    "phonetic": "",
+    "def": "无",
+    "grade": 4,
+    "semester": 2,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 四年级下"
+  },
+  {
+    "word": "get up",
+    "phonetic": "/ɡet ʌp/",
+    "def": "na. 起床",
+    "grade": 4,
+    "semester": 2,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 四年级下"
+  },
+  {
+    "word": "go to school",
+    "phonetic": "",
+    "def": "na. 到校上课",
+    "grade": 4,
+    "semester": 2,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 四年级下"
+  },
+  {
+    "word": "go home",
+    "phonetic": "",
+    "def": "na. 回家",
+    "grade": 4,
+    "semester": 2,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 四年级下"
+  },
+  {
+    "word": "go to bed",
+    "phonetic": "",
+    "def": "na. 睡",
+    "grade": 4,
+    "semester": 2,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 四年级下"
+  },
+  {
+    "word": "over",
+    "phonetic": "/ˈoʊvər/",
+    "def": "结束",
+    "grade": 4,
+    "semester": 2,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 四年级下"
+  },
+  {
+    "word": "now",
+    "phonetic": "/naʊ/",
+    "def": "现在",
+    "grade": 4,
+    "semester": 2,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 四年级下"
+  },
+  {
+    "word": "o'clock",
+    "phonetic": "",
+    "def": "abbr. …点钟（等于of the clock）",
+    "grade": 4,
+    "semester": 2,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 四年级下"
+  },
+  {
+    "word": "kid",
+    "phonetic": "/kɪd/",
+    "def": "小孩",
+    "grade": 4,
+    "semester": 2,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 四年级下"
+  },
+  {
+    "word": "thirty",
+    "phonetic": "/ˈθɜːrti/",
+    "def": "三十",
+    "grade": 4,
+    "semester": 2,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 四年级下"
+  },
+  {
+    "word": "hurry up",
+    "phonetic": "/'hɜːrɪ ʌp/",
+    "def": "na. 催促",
+    "grade": 4,
+    "semester": 2,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 四年级下"
+  },
+  {
+    "word": "come on",
+    "phonetic": "",
+    "def": "na.出台",
+    "grade": 4,
+    "semester": 2,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 四年级下"
+  },
+  {
+    "word": "just a minute",
+    "phonetic": "",
+    "def": "na. “wait/just a minute”的变体",
+    "grade": 4,
+    "semester": 2,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 四年级下"
+  },
+  {
+    "word": "cold",
+    "phonetic": "/kəʊld/",
+    "def": "寒冷",
+    "grade": 4,
+    "semester": 2,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 四年级下"
+  },
+  {
+    "word": "cool",
+    "phonetic": "/kuːl/",
+    "def": "凉爽",
+    "grade": 4,
+    "semester": 2,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 四年级下"
+  },
+  {
+    "word": "warm",
+    "phonetic": "/wɔːrm/",
+    "def": "取暖",
+    "grade": 4,
+    "semester": 2,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 四年级下"
+  },
+  {
+    "word": "hot",
+    "phonetic": "/hɑːt/",
+    "def": "热的",
+    "grade": 4,
+    "semester": 2,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 四年级下"
+  },
+  {
+    "word": "sunny",
+    "phonetic": "/ˈsʌni/",
+    "def": "阳光充足的，和煦的",
+    "grade": 4,
+    "semester": 2,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 四年级下"
+  },
+  {
+    "word": "windy",
+    "phonetic": "/ˈwɪndi/",
+    "def": "多风的，有风的",
+    "grade": 4,
+    "semester": 2,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 四年级下"
+  },
+  {
+    "word": "cloudy",
+    "phonetic": "/ˈklaʊdi/",
+    "def": "多云的",
+    "grade": 4,
+    "semester": 2,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 四年级下"
+  },
+  {
+    "word": "snowy",
+    "phonetic": "/ˈsnoʊi/",
+    "def": "下雪的，多雪的",
+    "grade": 4,
+    "semester": 2,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 四年级下"
+  },
+  {
+    "word": "rainy",
+    "phonetic": "/ˈreɪni/",
+    "def": "下雨的",
+    "grade": 4,
+    "semester": 2,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 四年级下"
+  },
+  {
+    "word": "outside",
+    "phonetic": "/ˌaʊtˈsaɪd/",
+    "def": "外面的，外部的",
+    "grade": 4,
+    "semester": 2,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 四年级下"
+  },
+  {
+    "word": "be careful",
+    "phonetic": "",
+    "def": "小心",
+    "grade": 4,
+    "semester": 2,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 四年级下"
+  },
+  {
+    "word": "weather",
+    "phonetic": "/ˈweðər/",
+    "def": "天气",
+    "grade": 4,
+    "semester": 2,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 四年级下"
+  },
+  {
+    "word": "New York",
+    "phonetic": "",
+    "def": "【城】纽约州",
+    "grade": 4,
+    "semester": 2,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 四年级下"
+  },
+  {
+    "word": "how about",
+    "phonetic": "",
+    "def": "怎么样",
+    "grade": 4,
+    "semester": 2,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 四年级下"
+  },
+  {
+    "word": "degree",
+    "phonetic": "/dɪˈɡriː/",
+    "def": "程度，等级",
+    "grade": 4,
+    "semester": 2,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 四年级下"
+  },
+  {
+    "word": "world",
+    "phonetic": "/wɜːrld/",
+    "def": "世界",
+    "grade": 4,
+    "semester": 2,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 四年级下"
+  },
+  {
+    "word": "London",
+    "phonetic": "/ˈlʌndən/",
+    "def": "伦敦",
+    "grade": 4,
+    "semester": 2,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 四年级下"
+  },
+  {
+    "word": "Moscow",
+    "phonetic": "/ˈmɑːskaʊ/",
+    "def": "莫斯科（俄罗斯首都）",
+    "grade": 4,
+    "semester": 2,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 四年级下"
+  },
+  {
+    "word": "Singapore",
+    "phonetic": "/ˈsɪŋəpɔːr/",
+    "def": "新加坡",
+    "grade": 4,
+    "semester": 2,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 四年级下"
+  },
+  {
+    "word": "Sydney",
+    "phonetic": "/ˈsɪdni/",
+    "def": "悉尼（澳大利亚港市）",
+    "grade": 4,
+    "semester": 2,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 四年级下"
+  },
+  {
+    "word": "fly",
+    "phonetic": "/flaɪ/",
+    "def": "飞行",
+    "grade": 4,
+    "semester": 2,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 四年级下"
+  },
+  {
+    "word": "love",
+    "phonetic": "/lʌv/",
+    "def": "恋爱",
+    "grade": 4,
+    "semester": 2,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 四年级下"
+  },
+  {
+    "word": "tomato",
+    "phonetic": "/təˈmeɪtoʊ/",
+    "def": "番茄，西红柿",
+    "grade": 4,
+    "semester": 2,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 四年级下"
+  },
+  {
+    "word": "potato",
+    "phonetic": "/pəˈteɪtoʊ/",
+    "def": "[作物] 土豆，[作物] 马铃薯",
+    "grade": 4,
+    "semester": 2,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 四年级下"
+  },
+  {
+    "word": "green beans",
+    "phonetic": "",
+    "def": "【食】青豆",
+    "grade": 4,
+    "semester": 2,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 四年级下"
+  },
+  {
+    "word": "carrot",
+    "phonetic": "/ˈkærət/",
+    "def": "胡萝卜",
+    "grade": 4,
+    "semester": 2,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 四年级下"
+  },
+  {
+    "word": "horse",
+    "phonetic": "/hɔːrs/",
+    "def": "马",
+    "grade": 4,
+    "semester": 2,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 四年级下"
+  },
+  {
+    "word": "cow",
+    "phonetic": "/kaʊ/",
+    "def": "奶牛，母牛",
+    "grade": 4,
+    "semester": 2,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 四年级下"
+  },
+  {
+    "word": "sheep",
+    "phonetic": "/ʃiːp/",
+    "def": "羊，绵羊",
+    "grade": 4,
+    "semester": 2,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 四年级下"
+  },
+  {
+    "word": "hen",
+    "phonetic": "/hen/",
+    "def": "母鸡",
+    "grade": 4,
+    "semester": 2,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 四年级下"
+  },
+  {
+    "word": "these",
+    "phonetic": "/ðiːz/",
+    "def": "这些的",
+    "grade": 4,
+    "semester": 2,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 四年级下"
+  },
+  {
+    "word": "yum",
+    "phonetic": "/jʌm/",
+    "def": "极好的",
+    "grade": 4,
+    "semester": 2,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 四年级下"
+  },
+  {
+    "word": "animal",
+    "phonetic": "/ˈænɪm(ə)l/",
+    "def": "动物",
+    "grade": 4,
+    "semester": 2,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 四年级下"
+  },
+  {
+    "word": "those",
+    "phonetic": "/ðoʊz/",
+    "def": "那些的",
+    "grade": 4,
+    "semester": 2,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 四年级下"
+  },
+  {
+    "word": "garden",
+    "phonetic": "/ˈɡɑːrdn/",
+    "def": "花园",
+    "grade": 4,
+    "semester": 2,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 四年级下"
+  },
+  {
+    "word": "farm",
+    "phonetic": "/fɑːrm/",
+    "def": "农场",
+    "grade": 4,
+    "semester": 2,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 四年级下"
+  },
+  {
+    "word": "goat",
+    "phonetic": "/goʊt/",
+    "def": "山羊",
+    "grade": 4,
+    "semester": 2,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 四年级下"
+  },
+  {
+    "word": "eat",
+    "phonetic": "/iːt/",
+    "def": "吃，喝",
+    "grade": 4,
+    "semester": 2,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 四年级下"
+  },
+  {
+    "word": "clothes",
+    "phonetic": "/kloʊðz; kloʊz/",
+    "def": "衣服",
+    "grade": 4,
+    "semester": 2,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 四年级下"
+  },
+  {
+    "word": "pants",
+    "phonetic": "/pænts/",
+    "def": "裤子",
+    "grade": 4,
+    "semester": 2,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 四年级下"
+  },
+  {
+    "word": "dress",
+    "phonetic": "/dres/",
+    "def": "连衣裙",
+    "grade": 4,
+    "semester": 2,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 四年级下"
+  },
+  {
+    "word": "skirt",
+    "phonetic": "/skɜːrt/",
+    "def": "裙子",
+    "grade": 4,
+    "semester": 2,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 四年级下"
+  },
+  {
+    "word": "coat",
+    "phonetic": "/koʊt/",
+    "def": "外套",
+    "grade": 4,
+    "semester": 2,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 四年级下"
+  },
+  {
+    "word": "sweater",
+    "phonetic": "/ˈswetər/",
+    "def": "毛线衣，运动衫",
+    "grade": 4,
+    "semester": 2,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 四年级下"
+  },
+  {
+    "word": "sock",
+    "phonetic": "/sɑːk/",
+    "def": "重击",
+    "grade": 4,
+    "semester": 2,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 四年级下"
+  },
+  {
+    "word": "shorts",
+    "phonetic": "/ʃɔːrts/",
+    "def": "短裤",
+    "grade": 4,
+    "semester": 2,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 四年级下"
+  },
+  {
+    "word": "jacket",
+    "phonetic": "/ˈdʒækɪt/",
+    "def": "羽绒滑雪衫",
+    "grade": 4,
+    "semester": 2,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 四年级下"
+  },
+  {
+    "word": "shirt",
+    "phonetic": "/ʃɜːrt/",
+    "def": "衬衫",
+    "grade": 4,
+    "semester": 2,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 四年级下"
+  },
+  {
+    "word": "yours",
+    "phonetic": "/jərz; jɔːrz; jʊrz/",
+    "def": "你（们）的东西",
+    "grade": 4,
+    "semester": 2,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 四年级下"
+  },
+  {
+    "word": "whose",
+    "phonetic": "/huːz/",
+    "def": "谁的（疑问代词）",
+    "grade": 4,
+    "semester": 2,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 四年级下"
+  },
+  {
+    "word": "mine",
+    "phonetic": "/maɪn/",
+    "def": "矿，矿藏",
+    "grade": 4,
+    "semester": 2,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 四年级下"
+  },
+  {
+    "word": "pack",
+    "phonetic": "/pæk/",
+    "def": "包装",
+    "grade": 4,
+    "semester": 2,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 四年级下"
+  },
+  {
+    "word": "wait",
+    "phonetic": "/weɪt/",
+    "def": "等待",
+    "grade": 4,
+    "semester": 2,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 四年级下"
+  },
+  {
+    "word": "glove",
+    "phonetic": "/ɡlʌv/",
+    "def": "手套",
+    "grade": 4,
+    "semester": 2,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 四年级下"
+  },
+  {
+    "word": "scarf",
+    "phonetic": "/skɑːrf/",
+    "def": "围巾",
+    "grade": 4,
+    "semester": 2,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 四年级下"
+  },
+  {
+    "word": "umbrella",
+    "phonetic": "/ʌmˈbrelə/",
+    "def": "雨伞",
+    "grade": 4,
+    "semester": 2,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 四年级下"
+  },
+  {
+    "word": "sunglasses",
+    "phonetic": "/ˈsʌnɡlæsɪz/",
+    "def": "太阳镜",
+    "grade": 4,
+    "semester": 2,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 四年级下"
+  },
+  {
+    "word": "pretty",
+    "phonetic": "/ˈprɪti/",
+    "def": "有吸引力的事物（尤指饰品）",
+    "grade": 4,
+    "semester": 2,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 四年级下"
+  },
+  {
+    "word": "expensive",
+    "phonetic": "/ɪkˈspensɪv/",
+    "def": "昂贵的",
+    "grade": 4,
+    "semester": 2,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 四年级下"
+  },
+  {
+    "word": "cheap",
+    "phonetic": "/tʃiːp/",
+    "def": "便宜的",
+    "grade": 4,
+    "semester": 2,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 四年级下"
+  },
+  {
+    "word": "nice",
+    "phonetic": "/naɪs/",
+    "def": "精密的",
+    "grade": 4,
+    "semester": 2,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 四年级下"
+  },
+  {
+    "word": "try on",
+    "phonetic": "",
+    "def": "na. 试穿",
+    "grade": 4,
+    "semester": 2,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 四年级下"
+  },
+  {
+    "word": "size",
+    "phonetic": "/saɪz/",
+    "def": "大小",
+    "grade": 4,
+    "semester": 2,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 四年级下"
+  },
+  {
+    "word": "of course",
+    "phonetic": "",
+    "def": "na. 当然",
+    "grade": 4,
+    "semester": 2,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 四年级下"
+  },
+  {
+    "word": "too",
+    "phonetic": "/tuː/",
+    "def": "太",
+    "grade": 4,
+    "semester": 2,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 四年级下"
+  },
+  {
+    "word": "just",
+    "phonetic": "/dʒʌst/",
+    "def": "只是，仅仅",
+    "grade": 4,
+    "semester": 2,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 四年级下"
+  },
+  {
+    "word": "how much",
+    "phonetic": "/haʊ mʌtʃ/",
+    "def": "多少",
+    "grade": 4,
+    "semester": 2,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 四年级下"
+  },
+  {
+    "word": "eighty",
+    "phonetic": "/ˈeɪti/",
+    "def": "八十",
+    "grade": 4,
+    "semester": 2,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 四年级下"
+  },
+  {
+    "word": "dollar",
+    "phonetic": "/ˈdɑːlər/",
+    "def": "美元",
+    "grade": 4,
+    "semester": 2,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 四年级下"
+  },
+  {
+    "word": "sale",
+    "phonetic": "/seɪl/",
+    "def": "销售",
+    "grade": 4,
+    "semester": 2,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 四年级下"
+  },
+  {
+    "word": "more",
+    "phonetic": "/mɔːr/",
+    "def": "更多",
+    "grade": 4,
+    "semester": 2,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 四年级下"
+  },
+  {
+    "word": "us",
+    "phonetic": "/əs; ʌs/",
+    "def": "我们",
+    "grade": 4,
+    "semester": 2,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 四年级下"
+  },
+  {
+    "word": "old",
+    "phonetic": "/oʊld/",
+    "def": "陈旧的，古老的",
+    "grade": 5,
+    "semester": 1,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 五年级上"
+  },
+  {
+    "word": "young",
+    "phonetic": "/jʌŋ/",
+    "def": "年轻人",
+    "grade": 5,
+    "semester": 1,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 五年级上"
+  },
+  {
+    "word": "funny",
+    "phonetic": "/ˈfʌni/",
+    "def": "滑稽人物",
+    "grade": 5,
+    "semester": 1,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 五年级上"
+  },
+  {
+    "word": "kind",
+    "phonetic": "/kaɪnd/",
+    "def": "种类",
+    "grade": 5,
+    "semester": 1,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 五年级上"
+  },
+  {
+    "word": "strict",
+    "phonetic": "/strɪkt/",
+    "def": "严格的",
+    "grade": 5,
+    "semester": 1,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 五年级上"
+  },
+  {
+    "word": "polite",
+    "phonetic": "/pəˈlaɪt/",
+    "def": "有礼貌的，客气的",
+    "grade": 5,
+    "semester": 1,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 五年级上"
+  },
+  {
+    "word": "hard-working",
+    "phonetic": "/ˌhɑːrd ˈwɜːrkɪŋ/",
+    "def": "勤勉的",
+    "grade": 5,
+    "semester": 1,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 五年级上"
+  },
+  {
+    "word": "helpful",
+    "phonetic": "/ˈhelpfl/",
+    "def": "有帮助的",
+    "grade": 5,
+    "semester": 1,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 五年级上"
+  },
+  {
+    "word": "clever",
+    "phonetic": "/ˈklevər/",
+    "def": "聪明的",
+    "grade": 5,
+    "semester": 1,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 五年级上"
+  },
+  {
+    "word": "shy",
+    "phonetic": "/ʃaɪ/",
+    "def": "投掷",
+    "grade": 5,
+    "semester": 1,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 五年级上"
+  },
+  {
+    "word": "know",
+    "phonetic": "/noʊ/",
+    "def": "知道",
+    "grade": 5,
+    "semester": 1,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 五年级上"
+  },
+  {
+    "word": "our",
+    "phonetic": "/ɑːr/",
+    "def": "我们的",
+    "grade": 5,
+    "semester": 1,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 五年级上"
+  },
+  {
+    "word": "Ms",
+    "phonetic": "/mɪz/",
+    "def": "abbr. 存贮系统（Memory System）",
+    "grade": 5,
+    "semester": 1,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 五年级上"
+  },
+  {
+    "word": "will",
+    "phonetic": "/wɪl/",
+    "def": "意志",
+    "grade": 5,
+    "semester": 1,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 五年级上"
+  },
+  {
+    "word": "sometimes",
+    "phonetic": "/ˈsʌmtaɪmz/",
+    "def": "有时，间或",
+    "grade": 5,
+    "semester": 1,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 五年级上"
+  },
+  {
+    "word": "robot",
+    "phonetic": "/ˈroʊbɑːt/",
+    "def": "机器人",
+    "grade": 5,
+    "semester": 1,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 五年级上"
+  },
+  {
+    "word": "him",
+    "phonetic": "/hɪm; ɪm/",
+    "def": "他（宾格）",
+    "grade": 5,
+    "semester": 1,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 五年级上"
+  },
+  {
+    "word": "speak",
+    "phonetic": "/spiːk/",
+    "def": "说话",
+    "grade": 5,
+    "semester": 1,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 五年级上"
+  },
+  {
+    "word": "finish",
+    "phonetic": "/ˈfɪnɪʃ/",
+    "def": "结束",
+    "grade": 5,
+    "semester": 1,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 五年级上"
+  },
+  {
+    "word": "Monday",
+    "phonetic": "/ˈmʌndeɪ/",
+    "def": "星期一",
+    "grade": 5,
+    "semester": 1,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 五年级上"
+  },
+  {
+    "word": "Tuesday",
+    "phonetic": "/ˈtuːzdeɪ/",
+    "def": "星期二",
+    "grade": 5,
+    "semester": 1,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 五年级上"
+  },
+  {
+    "word": "Wednesday",
+    "phonetic": "/ˈwenzdeɪ/",
+    "def": "星期三",
+    "grade": 5,
+    "semester": 1,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 五年级上"
+  },
+  {
+    "word": "Thursday",
+    "phonetic": "/ˈθɜːrzdeɪ/",
+    "def": "星期四",
+    "grade": 5,
+    "semester": 1,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 五年级上"
+  },
+  {
+    "word": "Friday",
+    "phonetic": "/ˈfraɪdeɪ/",
+    "def": "星期五",
+    "grade": 5,
+    "semester": 1,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 五年级上"
+  },
+  {
+    "word": "Saturday",
+    "phonetic": "/ˈsætərdeɪ/",
+    "def": "星期六",
+    "grade": 5,
+    "semester": 1,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 五年级上"
+  },
+  {
+    "word": "Sunday",
+    "phonetic": "/ˈsʌndeɪ/",
+    "def": "星期日",
+    "grade": 5,
+    "semester": 1,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 五年级上"
+  },
+  {
+    "word": "weekend",
+    "phonetic": "/ˈwiːkend/",
+    "def": "周末，周末休假",
+    "grade": 5,
+    "semester": 1,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 五年级上"
+  },
+  {
+    "word": "wash",
+    "phonetic": "/wɑːʃ/",
+    "def": "洗涤",
+    "grade": 5,
+    "semester": 1,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 五年级上"
+  },
+  {
+    "word": "wash my clothes",
+    "phonetic": "",
+    "def": "洗我的衣服",
+    "grade": 5,
+    "semester": 1,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 五年级上"
+  },
+  {
+    "word": "watch",
+    "phonetic": "/wɑːtʃ/",
+    "def": "手表",
+    "grade": 5,
+    "semester": 1,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 五年级上"
+  },
+  {
+    "word": "watch TV",
+    "phonetic": "",
+    "def": "看电视",
+    "grade": 5,
+    "semester": 1,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 五年级上"
+  },
+  {
+    "word": "do",
+    "phonetic": "/duː; də; du; doʊ/",
+    "def": "行，足够",
+    "grade": 5,
+    "semester": 1,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 五年级上"
+  },
+  {
+    "word": "do homework",
+    "phonetic": "",
+    "def": "做作业",
+    "grade": 5,
+    "semester": 1,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 五年级上"
+  },
+  {
+    "word": "read",
+    "phonetic": "/riːd/",
+    "def": "阅读",
+    "grade": 5,
+    "semester": 1,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 五年级上"
+  },
+  {
+    "word": "read books",
+    "phonetic": "",
+    "def": "读书",
+    "grade": 5,
+    "semester": 1,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 五年级上"
+  },
+  {
+    "word": "play",
+    "phonetic": "/pleɪ/",
+    "def": "游戏",
+    "grade": 5,
+    "semester": 1,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 五年级上"
+  },
+  {
+    "word": "play football",
+    "phonetic": "",
+    "def": "na. 踢足球",
+    "grade": 5,
+    "semester": 1,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 五年级上"
+  },
+  {
+    "word": "cooking",
+    "phonetic": "/ˈkʊkɪŋ/",
+    "def": "烹饪",
+    "grade": 5,
+    "semester": 1,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 五年级上"
+  },
+  {
+    "word": "often",
+    "phonetic": "/ˈɔːf(ə)n/",
+    "def": "常常，时常",
+    "grade": 5,
+    "semester": 1,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 五年级上"
+  },
+  {
+    "word": "park",
+    "phonetic": "/pɑːrk/",
+    "def": "公园",
+    "grade": 5,
+    "semester": 1,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 五年级上"
+  },
+  {
+    "word": "tired",
+    "phonetic": "/ˈtaɪərd/",
+    "def": "疲倦",
+    "grade": 5,
+    "semester": 1,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 五年级上"
+  },
+  {
+    "word": "sport",
+    "phonetic": "/spɔːrt/",
+    "def": "运动",
+    "grade": 5,
+    "semester": 1,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 五年级上"
+  },
+  {
+    "word": "play sports",
+    "phonetic": "",
+    "def": "做运动",
+    "grade": 5,
+    "semester": 1,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 五年级上"
+  },
+  {
+    "word": "should",
+    "phonetic": "/ʃəd; ʃʊd/",
+    "def": "aux. 应该",
+    "grade": 5,
+    "semester": 1,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 五年级上"
+  },
+  {
+    "word": "every",
+    "phonetic": "/ˈevri/",
+    "def": "每一的，每个的",
+    "grade": 5,
+    "semester": 1,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 五年级上"
+  },
+  {
+    "word": "day",
+    "phonetic": "/deɪ/",
+    "def": "一天",
+    "grade": 5,
+    "semester": 1,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 五年级上"
+  },
+  {
+    "word": "schedule",
+    "phonetic": "/ˈskedʒuːl/",
+    "def": "时间表",
+    "grade": 5,
+    "semester": 1,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 五年级上"
+  },
+  {
+    "word": "sandwich",
+    "phonetic": "/ˈsænwɪtʃ; ˈsænwɪdʒ/",
+    "def": "三明治",
+    "grade": 5,
+    "semester": 1,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 五年级上"
+  },
+  {
+    "word": "salad",
+    "phonetic": "/ˈsæləd/",
+    "def": "色拉",
+    "grade": 5,
+    "semester": 1,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 五年级上"
+  },
+  {
+    "word": "hamburger",
+    "phonetic": "/ˈhæmbɜːrɡər/",
+    "def": "汉堡包，火腿汉堡",
+    "grade": 5,
+    "semester": 1,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 五年级上"
+  },
+  {
+    "word": "ice cream",
+    "phonetic": "/ˈaɪs kriːm/",
+    "def": "【食】冰淇淋",
+    "grade": 5,
+    "semester": 1,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 五年级上"
+  },
+  {
+    "word": "tea",
+    "phonetic": "/tiː/",
+    "def": "茶叶",
+    "grade": 5,
+    "semester": 1,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 五年级上"
+  },
+  {
+    "word": "fresh",
+    "phonetic": "/freʃ/",
+    "def": "开始",
+    "grade": 5,
+    "semester": 1,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 五年级上"
+  },
+  {
+    "word": "healthy",
+    "phonetic": "/ˈhelθi/",
+    "def": "健康的，健全的",
+    "grade": 5,
+    "semester": 1,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 五年级上"
+  },
+  {
+    "word": "delicious",
+    "phonetic": "/dɪˈlɪʃəs/",
+    "def": "美味的",
+    "grade": 5,
+    "semester": 1,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 五年级上"
+  },
+  {
+    "word": "hot",
+    "phonetic": "/hɑːt/",
+    "def": "热的",
+    "grade": 5,
+    "semester": 1,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 五年级上"
+  },
+  {
+    "word": "sweet",
+    "phonetic": "/swiːt/",
+    "def": "糖果",
+    "grade": 5,
+    "semester": 1,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 五年级上"
+  },
+  {
+    "word": "drink",
+    "phonetic": "/drɪŋk/",
+    "def": "酒，饮料",
+    "grade": 5,
+    "semester": 1,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 五年级上"
+  },
+  {
+    "word": "thirsty",
+    "phonetic": "/ˈθɜːrsti/",
+    "def": "口渴的，口干的",
+    "grade": 5,
+    "semester": 1,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 五年级上"
+  },
+  {
+    "word": "favourite",
+    "phonetic": "/ˈfeɪvərɪt/",
+    "def": "特别喜爱的人（或物）",
+    "grade": 5,
+    "semester": 1,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 五年级上"
+  },
+  {
+    "word": "food",
+    "phonetic": "/fuːd/",
+    "def": "食物",
+    "grade": 5,
+    "semester": 1,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 五年级上"
+  },
+  {
+    "word": "Dear",
+    "phonetic": "/dɪr/",
+    "def": "亲爱的人",
+    "grade": 5,
+    "semester": 1,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 五年级上"
+  },
+  {
+    "word": "onion",
+    "phonetic": "/ˈʌnjən/",
+    "def": "洋葱",
+    "grade": 5,
+    "semester": 1,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 五年级上"
+  },
+  {
+    "word": "sing",
+    "phonetic": "/sɪŋ/",
+    "def": "演唱",
+    "grade": 5,
+    "semester": 1,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 五年级上"
+  },
+  {
+    "word": "song",
+    "phonetic": "/sɔŋ/",
+    "def": "歌曲",
+    "grade": 5,
+    "semester": 1,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 五年级上"
+  },
+  {
+    "word": "sing English songs",
+    "phonetic": "",
+    "def": "无",
+    "grade": 5,
+    "semester": 1,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 五年级上"
+  },
+  {
+    "word": "play the pipa",
+    "phonetic": "",
+    "def": "无",
+    "grade": 5,
+    "semester": 1,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 五年级上"
+  },
+  {
+    "word": "kung fu",
+    "phonetic": "/ˌkʌŋ ˈfuː/",
+    "def": "功夫（中国拳术）",
+    "grade": 5,
+    "semester": 1,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 五年级上"
+  },
+  {
+    "word": "do kung fu",
+    "phonetic": "",
+    "def": "无",
+    "grade": 5,
+    "semester": 1,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 五年级上"
+  },
+  {
+    "word": "dance",
+    "phonetic": "/dæns/",
+    "def": "舞蹈",
+    "grade": 5,
+    "semester": 1,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 五年级上"
+  },
+  {
+    "word": "draw",
+    "phonetic": "/drɔː/",
+    "def": "平局",
+    "grade": 5,
+    "semester": 1,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 五年级上"
+  },
+  {
+    "word": "cartoon",
+    "phonetic": "/kɑːrˈtuːn/",
+    "def": "卡通片，[电影] 动画片",
+    "grade": 5,
+    "semester": 1,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 五年级上"
+  },
+  {
+    "word": "draw cartoons",
+    "phonetic": "",
+    "def": "无",
+    "grade": 5,
+    "semester": 1,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 五年级上"
+  },
+  {
+    "word": "cook",
+    "phonetic": "/kʊk/",
+    "def": "厨师，厨子",
+    "grade": 5,
+    "semester": 1,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 五年级上"
+  },
+  {
+    "word": "swim",
+    "phonetic": "/swɪm/",
+    "def": "游泳",
+    "grade": 5,
+    "semester": 1,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 五年级上"
+  },
+  {
+    "word": "play basketball",
+    "phonetic": "",
+    "def": "打篮球",
+    "grade": 5,
+    "semester": 1,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 五年级上"
+  },
+  {
+    "word": "ping-pong",
+    "phonetic": "/ˈpɪŋ pɑːŋ/",
+    "def": "乒乓球",
+    "grade": 5,
+    "semester": 1,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 五年级上"
+  },
+  {
+    "word": "play ping-pong",
+    "phonetic": "",
+    "def": "打乒乓球",
+    "grade": 5,
+    "semester": 1,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 五年级上"
+  },
+  {
+    "word": "speak English",
+    "phonetic": "",
+    "def": "说英语",
+    "grade": 5,
+    "semester": 1,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 五年级上"
+  },
+  {
+    "word": "we'll",
+    "phonetic": "",
+    "def": "abbr. 我们将（we shall，we will）",
+    "grade": 5,
+    "semester": 1,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 五年级上"
+  },
+  {
+    "word": "we will",
+    "phonetic": "",
+    "def": "无",
+    "grade": 5,
+    "semester": 1,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 五年级上"
+  },
+  {
+    "word": "party",
+    "phonetic": "/ˈpɑːrti/",
+    "def": "政党，党派",
+    "grade": 5,
+    "semester": 1,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 五年级上"
+  },
+  {
+    "word": "next",
+    "phonetic": "/nekst/",
+    "def": "然后",
+    "grade": 5,
+    "semester": 1,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 五年级上"
+  },
+  {
+    "word": "wonderful",
+    "phonetic": "/ˈwʌndərf(ə)l/",
+    "def": "极好的，精彩的，绝妙的",
+    "grade": 5,
+    "semester": 1,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 五年级上"
+  },
+  {
+    "word": "learn",
+    "phonetic": "/lɜːrn/",
+    "def": "学习",
+    "grade": 5,
+    "semester": 1,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 五年级上"
+  },
+  {
+    "word": "any",
+    "phonetic": "/ˈeni/",
+    "def": "任何的",
+    "grade": 5,
+    "semester": 1,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 五年级上"
+  },
+  {
+    "word": "problem",
+    "phonetic": "/ˈprɑːbləm/",
+    "def": "难题",
+    "grade": 5,
+    "semester": 1,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 五年级上"
+  },
+  {
+    "word": "no problem",
+    "phonetic": "",
+    "def": "没问题",
+    "grade": 5,
+    "semester": 1,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 五年级上"
+  },
+  {
+    "word": "want",
+    "phonetic": "/wɑːnt/",
+    "def": "需要",
+    "grade": 5,
+    "semester": 1,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 五年级上"
+  },
+  {
+    "word": "send",
+    "phonetic": "/send/",
+    "def": "上升运动",
+    "grade": 5,
+    "semester": 1,
+    "unit": "Unit 5",
+    "source": "人教版小学英语 · 五年级上"
+  },
+  {
+    "word": "email",
+    "phonetic": "/ˈiːmeɪl/",
+    "def": "电子信函",
+    "grade": 5,
+    "semester": 1,
+    "unit": "Unit 5",
+    "source": "人教版小学英语 · 五年级上"
+  },
+  {
+    "word": "at",
+    "phonetic": "/ət; æt/",
+    "def": "在（表示存在或出现的地点、场所、位置、空间）",
+    "grade": 5,
+    "semester": 1,
+    "unit": "Unit 5",
+    "source": "人教版小学英语 · 五年级上"
+  },
+  {
+    "word": "clock",
+    "phonetic": "/klɑːk/",
+    "def": "时钟",
+    "grade": 5,
+    "semester": 1,
+    "unit": "Unit 5",
+    "source": "人教版小学英语 · 五年级上"
+  },
+  {
+    "word": "plant",
+    "phonetic": "/plænt/",
+    "def": "工厂，车间",
+    "grade": 5,
+    "semester": 1,
+    "unit": "Unit 5",
+    "source": "人教版小学英语 · 五年级上"
+  },
+  {
+    "word": "bottle",
+    "phonetic": "/ˈbɑːtl/",
+    "def": "瓶子",
+    "grade": 5,
+    "semester": 1,
+    "unit": "Unit 5",
+    "source": "人教版小学英语 · 五年级上"
+  },
+  {
+    "word": "water bottle",
+    "phonetic": "",
+    "def": "un. 水壶",
+    "grade": 5,
+    "semester": 1,
+    "unit": "Unit 5",
+    "source": "人教版小学英语 · 五年级上"
+  },
+  {
+    "word": "bike",
+    "phonetic": "/baɪk/",
+    "def": "自行车",
+    "grade": 5,
+    "semester": 1,
+    "unit": "Unit 5",
+    "source": "人教版小学英语 · 五年级上"
+  },
+  {
+    "word": "photo",
+    "phonetic": "/ˈfoʊtoʊ/",
+    "def": "照片",
+    "grade": 5,
+    "semester": 1,
+    "unit": "Unit 5",
+    "source": "人教版小学英语 · 五年级上"
+  },
+  {
+    "word": "front",
+    "phonetic": "/frʌnt/",
+    "def": "前面",
+    "grade": 5,
+    "semester": 1,
+    "unit": "Unit 5",
+    "source": "人教版小学英语 · 五年级上"
+  },
+  {
+    "word": "in front of",
+    "phonetic": "/ɪn frʌnt ʌv/",
+    "def": "na. 在…的前面",
+    "grade": 5,
+    "semester": 1,
+    "unit": "Unit 5",
+    "source": "人教版小学英语 · 五年级上"
+  },
+  {
+    "word": "between",
+    "phonetic": "/bɪˈtwiːn/",
+    "def": "在…之间",
+    "grade": 5,
+    "semester": 1,
+    "unit": "Unit 5",
+    "source": "人教版小学英语 · 五年级上"
+  },
+  {
+    "word": "above",
+    "phonetic": "/əˈbʌv/",
+    "def": "超过",
+    "grade": 5,
+    "semester": 1,
+    "unit": "Unit 5",
+    "source": "人教版小学英语 · 五年级上"
+  },
+  {
+    "word": "beside",
+    "phonetic": "/bɪˈsaɪd/",
+    "def": "在旁边",
+    "grade": 5,
+    "semester": 1,
+    "unit": "Unit 5",
+    "source": "人教版小学英语 · 五年级上"
+  },
+  {
+    "word": "behind",
+    "phonetic": "/bɪˈhaɪnd/",
+    "def": "落后于",
+    "grade": 5,
+    "semester": 1,
+    "unit": "Unit 5",
+    "source": "人教版小学英语 · 五年级上"
+  },
+  {
+    "word": "there",
+    "phonetic": "/ðer/",
+    "def": "那个地方",
+    "grade": 5,
+    "semester": 1,
+    "unit": "Unit 5",
+    "source": "人教版小学英语 · 五年级上"
+  },
+  {
+    "word": "grandparent",
+    "phonetic": "/ˈɡrænperənt/",
+    "def": "祖父母",
+    "grade": 5,
+    "semester": 1,
+    "unit": "Unit 5",
+    "source": "人教版小学英语 · 五年级上"
+  },
+  {
+    "word": "their",
+    "phonetic": "/ðer/",
+    "def": "他们的，她们的",
+    "grade": 5,
+    "semester": 1,
+    "unit": "Unit 5",
+    "source": "人教版小学英语 · 五年级上"
+  },
+  {
+    "word": "house",
+    "phonetic": "/haʊs/",
+    "def": "住宅",
+    "grade": 5,
+    "semester": 1,
+    "unit": "Unit 5",
+    "source": "人教版小学英语 · 五年级上"
+  },
+  {
+    "word": "lot",
+    "phonetic": "/lɑːt/",
+    "def": "份额",
+    "grade": 5,
+    "semester": 1,
+    "unit": "Unit 5",
+    "source": "人教版小学英语 · 五年级上"
+  },
+  {
+    "word": "lots of",
+    "phonetic": "",
+    "def": "许多",
+    "grade": 5,
+    "semester": 1,
+    "unit": "Unit 5",
+    "source": "人教版小学英语 · 五年级上"
+  },
+  {
+    "word": "flower",
+    "phonetic": "/ˈflaʊər/",
+    "def": "花",
+    "grade": 5,
+    "semester": 1,
+    "unit": "Unit 5",
+    "source": "人教版小学英语 · 五年级上"
+  },
+  {
+    "word": "move",
+    "phonetic": "/muːv/",
+    "def": "移动",
+    "grade": 5,
+    "semester": 1,
+    "unit": "Unit 6",
+    "source": "人教版小学英语 · 五年级上"
+  },
+  {
+    "word": "dirty",
+    "phonetic": "/ˈdɜːrti/",
+    "def": "下流的，卑鄙的",
+    "grade": 5,
+    "semester": 1,
+    "unit": "Unit 6",
+    "source": "人教版小学英语 · 五年级上"
+  },
+  {
+    "word": "everywhere",
+    "phonetic": "/ˈevriwer/",
+    "def": "每个地方",
+    "grade": 5,
+    "semester": 1,
+    "unit": "Unit 6",
+    "source": "人教版小学英语 · 五年级上"
+  },
+  {
+    "word": "mouse",
+    "phonetic": "/maʊs/",
+    "def": "鼠标",
+    "grade": 5,
+    "semester": 1,
+    "unit": "Unit 6",
+    "source": "人教版小学英语 · 五年级上"
+  },
+  {
+    "word": "live",
+    "phonetic": "/lɪv; laɪv/",
+    "def": "活的",
+    "grade": 5,
+    "semester": 1,
+    "unit": "Unit 6",
+    "source": "人教版小学英语 · 五年级上"
+  },
+  {
+    "word": "nature",
+    "phonetic": "/ˈneɪtʃər/",
+    "def": "自然",
+    "grade": 5,
+    "semester": 1,
+    "unit": "Unit 6",
+    "source": "人教版小学英语 · 五年级上"
+  },
+  {
+    "word": "forest",
+    "phonetic": "/ˈfɔːrɪst/",
+    "def": "森林",
+    "grade": 5,
+    "semester": 1,
+    "unit": "Unit 6",
+    "source": "人教版小学英语 · 五年级上"
+  },
+  {
+    "word": "river",
+    "phonetic": "/ˈrɪvər/",
+    "def": "河，江",
+    "grade": 5,
+    "semester": 1,
+    "unit": "Unit 6",
+    "source": "人教版小学英语 · 五年级上"
+  },
+  {
+    "word": "lake",
+    "phonetic": "/leɪk/",
+    "def": "湖",
+    "grade": 5,
+    "semester": 1,
+    "unit": "Unit 6",
+    "source": "人教版小学英语 · 五年级上"
+  },
+  {
+    "word": "mountain",
+    "phonetic": "/ˈmaʊntn/",
+    "def": "山",
+    "grade": 5,
+    "semester": 1,
+    "unit": "Unit 6",
+    "source": "人教版小学英语 · 五年级上"
+  },
+  {
+    "word": "hill",
+    "phonetic": "/hɪl/",
+    "def": "小山",
+    "grade": 5,
+    "semester": 1,
+    "unit": "Unit 6",
+    "source": "人教版小学英语 · 五年级上"
+  },
+  {
+    "word": "tree",
+    "phonetic": "/triː/",
+    "def": "树",
+    "grade": 5,
+    "semester": 1,
+    "unit": "Unit 6",
+    "source": "人教版小学英语 · 五年级上"
+  },
+  {
+    "word": "bridge",
+    "phonetic": "/brɪdʒ/",
+    "def": "桥",
+    "grade": 5,
+    "semester": 1,
+    "unit": "Unit 6",
+    "source": "人教版小学英语 · 五年级上"
+  },
+  {
+    "word": "building",
+    "phonetic": "/ˈbɪldɪŋ/",
+    "def": "建筑",
+    "grade": 5,
+    "semester": 1,
+    "unit": "Unit 6",
+    "source": "人教版小学英语 · 五年级上"
+  },
+  {
+    "word": "village",
+    "phonetic": "/ˈvɪlɪdʒ/",
+    "def": "村庄",
+    "grade": 5,
+    "semester": 1,
+    "unit": "Unit 6",
+    "source": "人教版小学英语 · 五年级上"
+  },
+  {
+    "word": "boating",
+    "phonetic": "/ˈboʊtɪŋ/",
+    "def": "划船",
+    "grade": 5,
+    "semester": 1,
+    "unit": "Unit 6",
+    "source": "人教版小学英语 · 五年级上"
+  },
+  {
+    "word": "go boating",
+    "phonetic": "",
+    "def": "na. 乘船〔尤指划船〕游玩",
+    "grade": 5,
+    "semester": 1,
+    "unit": "Unit 6",
+    "source": "人教版小学英语 · 五年级上"
+  },
+  {
+    "word": "aren't",
+    "phonetic": "",
+    "def": "abbr. 不是（are not）",
+    "grade": 5,
+    "semester": 1,
+    "unit": "Unit 6",
+    "source": "人教版小学英语 · 五年级上"
+  },
+  {
+    "word": "are not",
+    "phonetic": "",
+    "def": "无",
+    "grade": 5,
+    "semester": 1,
+    "unit": "Unit 6",
+    "source": "人教版小学英语 · 五年级上"
+  },
+  {
+    "word": "rabbit",
+    "phonetic": "/ˈræbɪt/",
+    "def": "兔子，野兔",
+    "grade": 5,
+    "semester": 1,
+    "unit": "Unit 6",
+    "source": "人教版小学英语 · 五年级上"
+  },
+  {
+    "word": "high",
+    "phonetic": "/haɪ/",
+    "def": "高水平",
+    "grade": 5,
+    "semester": 1,
+    "unit": "Unit 6",
+    "source": "人教版小学英语 · 五年级上"
+  },
+  {
+    "word": "eat breakfast",
+    "phonetic": "/iːt ˈbrekfəst/",
+    "def": "吃早饭",
+    "grade": 5,
+    "semester": 2,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 五年级下"
+  },
+  {
+    "word": "have ... class",
+    "phonetic": "",
+    "def": "上课",
+    "grade": 5,
+    "semester": 2,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 五年级下"
+  },
+  {
+    "word": "exercise",
+    "phonetic": "/ˈeksərsaɪz/",
+    "def": "运动",
+    "grade": 5,
+    "semester": 2,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 五年级下"
+  },
+  {
+    "word": "do morning exercises",
+    "phonetic": "",
+    "def": "做早操",
+    "grade": 5,
+    "semester": 2,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 五年级下"
+  },
+  {
+    "word": "eat dinner",
+    "phonetic": "",
+    "def": "吃晚饭",
+    "grade": 5,
+    "semester": 2,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 五年级下"
+  },
+  {
+    "word": "clean my room",
+    "phonetic": "",
+    "def": "无",
+    "grade": 5,
+    "semester": 2,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 五年级下"
+  },
+  {
+    "word": "go for a walk",
+    "phonetic": "",
+    "def": "出去散步",
+    "grade": 5,
+    "semester": 2,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 五年级下"
+  },
+  {
+    "word": "go shopping",
+    "phonetic": "",
+    "def": "na. 去买东西",
+    "grade": 5,
+    "semester": 2,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 五年级下"
+  },
+  {
+    "word": "take",
+    "phonetic": "/teɪk/",
+    "def": "拿",
+    "grade": 5,
+    "semester": 2,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 五年级下"
+  },
+  {
+    "word": "dancing",
+    "phonetic": "/ˈdænsɪŋ/",
+    "def": "跳舞",
+    "grade": 5,
+    "semester": 2,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 五年级下"
+  },
+  {
+    "word": "take a dancing class",
+    "phonetic": "",
+    "def": "无",
+    "grade": 5,
+    "semester": 2,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 五年级下"
+  },
+  {
+    "word": "when",
+    "phonetic": "/wen/",
+    "def": "考虑到",
+    "grade": 5,
+    "semester": 2,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 五年级下"
+  },
+  {
+    "word": "after",
+    "phonetic": "/ˈæftər/",
+    "def": "在……之后",
+    "grade": 5,
+    "semester": 2,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 五年级下"
+  },
+  {
+    "word": "start",
+    "phonetic": "/stɑːrt/",
+    "def": "开始",
+    "grade": 5,
+    "semester": 2,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 五年级下"
+  },
+  {
+    "word": "usually",
+    "phonetic": "/ˈjuːʒuəli; ˈjuːʒəli/",
+    "def": "通常，经常",
+    "grade": 5,
+    "semester": 2,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 五年级下"
+  },
+  {
+    "word": "Spain",
+    "phonetic": "/speɪn/",
+    "def": "西班牙",
+    "grade": 5,
+    "semester": 2,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 五年级下"
+  },
+  {
+    "word": "late",
+    "phonetic": "/leɪt/",
+    "def": "晚的",
+    "grade": 5,
+    "semester": 2,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 五年级下"
+  },
+  {
+    "word": "a.m.",
+    "phonetic": "/ˌeɪ ˈem/",
+    "def": "abbr. 上午，午前（ante meridiem）",
+    "grade": 5,
+    "semester": 2,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 五年级下"
+  },
+  {
+    "word": "p.m.",
+    "phonetic": "/ˌpiː ˈem/",
+    "def": "abbr.总理",
+    "grade": 5,
+    "semester": 2,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 五年级下"
+  },
+  {
+    "word": "why",
+    "phonetic": "/waɪ/",
+    "def": "哎呀！什么？",
+    "grade": 5,
+    "semester": 2,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 五年级下"
+  },
+  {
+    "word": "shop",
+    "phonetic": "/ʃɑːp/",
+    "def": "商店",
+    "grade": 5,
+    "semester": 2,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 五年级下"
+  },
+  {
+    "word": "work",
+    "phonetic": "/wɜːrk/",
+    "def": "工作",
+    "grade": 5,
+    "semester": 2,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 五年级下"
+  },
+  {
+    "word": "last",
+    "phonetic": "/læst/",
+    "def": "末尾，最后",
+    "grade": 5,
+    "semester": 2,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 五年级下"
+  },
+  {
+    "word": "sound",
+    "phonetic": "/saʊnd/",
+    "def": "声音，语音",
+    "grade": 5,
+    "semester": 2,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 五年级下"
+  },
+  {
+    "word": "also",
+    "phonetic": "/ˈɔːlsoʊ/",
+    "def": "并且",
+    "grade": 5,
+    "semester": 2,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 五年级下"
+  },
+  {
+    "word": "busy",
+    "phonetic": "/ˈbɪzi/",
+    "def": "忙碌的",
+    "grade": 5,
+    "semester": 2,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 五年级下"
+  },
+  {
+    "word": "need",
+    "phonetic": "/niːd/",
+    "def": "需要，要求",
+    "grade": 5,
+    "semester": 2,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 五年级下"
+  },
+  {
+    "word": "letter",
+    "phonetic": "/ˈletər/",
+    "def": "信",
+    "grade": 5,
+    "semester": 2,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 五年级下"
+  },
+  {
+    "word": "island",
+    "phonetic": "/ˈaɪlənd/",
+    "def": "岛",
+    "grade": 5,
+    "semester": 2,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 五年级下"
+  },
+  {
+    "word": "always",
+    "phonetic": "/ˈɔːlweɪz/",
+    "def": "永远，一直",
+    "grade": 5,
+    "semester": 2,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 五年级下"
+  },
+  {
+    "word": "cave",
+    "phonetic": "/keɪv/",
+    "def": "洞穴，窑洞",
+    "grade": 5,
+    "semester": 2,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 五年级下"
+  },
+  {
+    "word": "go swimming",
+    "phonetic": "",
+    "def": "na. 去游泳",
+    "grade": 5,
+    "semester": 2,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 五年级下"
+  },
+  {
+    "word": "win",
+    "phonetic": "/wɪn/",
+    "def": "赢",
+    "grade": 5,
+    "semester": 2,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 五年级下"
+  },
+  {
+    "word": "spring",
+    "phonetic": "/sprɪŋ/",
+    "def": "春天",
+    "grade": 5,
+    "semester": 2,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 五年级下"
+  },
+  {
+    "word": "summer",
+    "phonetic": "/ˈsʌmər/",
+    "def": "夏季",
+    "grade": 5,
+    "semester": 2,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 五年级下"
+  },
+  {
+    "word": "autumn",
+    "phonetic": "/ˈɔːtəm; ˈɑːtəm/",
+    "def": "秋天",
+    "grade": 5,
+    "semester": 2,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 五年级下"
+  },
+  {
+    "word": "winter",
+    "phonetic": "/ˈwɪntər/",
+    "def": "冬季",
+    "grade": 5,
+    "semester": 2,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 五年级下"
+  },
+  {
+    "word": "season",
+    "phonetic": "/ˈsiːzn/",
+    "def": "时期",
+    "grade": 5,
+    "semester": 2,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 五年级下"
+  },
+  {
+    "word": "picnic",
+    "phonetic": "/ˈpɪknɪk/",
+    "def": "野餐",
+    "grade": 5,
+    "semester": 2,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 五年级下"
+  },
+  {
+    "word": "go on a picnic",
+    "phonetic": "",
+    "def": "去野餐",
+    "grade": 5,
+    "semester": 2,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 五年级下"
+  },
+  {
+    "word": "pick",
+    "phonetic": "/pɪk/",
+    "def": "选择",
+    "grade": 5,
+    "semester": 2,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 五年级下"
+  },
+  {
+    "word": "pick apples",
+    "phonetic": "",
+    "def": "摘苹果",
+    "grade": 5,
+    "semester": 2,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 五年级下"
+  },
+  {
+    "word": "snowman",
+    "phonetic": "/ˈsnoʊmæn/",
+    "def": "雪人",
+    "grade": 5,
+    "semester": 2,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 五年级下"
+  },
+  {
+    "word": "make a snowman",
+    "phonetic": "",
+    "def": "堆雪人",
+    "grade": 5,
+    "semester": 2,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 五年级下"
+  },
+  {
+    "word": "which",
+    "phonetic": "/wɪtʃ/",
+    "def": "哪一个",
+    "grade": 5,
+    "semester": 2,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 五年级下"
+  },
+  {
+    "word": "best",
+    "phonetic": "/best/",
+    "def": "最好的人，最好的事物",
+    "grade": 5,
+    "semester": 2,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 五年级下"
+  },
+  {
+    "word": "snow",
+    "phonetic": "/snoʊ/",
+    "def": "雪，积雪",
+    "grade": 5,
+    "semester": 2,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 五年级下"
+  },
+  {
+    "word": "good job",
+    "phonetic": "",
+    "def": "做得好",
+    "grade": 5,
+    "semester": 2,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 五年级下"
+  },
+  {
+    "word": "because",
+    "phonetic": "/bɪˈkəz/",
+    "def": "因为",
+    "grade": 5,
+    "semester": 2,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 五年级下"
+  },
+  {
+    "word": "vacation",
+    "phonetic": "/veɪˈkeɪʃn; vəˈkeɪʃn/",
+    "def": "假期",
+    "grade": 5,
+    "semester": 2,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 五年级下"
+  },
+  {
+    "word": "all",
+    "phonetic": "/ɔːl/",
+    "def": "全部",
+    "grade": 5,
+    "semester": 2,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 五年级下"
+  },
+  {
+    "word": "pink",
+    "phonetic": "/pɪŋk/",
+    "def": "粉红色",
+    "grade": 5,
+    "semester": 2,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 五年级下"
+  },
+  {
+    "word": "lovely",
+    "phonetic": "/ˈlʌvli/",
+    "def": "可爱的",
+    "grade": 5,
+    "semester": 2,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 五年级下"
+  },
+  {
+    "word": "leaf",
+    "phonetic": "/liːf/",
+    "def": "叶子",
+    "grade": 5,
+    "semester": 2,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 五年级下"
+  },
+  {
+    "word": "fall",
+    "phonetic": "/fɔːl/",
+    "def": "下降",
+    "grade": 5,
+    "semester": 2,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 五年级下"
+  },
+  {
+    "word": "paint",
+    "phonetic": "/peɪnt/",
+    "def": "油漆",
+    "grade": 5,
+    "semester": 2,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 五年级下"
+  },
+  {
+    "word": "January",
+    "phonetic": "/ˈdʒænjueri/",
+    "def": "一月",
+    "grade": 5,
+    "semester": 2,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 五年级下"
+  },
+  {
+    "word": "February",
+    "phonetic": "/ˈfebrueri/",
+    "def": "二月",
+    "grade": 5,
+    "semester": 2,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 五年级下"
+  },
+  {
+    "word": "March",
+    "phonetic": "/mɑːrtʃ/",
+    "def": "三月",
+    "grade": 5,
+    "semester": 2,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 五年级下"
+  },
+  {
+    "word": "April",
+    "phonetic": "/ˈeɪprəl/",
+    "def": "四月",
+    "grade": 5,
+    "semester": 2,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 五年级下"
+  },
+  {
+    "word": "May",
+    "phonetic": "/meɪ/",
+    "def": "aux. 可以，能够",
+    "grade": 5,
+    "semester": 2,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 五年级下"
+  },
+  {
+    "word": "June",
+    "phonetic": "/dʒuːn/",
+    "def": "六月",
+    "grade": 5,
+    "semester": 2,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 五年级下"
+  },
+  {
+    "word": "July",
+    "phonetic": "/dʒʊˈlaɪ/",
+    "def": "七月",
+    "grade": 5,
+    "semester": 2,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 五年级下"
+  },
+  {
+    "word": "August",
+    "phonetic": "/ˈɔːɡəst/",
+    "def": "八月（简写为Aug）",
+    "grade": 5,
+    "semester": 2,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 五年级下"
+  },
+  {
+    "word": "September",
+    "phonetic": "/sepˈtembər/",
+    "def": "九月",
+    "grade": 5,
+    "semester": 2,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 五年级下"
+  },
+  {
+    "word": "October",
+    "phonetic": "/ɑːkˈtoʊbər/",
+    "def": "[天] 十月",
+    "grade": 5,
+    "semester": 2,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 五年级下"
+  },
+  {
+    "word": "November",
+    "phonetic": "/noʊˈvembər/",
+    "def": "十一月",
+    "grade": 5,
+    "semester": 2,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 五年级下"
+  },
+  {
+    "word": "December",
+    "phonetic": "/dɪˈsembər/",
+    "def": "十二月",
+    "grade": 5,
+    "semester": 2,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 五年级下"
+  },
+  {
+    "word": "few",
+    "phonetic": "/fjuː/",
+    "def": "很少数",
+    "grade": 5,
+    "semester": 2,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 五年级下"
+  },
+  {
+    "word": "a few",
+    "phonetic": "",
+    "def": "na. 几个",
+    "grade": 5,
+    "semester": 2,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 五年级下"
+  },
+  {
+    "word": "thing",
+    "phonetic": "/θɪŋ/",
+    "def": "事情",
+    "grade": 5,
+    "semester": 2,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 五年级下"
+  },
+  {
+    "word": "meet",
+    "phonetic": "/miːt/",
+    "def": "满足",
+    "grade": 5,
+    "semester": 2,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 五年级下"
+  },
+  {
+    "word": "sports meet",
+    "phonetic": "",
+    "def": "un. 运动会",
+    "grade": 5,
+    "semester": 2,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 五年级下"
+  },
+  {
+    "word": "Easter",
+    "phonetic": "/ˈiːstər/",
+    "def": "复活节",
+    "grade": 5,
+    "semester": 2,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 五年级下"
+  },
+  {
+    "word": "trip",
+    "phonetic": "/trɪp/",
+    "def": "旅行",
+    "grade": 5,
+    "semester": 2,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 五年级下"
+  },
+  {
+    "word": "year",
+    "phonetic": "/jɪr/",
+    "def": "年",
+    "grade": 5,
+    "semester": 2,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 五年级下"
+  },
+  {
+    "word": "contest",
+    "phonetic": "/ˈkɑːntest/",
+    "def": "竞赛",
+    "grade": 5,
+    "semester": 2,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 五年级下"
+  },
+  {
+    "word": "the Great Wall",
+    "phonetic": "",
+    "def": "长城",
+    "grade": 5,
+    "semester": 2,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 五年级下"
+  },
+  {
+    "word": "national",
+    "phonetic": "/ˈnæʃnəl/",
+    "def": "国家的",
+    "grade": 5,
+    "semester": 2,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 五年级下"
+  },
+  {
+    "word": "National Day",
+    "phonetic": "",
+    "def": "na. 国庆日",
+    "grade": 5,
+    "semester": 2,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 五年级下"
+  },
+  {
+    "word": "American",
+    "phonetic": "/əˈmerɪkən/",
+    "def": "美国人，美洲人",
+    "grade": 5,
+    "semester": 2,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 五年级下"
+  },
+  {
+    "word": "Thanksgiving",
+    "phonetic": "",
+    "def": "感恩",
+    "grade": 5,
+    "semester": 2,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 五年级下"
+  },
+  {
+    "word": "Christmas",
+    "phonetic": "/ˈkrɪsməs/",
+    "def": "圣诞节",
+    "grade": 5,
+    "semester": 2,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 五年级下"
+  },
+  {
+    "word": "holiday",
+    "phonetic": "/ˈhɑːlədeɪ/",
+    "def": "假日",
+    "grade": 5,
+    "semester": 2,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 五年级下"
+  },
+  {
+    "word": "game",
+    "phonetic": "/ɡeɪm/",
+    "def": "游戏",
+    "grade": 5,
+    "semester": 2,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 五年级下"
+  },
+  {
+    "word": "roll",
+    "phonetic": "/roʊl/",
+    "def": "卷，卷形物",
+    "grade": 5,
+    "semester": 2,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 五年级下"
+  },
+  {
+    "word": "look for",
+    "phonetic": "/ˈlʊk fɔːr/",
+    "def": "寻找",
+    "grade": 5,
+    "semester": 2,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 五年级下"
+  },
+  {
+    "word": "chocolate",
+    "phonetic": "/ˈtʃɔːklət/",
+    "def": "巧克力，巧克力糖",
+    "grade": 5,
+    "semester": 2,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 五年级下"
+  },
+  {
+    "word": "bunny",
+    "phonetic": "/ˈbʌni/",
+    "def": "兔子（特别是小兔子）",
+    "grade": 5,
+    "semester": 2,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 五年级下"
+  },
+  {
+    "word": "RSVP",
+    "phonetic": "/ˌɑːr es viː ˈpiː/",
+    "def": "abbr. 请回复 Répondez s'il vous plaît.（法语）",
+    "grade": 5,
+    "semester": 2,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 五年级下"
+  },
+  {
+    "word": "by",
+    "phonetic": "/baɪ/",
+    "def": "通过",
+    "grade": 5,
+    "semester": 2,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 五年级下"
+  },
+  {
+    "word": "first",
+    "phonetic": "/fɜːrst/",
+    "def": "第一",
+    "grade": 5,
+    "semester": 2,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 五年级下"
+  },
+  {
+    "word": "second",
+    "phonetic": "/ˈsekənd; sɪˈkɑːnd/",
+    "def": "第二",
+    "grade": 5,
+    "semester": 2,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 五年级下"
+  },
+  {
+    "word": "third",
+    "phonetic": "/θɜːrd/",
+    "def": "第三",
+    "grade": 5,
+    "semester": 2,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 五年级下"
+  },
+  {
+    "word": "fourth",
+    "phonetic": "/fɔːrθ/",
+    "def": "第四",
+    "grade": 5,
+    "semester": 2,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 五年级下"
+  },
+  {
+    "word": "fifth",
+    "phonetic": "/fɪfθ/",
+    "def": "第五",
+    "grade": 5,
+    "semester": 2,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 五年级下"
+  },
+  {
+    "word": "twelfth",
+    "phonetic": "/twelfθ/",
+    "def": "第十二",
+    "grade": 5,
+    "semester": 2,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 五年级下"
+  },
+  {
+    "word": "twentieth",
+    "phonetic": "/ˈtwentiəθ/",
+    "def": "二十分之一",
+    "grade": 5,
+    "semester": 2,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 五年级下"
+  },
+  {
+    "word": "twenty-first",
+    "phonetic": "/ˌtwenti ˈfɜːrst/",
+    "def": "第二十一",
+    "grade": 5,
+    "semester": 2,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 五年级下"
+  },
+  {
+    "word": "twenty-third",
+    "phonetic": "",
+    "def": "第二十三",
+    "grade": 5,
+    "semester": 2,
+    "unit": "Unit 5",
+    "source": "人教版小学英语 · 五年级下"
+  },
+  {
+    "word": "thirtieth",
+    "phonetic": "/ˈθɜːrtiəθ/",
+    "def": "第三十",
+    "grade": 5,
+    "semester": 2,
+    "unit": "Unit 5",
+    "source": "人教版小学英语 · 五年级下"
+  },
+  {
+    "word": "special",
+    "phonetic": "/ˈspeʃl/",
+    "def": "特使，特派人员",
+    "grade": 5,
+    "semester": 2,
+    "unit": "Unit 5",
+    "source": "人教版小学英语 · 五年级下"
+  },
+  {
+    "word": "fool",
+    "phonetic": "/fuːl/",
+    "def": "傻瓜",
+    "grade": 5,
+    "semester": 2,
+    "unit": "Unit 5",
+    "source": "人教版小学英语 · 五年级下"
+  },
+  {
+    "word": "kitten",
+    "phonetic": "/ˈkɪt(ə)n/",
+    "def": "小猫",
+    "grade": 5,
+    "semester": 2,
+    "unit": "Unit 5",
+    "source": "人教版小学英语 · 五年级下"
+  },
+  {
+    "word": "diary",
+    "phonetic": "/ˈdaɪəri/",
+    "def": "日志，日记",
+    "grade": 5,
+    "semester": 2,
+    "unit": "Unit 5",
+    "source": "人教版小学英语 · 五年级下"
+  },
+  {
+    "word": "still",
+    "phonetic": "/stɪl/",
+    "def": "仍然",
+    "grade": 5,
+    "semester": 2,
+    "unit": "Unit 5",
+    "source": "人教版小学英语 · 五年级下"
+  },
+  {
+    "word": "noise",
+    "phonetic": "/nɔɪz/",
+    "def": "[环境] 噪音",
+    "grade": 5,
+    "semester": 2,
+    "unit": "Unit 5",
+    "source": "人教版小学英语 · 五年级下"
+  },
+  {
+    "word": "fur",
+    "phonetic": "/fɜːr/",
+    "def": "皮，皮子",
+    "grade": 5,
+    "semester": 2,
+    "unit": "Unit 5",
+    "source": "人教版小学英语 · 五年级下"
+  },
+  {
+    "word": "open",
+    "phonetic": "/ˈoʊpən/",
+    "def": "公开的",
+    "grade": 5,
+    "semester": 2,
+    "unit": "Unit 5",
+    "source": "人教版小学英语 · 五年级下"
+  },
+  {
+    "word": "walk",
+    "phonetic": "/wɔːk/",
+    "def": "步行，走",
+    "grade": 5,
+    "semester": 2,
+    "unit": "Unit 5",
+    "source": "人教版小学英语 · 五年级下"
+  },
+  {
+    "word": "mine",
+    "phonetic": "/maɪn/",
+    "def": "矿，矿藏",
+    "grade": 5,
+    "semester": 2,
+    "unit": "Unit 5",
+    "source": "人教版小学英语 · 五年级下"
+  },
+  {
+    "word": "yours",
+    "phonetic": "/jərz; jɔːrz; jʊrz/",
+    "def": "你（们）的东西",
+    "grade": 5,
+    "semester": 2,
+    "unit": "Unit 5",
+    "source": "人教版小学英语 · 五年级下"
+  },
+  {
+    "word": "his",
+    "phonetic": "/hɪz; ɪz/",
+    "def": "他的",
+    "grade": 5,
+    "semester": 2,
+    "unit": "Unit 5",
+    "source": "人教版小学英语 · 五年级下"
+  },
+  {
+    "word": "hers",
+    "phonetic": "/hɜːrz; ɜːrz/",
+    "def": "她的（所有格）",
+    "grade": 5,
+    "semester": 2,
+    "unit": "Unit 5",
+    "source": "人教版小学英语 · 五年级下"
+  },
+  {
+    "word": "theirs",
+    "phonetic": "/ðerz/",
+    "def": "他们的",
+    "grade": 5,
+    "semester": 2,
+    "unit": "Unit 5",
+    "source": "人教版小学英语 · 五年级下"
+  },
+  {
+    "word": "ours",
+    "phonetic": "/ˈaʊərz/",
+    "def": "我们的",
+    "grade": 5,
+    "semester": 2,
+    "unit": "Unit 5",
+    "source": "人教版小学英语 · 五年级下"
+  },
+  {
+    "word": "climbing",
+    "phonetic": "/ˈklaɪmɪŋ/",
+    "def": "攀登",
+    "grade": 5,
+    "semester": 2,
+    "unit": "Unit 5",
+    "source": "人教版小学英语 · 五年级下"
+  },
+  {
+    "word": "eating",
+    "phonetic": "/ˈiːtɪŋ/",
+    "def": "吃",
+    "grade": 5,
+    "semester": 2,
+    "unit": "Unit 5",
+    "source": "人教版小学英语 · 五年级下"
+  },
+  {
+    "word": "playing",
+    "phonetic": "/ˈpleɪɪŋ/",
+    "def": "比赛",
+    "grade": 5,
+    "semester": 2,
+    "unit": "Unit 5",
+    "source": "人教版小学英语 · 五年级下"
+  },
+  {
+    "word": "jumping",
+    "phonetic": "/ˈdʒʌmpɪŋ/",
+    "def": "跳跃的",
+    "grade": 5,
+    "semester": 2,
+    "unit": "Unit 5",
+    "source": "人教版小学英语 · 五年级下"
+  },
+  {
+    "word": "drinking",
+    "phonetic": "/ˈdrɪŋkɪŋ/",
+    "def": "喝，饮",
+    "grade": 5,
+    "semester": 2,
+    "unit": "Unit 5",
+    "source": "人教版小学英语 · 五年级下"
+  },
+  {
+    "word": "sleeping",
+    "phonetic": "/ˈsliːpɪŋ/",
+    "def": "睡眠",
+    "grade": 5,
+    "semester": 2,
+    "unit": "Unit 5",
+    "source": "人教版小学英语 · 五年级下"
+  },
+  {
+    "word": "each",
+    "phonetic": "/iːtʃ/",
+    "def": "每",
+    "grade": 5,
+    "semester": 2,
+    "unit": "Unit 5",
+    "source": "人教版小学英语 · 五年级下"
+  },
+  {
+    "word": "other",
+    "phonetic": "/ˈʌðər/",
+    "def": "其他的，另外的",
+    "grade": 5,
+    "semester": 2,
+    "unit": "Unit 5",
+    "source": "人教版小学英语 · 五年级下"
+  },
+  {
+    "word": "each other",
+    "phonetic": "",
+    "def": "彼此",
+    "grade": 5,
+    "semester": 2,
+    "unit": "Unit 5",
+    "source": "人教版小学英语 · 五年级下"
+  },
+  {
+    "word": "excited",
+    "phonetic": "/ɪkˈsaɪtɪd/",
+    "def": "激动",
+    "grade": 5,
+    "semester": 2,
+    "unit": "Unit 6",
+    "source": "人教版小学英语 · 五年级下"
+  },
+  {
+    "word": "like",
+    "phonetic": "/laɪk/",
+    "def": "喜欢",
+    "grade": 5,
+    "semester": 2,
+    "unit": "Unit 6",
+    "source": "人教版小学英语 · 五年级下"
+  },
+  {
+    "word": "doing morning exercises",
+    "phonetic": "",
+    "def": "无",
+    "grade": 5,
+    "semester": 2,
+    "unit": "Unit 6",
+    "source": "人教版小学英语 · 五年级下"
+  },
+  {
+    "word": "having ... class",
+    "phonetic": "",
+    "def": "无",
+    "grade": 5,
+    "semester": 2,
+    "unit": "Unit 6",
+    "source": "人教版小学英语 · 五年级下"
+  },
+  {
+    "word": "eating lunch",
+    "phonetic": "",
+    "def": "无",
+    "grade": 5,
+    "semester": 2,
+    "unit": "Unit 6",
+    "source": "人教版小学英语 · 五年级下"
+  },
+  {
+    "word": "reading a book",
+    "phonetic": "",
+    "def": "无",
+    "grade": 5,
+    "semester": 2,
+    "unit": "Unit 6",
+    "source": "人教版小学英语 · 五年级下"
+  },
+  {
+    "word": "listening to music",
+    "phonetic": "",
+    "def": "无",
+    "grade": 5,
+    "semester": 2,
+    "unit": "Unit 6",
+    "source": "人教版小学英语 · 五年级下"
+  },
+  {
+    "word": "keep",
+    "phonetic": "/kiːp/",
+    "def": "保持",
+    "grade": 5,
+    "semester": 2,
+    "unit": "Unit 6",
+    "source": "人教版小学英语 · 五年级下"
+  },
+  {
+    "word": "keep to the right",
+    "phonetic": "",
+    "def": "na. 靠右边走",
+    "grade": 5,
+    "semester": 2,
+    "unit": "Unit 6",
+    "source": "人教版小学英语 · 五年级下"
+  },
+  {
+    "word": "keep your desk clean",
+    "phonetic": "",
+    "def": "无",
+    "grade": 5,
+    "semester": 2,
+    "unit": "Unit 6",
+    "source": "人教版小学英语 · 五年级下"
+  },
+  {
+    "word": "talk quietly",
+    "phonetic": "",
+    "def": "无",
+    "grade": 5,
+    "semester": 2,
+    "unit": "Unit 6",
+    "source": "人教版小学英语 · 五年级下"
+  },
+  {
+    "word": "turn",
+    "phonetic": "/tɜːrn/",
+    "def": "转弯",
+    "grade": 5,
+    "semester": 2,
+    "unit": "Unit 6",
+    "source": "人教版小学英语 · 五年级下"
+  },
+  {
+    "word": "take turns",
+    "phonetic": "",
+    "def": "na. 替换",
+    "grade": 5,
+    "semester": 2,
+    "unit": "Unit 6",
+    "source": "人教版小学英语 · 五年级下"
+  },
+  {
+    "word": "bamboo",
+    "phonetic": "/ˌbæmˈbuː/",
+    "def": "竹，竹子",
+    "grade": 5,
+    "semester": 2,
+    "unit": "Unit 6",
+    "source": "人教版小学英语 · 五年级下"
+  },
+  {
+    "word": "its",
+    "phonetic": "/ɪts/",
+    "def": "它的",
+    "grade": 5,
+    "semester": 2,
+    "unit": "Unit 6",
+    "source": "人教版小学英语 · 五年级下"
+  },
+  {
+    "word": "show",
+    "phonetic": "/ʃoʊ/",
+    "def": "显示",
+    "grade": 5,
+    "semester": 2,
+    "unit": "Unit 6",
+    "source": "人教版小学英语 · 五年级下"
+  },
+  {
+    "word": "anything",
+    "phonetic": "/ˈeniθɪŋ/",
+    "def": "任何事",
+    "grade": 5,
+    "semester": 2,
+    "unit": "Unit 6",
+    "source": "人教版小学英语 · 五年级下"
+  },
+  {
+    "word": "else",
+    "phonetic": "/els/",
+    "def": "别的",
+    "grade": 5,
+    "semester": 2,
+    "unit": "Unit 6",
+    "source": "人教版小学英语 · 五年级下"
+  },
+  {
+    "word": "exhibition",
+    "phonetic": "/ˌeksɪˈbɪʃn/",
+    "def": "展览，显示",
+    "grade": 5,
+    "semester": 2,
+    "unit": "Unit 6",
+    "source": "人教版小学英语 · 五年级下"
+  },
+  {
+    "word": "say",
+    "phonetic": "/seɪ/",
+    "def": "讲",
+    "grade": 5,
+    "semester": 2,
+    "unit": "Unit 6",
+    "source": "人教版小学英语 · 五年级下"
+  },
+  {
+    "word": "have a look",
+    "phonetic": "",
+    "def": "看一看",
+    "grade": 5,
+    "semester": 2,
+    "unit": "Unit 6",
+    "source": "人教版小学英语 · 五年级下"
+  },
+  {
+    "word": "sushi",
+    "phonetic": "/ˈsuːʃi/",
+    "def": "寿司（生鱼片冷饭团）",
+    "grade": 5,
+    "semester": 2,
+    "unit": "Unit 6",
+    "source": "人教版小学英语 · 五年级下"
+  },
+  {
+    "word": "teach",
+    "phonetic": "/tiːtʃ/",
+    "def": "教",
+    "grade": 5,
+    "semester": 2,
+    "unit": "Unit 6",
+    "source": "人教版小学英语 · 五年级下"
+  },
+  {
+    "word": "sure",
+    "phonetic": "/ʃʊr/",
+    "def": "确信的",
+    "grade": 5,
+    "semester": 2,
+    "unit": "Unit 6",
+    "source": "人教版小学英语 · 五年级下"
+  },
+  {
+    "word": "Canadian",
+    "phonetic": "/kəˈneɪdiən/",
+    "def": "加拿大人",
+    "grade": 5,
+    "semester": 2,
+    "unit": "Unit 6",
+    "source": "人教版小学英语 · 五年级下"
+  },
+  {
+    "word": "Spanish",
+    "phonetic": "/ˈspænɪʃ/",
+    "def": "西班牙语",
+    "grade": 5,
+    "semester": 2,
+    "unit": "Unit 6",
+    "source": "人教版小学英语 · 五年级下"
+  },
+  {
+    "word": "science",
+    "phonetic": "/ˈsaɪəns/",
+    "def": "科学",
+    "grade": 6,
+    "semester": 1,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 六年级上"
+  },
+  {
+    "word": "museum",
+    "phonetic": "/mjuˈziːəm/",
+    "def": "博物馆",
+    "grade": 6,
+    "semester": 1,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 六年级上"
+  },
+  {
+    "word": "post office",
+    "phonetic": "/ˈpost ɔfɪs/",
+    "def": "邮局",
+    "grade": 6,
+    "semester": 1,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 六年级上"
+  },
+  {
+    "word": "bookstore",
+    "phonetic": "/ˈbʊkstɔːr/",
+    "def": "书店（等于bookshop）",
+    "grade": 6,
+    "semester": 1,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 六年级上"
+  },
+  {
+    "word": "cinema",
+    "phonetic": "/ˈsɪnəmə/",
+    "def": "电影",
+    "grade": 6,
+    "semester": 1,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 六年级上"
+  },
+  {
+    "word": "hospital",
+    "phonetic": "/ˈhɑːspɪtl/",
+    "def": "医院",
+    "grade": 6,
+    "semester": 1,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 六年级上"
+  },
+  {
+    "word": "crossing",
+    "phonetic": "/ˈkrɔːsɪŋ/",
+    "def": "十字路口",
+    "grade": 6,
+    "semester": 1,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 六年级上"
+  },
+  {
+    "word": "turn",
+    "phonetic": "/tɜːrn/",
+    "def": "转弯",
+    "grade": 6,
+    "semester": 1,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 六年级上"
+  },
+  {
+    "word": "left",
+    "phonetic": "/left/",
+    "def": "左边的",
+    "grade": 6,
+    "semester": 1,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 六年级上"
+  },
+  {
+    "word": "straight",
+    "phonetic": "/streɪt/",
+    "def": "直",
+    "grade": 6,
+    "semester": 1,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 六年级上"
+  },
+  {
+    "word": "right",
+    "phonetic": "/raɪt/",
+    "def": "正确",
+    "grade": 6,
+    "semester": 1,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 六年级上"
+  },
+  {
+    "word": "ask",
+    "phonetic": "/æsk/",
+    "def": "问，询问",
+    "grade": 6,
+    "semester": 1,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 六年级上"
+  },
+  {
+    "word": "sir",
+    "phonetic": "/sɜːr; sər/",
+    "def": "先生",
+    "grade": 6,
+    "semester": 1,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 六年级上"
+  },
+  {
+    "word": "interesting",
+    "phonetic": "/ˈɪntrəstɪŋ; ˈɪntrestɪŋ/",
+    "def": "有趣的",
+    "grade": 6,
+    "semester": 1,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 六年级上"
+  },
+  {
+    "word": "Italian",
+    "phonetic": "/ɪˈtæliən/",
+    "def": "意大利人",
+    "grade": 6,
+    "semester": 1,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 六年级上"
+  },
+  {
+    "word": "restaurant",
+    "phonetic": "/ˈrestrɑːnt; ˈrestərɑːnt/",
+    "def": "餐馆",
+    "grade": 6,
+    "semester": 1,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 六年级上"
+  },
+  {
+    "word": "pizza",
+    "phonetic": "/ˈpiːtsə/",
+    "def": "比萨饼（一种涂有乳酪核番茄酱的意大利式有馅烘饼）",
+    "grade": 6,
+    "semester": 1,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 六年级上"
+  },
+  {
+    "word": "street",
+    "phonetic": "/striːt/",
+    "def": "街道",
+    "grade": 6,
+    "semester": 1,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 六年级上"
+  },
+  {
+    "word": "get",
+    "phonetic": "/ɡet/",
+    "def": "生殖",
+    "grade": 6,
+    "semester": 1,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 六年级上"
+  },
+  {
+    "word": "GPS",
+    "phonetic": "/ˌdʒiː piː ˈes/",
+    "def": "abbr. 全球定位系统（Global Position System）",
+    "grade": 6,
+    "semester": 1,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 六年级上"
+  },
+  {
+    "word": "gave",
+    "phonetic": "/ɡeɪv/",
+    "def": "给予（give的过去式）",
+    "grade": 6,
+    "semester": 1,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 六年级上"
+  },
+  {
+    "word": "feature",
+    "phonetic": "/ˈfiːtʃər/",
+    "def": "特色，特征",
+    "grade": 6,
+    "semester": 1,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 六年级上"
+  },
+  {
+    "word": "follow",
+    "phonetic": "/ˈfɑːloʊ/",
+    "def": "跟随",
+    "grade": 6,
+    "semester": 1,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 六年级上"
+  },
+  {
+    "word": "far",
+    "phonetic": "/fɑːr/",
+    "def": "远方",
+    "grade": 6,
+    "semester": 1,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 六年级上"
+  },
+  {
+    "word": "tell",
+    "phonetic": "/tel/",
+    "def": "告诉，说",
+    "grade": 6,
+    "semester": 1,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 六年级上"
+  },
+  {
+    "word": "on foot",
+    "phonetic": "",
+    "def": "na. 步行",
+    "grade": 6,
+    "semester": 1,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 六年级上"
+  },
+  {
+    "word": "by",
+    "phonetic": "/baɪ/",
+    "def": "通过",
+    "grade": 6,
+    "semester": 1,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 六年级上"
+  },
+  {
+    "word": "bus",
+    "phonetic": "/bʌs/",
+    "def": "公共汽车",
+    "grade": 6,
+    "semester": 1,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 六年级上"
+  },
+  {
+    "word": "plane",
+    "phonetic": "/pleɪn/",
+    "def": "飞机",
+    "grade": 6,
+    "semester": 1,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 六年级上"
+  },
+  {
+    "word": "taxi",
+    "phonetic": "/ˈtæksi/",
+    "def": "出租汽车",
+    "grade": 6,
+    "semester": 1,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 六年级上"
+  },
+  {
+    "word": "ship",
+    "phonetic": "/ʃɪp/",
+    "def": "船",
+    "grade": 6,
+    "semester": 1,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 六年级上"
+  },
+  {
+    "word": "subway",
+    "phonetic": "/ˈsʌbweɪ/",
+    "def": "地铁",
+    "grade": 6,
+    "semester": 1,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 六年级上"
+  },
+  {
+    "word": "train",
+    "phonetic": "/treɪn/",
+    "def": "火车",
+    "grade": 6,
+    "semester": 1,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 六年级上"
+  },
+  {
+    "word": "slow",
+    "phonetic": "/sloʊ/",
+    "def": "慢的",
+    "grade": 6,
+    "semester": 1,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 六年级上"
+  },
+  {
+    "word": "down",
+    "phonetic": "/daʊn/",
+    "def": "沿着，往下",
+    "grade": 6,
+    "semester": 1,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 六年级上"
+  },
+  {
+    "word": "slow down",
+    "phonetic": "",
+    "def": "na. 闲下来",
+    "grade": 6,
+    "semester": 1,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 六年级上"
+  },
+  {
+    "word": "stop",
+    "phonetic": "/stɑːp/",
+    "def": "停止",
+    "grade": 6,
+    "semester": 1,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 六年级上"
+  },
+  {
+    "word": "Mrs",
+    "phonetic": "/ˈmɪsɪz/",
+    "def": "太太",
+    "grade": 6,
+    "semester": 1,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 六年级上"
+  },
+  {
+    "word": "early",
+    "phonetic": "/ˈɜːrli/",
+    "def": "早期的",
+    "grade": 6,
+    "semester": 1,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 六年级上"
+  },
+  {
+    "word": "helmet",
+    "phonetic": "/ˈhelmɪt/",
+    "def": "钢盔，头盔",
+    "grade": 6,
+    "semester": 1,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 六年级上"
+  },
+  {
+    "word": "must",
+    "phonetic": "/məst; mʌst/",
+    "def": "aux. 必须，一定",
+    "grade": 6,
+    "semester": 1,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 六年级上"
+  },
+  {
+    "word": "wear",
+    "phonetic": "/wer/",
+    "def": "衣物",
+    "grade": 6,
+    "semester": 1,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 六年级上"
+  },
+  {
+    "word": "attention",
+    "phonetic": "/əˈtenʃn/",
+    "def": "注意力",
+    "grade": 6,
+    "semester": 1,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 六年级上"
+  },
+  {
+    "word": "pay attention to",
+    "phonetic": "",
+    "def": "na. 注意",
+    "grade": 6,
+    "semester": 1,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 六年级上"
+  },
+  {
+    "word": "traffic",
+    "phonetic": "/ˈtræfɪk/",
+    "def": "交通",
+    "grade": 6,
+    "semester": 1,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 六年级上"
+  },
+  {
+    "word": "traffic lights",
+    "phonetic": "",
+    "def": "交通信号灯",
+    "grade": 6,
+    "semester": 1,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 六年级上"
+  },
+  {
+    "word": "Munich",
+    "phonetic": "/ˈmjuːnɪk/",
+    "def": "慕尼黑（联邦德国城市）",
+    "grade": 6,
+    "semester": 1,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 六年级上"
+  },
+  {
+    "word": "Germany",
+    "phonetic": "/ˈdʒɜːrməni/",
+    "def": "德国",
+    "grade": 6,
+    "semester": 1,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 六年级上"
+  },
+  {
+    "word": "Alaska",
+    "phonetic": "/əˈlæskə/",
+    "def": "阿拉斯加州",
+    "grade": 6,
+    "semester": 1,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 六年级上"
+  },
+  {
+    "word": "sled",
+    "phonetic": "/sled/",
+    "def": "雪橇",
+    "grade": 6,
+    "semester": 1,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 六年级上"
+  },
+  {
+    "word": "fast",
+    "phonetic": "/fæst/",
+    "def": "斋戒",
+    "grade": 6,
+    "semester": 1,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 六年级上"
+  },
+  {
+    "word": "ferry",
+    "phonetic": "/ˈferi/",
+    "def": "渡船",
+    "grade": 6,
+    "semester": 1,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 六年级上"
+  },
+  {
+    "word": "Papa Westray",
+    "phonetic": "",
+    "def": "帕帕威斯垂岛",
+    "grade": 6,
+    "semester": 1,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 六年级上"
+  },
+  {
+    "word": "Scotland",
+    "phonetic": "/ˈskɑːtlənd/",
+    "def": "苏格兰",
+    "grade": 6,
+    "semester": 1,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 六年级上"
+  },
+  {
+    "word": "visit",
+    "phonetic": "/ˈvɪzɪt/",
+    "def": "访问",
+    "grade": 6,
+    "semester": 1,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 六年级上"
+  },
+  {
+    "word": "film",
+    "phonetic": "/fɪlm/",
+    "def": "电影",
+    "grade": 6,
+    "semester": 1,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 六年级上"
+  },
+  {
+    "word": "see a film",
+    "phonetic": "",
+    "def": "看电影",
+    "grade": 6,
+    "semester": 1,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 六年级上"
+  },
+  {
+    "word": "trip",
+    "phonetic": "/trɪp/",
+    "def": "旅行",
+    "grade": 6,
+    "semester": 1,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 六年级上"
+  },
+  {
+    "word": "take a trip",
+    "phonetic": "",
+    "def": "na. 旅行",
+    "grade": 6,
+    "semester": 1,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 六年级上"
+  },
+  {
+    "word": "supermarket",
+    "phonetic": "/ˈsuːpərmɑːrkɪt/",
+    "def": "超级市场",
+    "grade": 6,
+    "semester": 1,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 六年级上"
+  },
+  {
+    "word": "evening",
+    "phonetic": "/ˈiːvnɪŋ/",
+    "def": "晚上",
+    "grade": 6,
+    "semester": 1,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 六年级上"
+  },
+  {
+    "word": "tonight",
+    "phonetic": "/təˈnaɪt/",
+    "def": "今晚",
+    "grade": 6,
+    "semester": 1,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 六年级上"
+  },
+  {
+    "word": "tomorrow",
+    "phonetic": "/təˈmɑːroʊ/",
+    "def": "明天",
+    "grade": 6,
+    "semester": 1,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 六年级上"
+  },
+  {
+    "word": "next week",
+    "phonetic": "/nekst wiːk/",
+    "def": "na. 下星期",
+    "grade": 6,
+    "semester": 1,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 六年级上"
+  },
+  {
+    "word": "dictionary",
+    "phonetic": "/ˈdɪkʃəneri/",
+    "def": "字典",
+    "grade": 6,
+    "semester": 1,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 六年级上"
+  },
+  {
+    "word": "comic",
+    "phonetic": "/ˈkɑːmɪk/",
+    "def": "连环漫画",
+    "grade": 6,
+    "semester": 1,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 六年级上"
+  },
+  {
+    "word": "comic book",
+    "phonetic": "",
+    "def": "漫画书",
+    "grade": 6,
+    "semester": 1,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 六年级上"
+  },
+  {
+    "word": "word",
+    "phonetic": "/wɜːrd/",
+    "def": "[语] 单词",
+    "grade": 6,
+    "semester": 1,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 六年级上"
+  },
+  {
+    "word": "word book",
+    "phonetic": "/ˈwɜːrkˈbʊk/",
+    "def": "词典",
+    "grade": 6,
+    "semester": 1,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 六年级上"
+  },
+  {
+    "word": "postcard",
+    "phonetic": "/ˈpoʊstkɑːrd/",
+    "def": "明信片",
+    "grade": 6,
+    "semester": 1,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 六年级上"
+  },
+  {
+    "word": "lesson",
+    "phonetic": "/ˈlesn/",
+    "def": "教训",
+    "grade": 6,
+    "semester": 1,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 六年级上"
+  },
+  {
+    "word": "space",
+    "phonetic": "/speɪs/",
+    "def": "空间",
+    "grade": 6,
+    "semester": 1,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 六年级上"
+  },
+  {
+    "word": "travel",
+    "phonetic": "/ˈtrævl/",
+    "def": "旅行",
+    "grade": 6,
+    "semester": 1,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 六年级上"
+  },
+  {
+    "word": "half",
+    "phonetic": "/hæf/",
+    "def": "一半",
+    "grade": 6,
+    "semester": 1,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 六年级上"
+  },
+  {
+    "word": "price",
+    "phonetic": "/praɪs/",
+    "def": "价格",
+    "grade": 6,
+    "semester": 1,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 六年级上"
+  },
+  {
+    "word": "Mid-Autumn Festival",
+    "phonetic": "",
+    "def": "《英汉医学词典》mid autumn festival",
+    "grade": 6,
+    "semester": 1,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 六年级上"
+  },
+  {
+    "word": "together",
+    "phonetic": "/təˈɡeðər/",
+    "def": "新潮的",
+    "grade": 6,
+    "semester": 1,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 六年级上"
+  },
+  {
+    "word": "get together",
+    "phonetic": "",
+    "def": "na. 聚集",
+    "grade": 6,
+    "semester": 1,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 六年级上"
+  },
+  {
+    "word": "mooncake",
+    "phonetic": "/ˈmuːnkeɪk/",
+    "def": "月饼",
+    "grade": 6,
+    "semester": 1,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 六年级上"
+  },
+  {
+    "word": "poem",
+    "phonetic": "/ˈpoʊəm/",
+    "def": "诗",
+    "grade": 6,
+    "semester": 1,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 六年级上"
+  },
+  {
+    "word": "moon",
+    "phonetic": "/muːn/",
+    "def": "月亮",
+    "grade": 6,
+    "semester": 1,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 六年级上"
+  },
+  {
+    "word": "studies",
+    "phonetic": "/ˈstʌdiz/",
+    "def": "研究",
+    "grade": 6,
+    "semester": 1,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 六年级上"
+  },
+  {
+    "word": "puzzle",
+    "phonetic": "/ˈpʌzl/",
+    "def": "谜",
+    "grade": 6,
+    "semester": 1,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 六年级上"
+  },
+  {
+    "word": "hiking",
+    "phonetic": "/ˈhaɪkɪŋ/",
+    "def": "徒步旅行",
+    "grade": 6,
+    "semester": 1,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 六年级上"
+  },
+  {
+    "word": "pen pal",
+    "phonetic": "/ˈpen pæl/",
+    "def": "abbr.",
+    "grade": 6,
+    "semester": 1,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 六年级上"
+  },
+  {
+    "word": "hobby",
+    "phonetic": "/ˈhɑːbi/",
+    "def": "嗜好",
+    "grade": 6,
+    "semester": 1,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 六年级上"
+  },
+  {
+    "word": "jasmine",
+    "phonetic": "/ˈdʒæzmɪn/",
+    "def": "茉莉",
+    "grade": 6,
+    "semester": 1,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 六年级上"
+  },
+  {
+    "word": "idea",
+    "phonetic": "/aɪˈdiːə/",
+    "def": "想法",
+    "grade": 6,
+    "semester": 1,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 六年级上"
+  },
+  {
+    "word": "Canberra",
+    "phonetic": "/ˈkænbərəˌˈkænberə/",
+    "def": "堪培拉（澳大利亚的首都）",
+    "grade": 6,
+    "semester": 1,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 六年级上"
+  },
+  {
+    "word": "amazing",
+    "phonetic": "/əˈmeɪzɪŋ/",
+    "def": "令人惊异的",
+    "grade": 6,
+    "semester": 1,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 六年级上"
+  },
+  {
+    "word": "shall",
+    "phonetic": "/ʃəl; ʃæl/",
+    "def": "aux. 应",
+    "grade": 6,
+    "semester": 1,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 六年级上"
+  },
+  {
+    "word": "goal",
+    "phonetic": "/ɡoʊl/",
+    "def": "目标",
+    "grade": 6,
+    "semester": 1,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 六年级上"
+  },
+  {
+    "word": "join",
+    "phonetic": "/dʒɔɪn/",
+    "def": "参加",
+    "grade": 6,
+    "semester": 1,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 六年级上"
+  },
+  {
+    "word": "club",
+    "phonetic": "/klʌb/",
+    "def": "俱乐部，社团",
+    "grade": 6,
+    "semester": 1,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 六年级上"
+  },
+  {
+    "word": "share",
+    "phonetic": "/ʃer/",
+    "def": "份额",
+    "grade": 6,
+    "semester": 1,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 六年级上"
+  },
+  {
+    "word": "factory",
+    "phonetic": "/ˈfæktri; ˈfæktəri/",
+    "def": "工厂",
+    "grade": 6,
+    "semester": 1,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 六年级上"
+  },
+  {
+    "word": "worker",
+    "phonetic": "/ˈwɜːrkər/",
+    "def": "工人",
+    "grade": 6,
+    "semester": 1,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 六年级上"
+  },
+  {
+    "word": "postman",
+    "phonetic": "/ˈpoʊstmən/",
+    "def": "邮递员",
+    "grade": 6,
+    "semester": 1,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 六年级上"
+  },
+  {
+    "word": "businessman",
+    "phonetic": "/ˈbɪznəsmæn/",
+    "def": "商人",
+    "grade": 6,
+    "semester": 1,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 六年级上"
+  },
+  {
+    "word": "police officer",
+    "phonetic": "/pəˈlis ˈɔfɪsɚ/",
+    "def": "警官",
+    "grade": 6,
+    "semester": 1,
+    "unit": "Unit 5",
+    "source": "人教版小学英语 · 六年级上"
+  },
+  {
+    "word": "fisherman",
+    "phonetic": "/ˈfɪʃərmən/",
+    "def": "渔夫",
+    "grade": 6,
+    "semester": 1,
+    "unit": "Unit 5",
+    "source": "人教版小学英语 · 六年级上"
+  },
+  {
+    "word": "scientist",
+    "phonetic": "/ˈsaɪəntɪst/",
+    "def": "科学家",
+    "grade": 6,
+    "semester": 1,
+    "unit": "Unit 5",
+    "source": "人教版小学英语 · 六年级上"
+  },
+  {
+    "word": "pilot",
+    "phonetic": "/ˈpaɪlət/",
+    "def": "飞行员",
+    "grade": 6,
+    "semester": 1,
+    "unit": "Unit 5",
+    "source": "人教版小学英语 · 六年级上"
+  },
+  {
+    "word": "coach",
+    "phonetic": "/koʊtʃ/",
+    "def": "教练",
+    "grade": 6,
+    "semester": 1,
+    "unit": "Unit 5",
+    "source": "人教版小学英语 · 六年级上"
+  },
+  {
+    "word": "country",
+    "phonetic": "/ˈkʌntri/",
+    "def": "国家，国土",
+    "grade": 6,
+    "semester": 1,
+    "unit": "Unit 5",
+    "source": "人教版小学英语 · 六年级上"
+  },
+  {
+    "word": "head teacher",
+    "phonetic": "",
+    "def": "校长",
+    "grade": 6,
+    "semester": 1,
+    "unit": "Unit 5",
+    "source": "人教版小学英语 · 六年级上"
+  },
+  {
+    "word": "sea",
+    "phonetic": "/siː/",
+    "def": "海",
+    "grade": 6,
+    "semester": 1,
+    "unit": "Unit 5",
+    "source": "人教版小学英语 · 六年级上"
+  },
+  {
+    "word": "stay",
+    "phonetic": "/steɪ/",
+    "def": "逗留",
+    "grade": 6,
+    "semester": 1,
+    "unit": "Unit 5",
+    "source": "人教版小学英语 · 六年级上"
+  },
+  {
+    "word": "university",
+    "phonetic": "/ˌjuːnɪˈvɜːrsəti/",
+    "def": "大学",
+    "grade": 6,
+    "semester": 1,
+    "unit": "Unit 5",
+    "source": "人教版小学英语 · 六年级上"
+  },
+  {
+    "word": "gym",
+    "phonetic": "/dʒɪm/",
+    "def": "健身房",
+    "grade": 6,
+    "semester": 1,
+    "unit": "Unit 5",
+    "source": "人教版小学英语 · 六年级上"
+  },
+  {
+    "word": "if",
+    "phonetic": "/ɪf/",
+    "def": "（表条件）如果",
+    "grade": 6,
+    "semester": 1,
+    "unit": "Unit 5",
+    "source": "人教版小学英语 · 六年级上"
+  },
+  {
+    "word": "reporter",
+    "phonetic": "/rɪˈpɔːrtər/",
+    "def": "记者",
+    "grade": 6,
+    "semester": 1,
+    "unit": "Unit 5",
+    "source": "人教版小学英语 · 六年级上"
+  },
+  {
+    "word": "use",
+    "phonetic": "/juːz/",
+    "def": "使用",
+    "grade": 6,
+    "semester": 1,
+    "unit": "Unit 5",
+    "source": "人教版小学英语 · 六年级上"
+  },
+  {
+    "word": "type",
+    "phonetic": "/taɪp/",
+    "def": "类型，品种",
+    "grade": 6,
+    "semester": 1,
+    "unit": "Unit 5",
+    "source": "人教版小学英语 · 六年级上"
+  },
+  {
+    "word": "quickly",
+    "phonetic": "/ˈkwɪkli/",
+    "def": "迅速地",
+    "grade": 6,
+    "semester": 1,
+    "unit": "Unit 5",
+    "source": "人教版小学英语 · 六年级上"
+  },
+  {
+    "word": "secretary",
+    "phonetic": "/ˈsekrəteri/",
+    "def": "秘书",
+    "grade": 6,
+    "semester": 1,
+    "unit": "Unit 5",
+    "source": "人教版小学英语 · 六年级上"
+  },
+  {
+    "word": "angry",
+    "phonetic": "/ˈæŋɡri/",
+    "def": "生气的",
+    "grade": 6,
+    "semester": 1,
+    "unit": "Unit 5",
+    "source": "人教版小学英语 · 六年级上"
+  },
+  {
+    "word": "afraid",
+    "phonetic": "/əˈfreɪd/",
+    "def": "害怕的",
+    "grade": 6,
+    "semester": 1,
+    "unit": "Unit 5",
+    "source": "人教版小学英语 · 六年级上"
+  },
+  {
+    "word": "sad",
+    "phonetic": "/sæd/",
+    "def": "难过的",
+    "grade": 6,
+    "semester": 1,
+    "unit": "Unit 5",
+    "source": "人教版小学英语 · 六年级上"
+  },
+  {
+    "word": "worried",
+    "phonetic": "/ˈwɜːrid/",
+    "def": "担心的",
+    "grade": 6,
+    "semester": 1,
+    "unit": "Unit 5",
+    "source": "人教版小学英语 · 六年级上"
+  },
+  {
+    "word": "happy",
+    "phonetic": "/ˈhæpi/",
+    "def": "幸福的",
+    "grade": 6,
+    "semester": 1,
+    "unit": "Unit 5",
+    "source": "人教版小学英语 · 六年级上"
+  },
+  {
+    "word": "see a doctor",
+    "phonetic": "",
+    "def": "na. 去就医",
+    "grade": 6,
+    "semester": 1,
+    "unit": "Unit 5",
+    "source": "人教版小学英语 · 六年级上"
+  },
+  {
+    "word": "more",
+    "phonetic": "/mɔːr/",
+    "def": "更多",
+    "grade": 6,
+    "semester": 1,
+    "unit": "Unit 6",
+    "source": "人教版小学英语 · 六年级上"
+  },
+  {
+    "word": "deep",
+    "phonetic": "/diːp/",
+    "def": "深处",
+    "grade": 6,
+    "semester": 1,
+    "unit": "Unit 6",
+    "source": "人教版小学英语 · 六年级上"
+  },
+  {
+    "word": "breath",
+    "phonetic": "/breθ/",
+    "def": "呼吸，气息",
+    "grade": 6,
+    "semester": 1,
+    "unit": "Unit 6",
+    "source": "人教版小学英语 · 六年级上"
+  },
+  {
+    "word": "take a deep breath",
+    "phonetic": "",
+    "def": "na. 行深呼吸",
+    "grade": 6,
+    "semester": 1,
+    "unit": "Unit 6",
+    "source": "人教版小学英语 · 六年级上"
+  },
+  {
+    "word": "count",
+    "phonetic": "/kaʊnt/",
+    "def": "计数",
+    "grade": 6,
+    "semester": 1,
+    "unit": "Unit 6",
+    "source": "人教版小学英语 · 六年级上"
+  },
+  {
+    "word": "count to ten",
+    "phonetic": "/kaʊnt tu ten/",
+    "def": "数到十",
+    "grade": 6,
+    "semester": 1,
+    "unit": "Unit 6",
+    "source": "人教版小学英语 · 六年级上"
+  },
+  {
+    "word": "chase",
+    "phonetic": "/tʃeɪs/",
+    "def": "追逐",
+    "grade": 6,
+    "semester": 1,
+    "unit": "Unit 6",
+    "source": "人教版小学英语 · 六年级上"
+  },
+  {
+    "word": "mice",
+    "phonetic": "/maɪs/",
+    "def": "老鼠（mouse的复数）",
+    "grade": 6,
+    "semester": 1,
+    "unit": "Unit 6",
+    "source": "人教版小学英语 · 六年级上"
+  },
+  {
+    "word": "bad",
+    "phonetic": "/bæd/",
+    "def": "坏事",
+    "grade": 6,
+    "semester": 1,
+    "unit": "Unit 6",
+    "source": "人教版小学英语 · 六年级上"
+  },
+  {
+    "word": "hurt",
+    "phonetic": "/hɜːrt/",
+    "def": "痛苦",
+    "grade": 6,
+    "semester": 1,
+    "unit": "Unit 6",
+    "source": "人教版小学英语 · 六年级上"
+  },
+  {
+    "word": "ill",
+    "phonetic": "/ɪl/",
+    "def": "疾病",
+    "grade": 6,
+    "semester": 1,
+    "unit": "Unit 6",
+    "source": "人教版小学英语 · 六年级上"
+  },
+  {
+    "word": "wrong",
+    "phonetic": "/rɔːŋ/",
+    "def": "坏事",
+    "grade": 6,
+    "semester": 1,
+    "unit": "Unit 6",
+    "source": "人教版小学英语 · 六年级上"
+  },
+  {
+    "word": "should",
+    "phonetic": "/ʃəd; ʃʊd/",
+    "def": "aux. 应该",
+    "grade": 6,
+    "semester": 1,
+    "unit": "Unit 6",
+    "source": "人教版小学英语 · 六年级上"
+  },
+  {
+    "word": "feel",
+    "phonetic": "/fiːl/",
+    "def": "感觉",
+    "grade": 6,
+    "semester": 1,
+    "unit": "Unit 6",
+    "source": "人教版小学英语 · 六年级上"
+  },
+  {
+    "word": "well",
+    "phonetic": "/wel/",
+    "def": "井",
+    "grade": 6,
+    "semester": 1,
+    "unit": "Unit 6",
+    "source": "人教版小学英语 · 六年级上"
+  },
+  {
+    "word": "sit",
+    "phonetic": "/sɪt/",
+    "def": "坐",
+    "grade": 6,
+    "semester": 1,
+    "unit": "Unit 6",
+    "source": "人教版小学英语 · 六年级上"
+  },
+  {
+    "word": "grass",
+    "phonetic": "/ɡræs/",
+    "def": "草",
+    "grade": 6,
+    "semester": 1,
+    "unit": "Unit 6",
+    "source": "人教版小学英语 · 六年级上"
+  },
+  {
+    "word": "hear",
+    "phonetic": "/hɪr/",
+    "def": "听",
+    "grade": 6,
+    "semester": 1,
+    "unit": "Unit 6",
+    "source": "人教版小学英语 · 六年级上"
+  },
+  {
+    "word": "ant",
+    "phonetic": "/ænt/",
+    "def": "蚂蚁",
+    "grade": 6,
+    "semester": 1,
+    "unit": "Unit 6",
+    "source": "人教版小学英语 · 六年级上"
+  },
+  {
+    "word": "worry",
+    "phonetic": "/ˈwɜːri/",
+    "def": "担心",
+    "grade": 6,
+    "semester": 1,
+    "unit": "Unit 6",
+    "source": "人教版小学英语 · 六年级上"
+  },
+  {
+    "word": "stuck",
+    "phonetic": "/stʌk/",
+    "def": "刺（stick的过去式）",
+    "grade": 6,
+    "semester": 1,
+    "unit": "Unit 6",
+    "source": "人教版小学英语 · 六年级上"
+  },
+  {
+    "word": "mud",
+    "phonetic": "/mʌd/",
+    "def": "弄脏",
+    "grade": 6,
+    "semester": 1,
+    "unit": "Unit 6",
+    "source": "人教版小学英语 · 六年级上"
+  },
+  {
+    "word": "pull",
+    "phonetic": "/pʊl/",
+    "def": "拉，拉绳",
+    "grade": 6,
+    "semester": 1,
+    "unit": "Unit 6",
+    "source": "人教版小学英语 · 六年级上"
+  },
+  {
+    "word": "everyone",
+    "phonetic": "/ˈevriwʌn/",
+    "def": "每个人",
+    "grade": 6,
+    "semester": 1,
+    "unit": "Unit 6",
+    "source": "人教版小学英语 · 六年级上"
+  },
+  {
+    "word": "younger",
+    "phonetic": "/ˈjʌŋɡər/",
+    "def": "年纪较小者",
+    "grade": 6,
+    "semester": 2,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 六年级下"
+  },
+  {
+    "word": "older",
+    "phonetic": "/ˈoʊldər/",
+    "def": "年长的",
+    "grade": 6,
+    "semester": 2,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 六年级下"
+  },
+  {
+    "word": "taller",
+    "phonetic": "/ˈtɔːlər/",
+    "def": "更高的",
+    "grade": 6,
+    "semester": 2,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 六年级下"
+  },
+  {
+    "word": "shorter",
+    "phonetic": "/ˈʃɔːrtər/",
+    "def": "较短的",
+    "grade": 6,
+    "semester": 2,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 六年级下"
+  },
+  {
+    "word": "longer",
+    "phonetic": "/lɔːŋɡər/",
+    "def": "长的（long的比较级）",
+    "grade": 6,
+    "semester": 2,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 六年级下"
+  },
+  {
+    "word": "thinner",
+    "phonetic": "/ˈθɪnər/",
+    "def": "较薄的",
+    "grade": 6,
+    "semester": 2,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 六年级下"
+  },
+  {
+    "word": "heavier",
+    "phonetic": "/ˈhevɪərðənˈer/",
+    "def": "沉重的",
+    "grade": 6,
+    "semester": 2,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 六年级下"
+  },
+  {
+    "word": "bigger",
+    "phonetic": "/bɪgə(r)/",
+    "def": "更大的（big的比较级）",
+    "grade": 6,
+    "semester": 2,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 六年级下"
+  },
+  {
+    "word": "smaller",
+    "phonetic": "/ˈsmɔːlər/",
+    "def": "较小，更小的",
+    "grade": 6,
+    "semester": 2,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 六年级下"
+  },
+  {
+    "word": "stronger",
+    "phonetic": "/strɔːŋər/",
+    "def": "更强壮的",
+    "grade": 6,
+    "semester": 2,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 六年级下"
+  },
+  {
+    "word": "dinosaur",
+    "phonetic": "/ˈdaɪnəsɔːr/",
+    "def": "恐龙",
+    "grade": 6,
+    "semester": 2,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 六年级下"
+  },
+  {
+    "word": "hall",
+    "phonetic": "/hɔːl/",
+    "def": "过道，门厅，走廊",
+    "grade": 6,
+    "semester": 2,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 六年级下"
+  },
+  {
+    "word": "metre",
+    "phonetic": "/ˈmiːtər/",
+    "def": "米",
+    "grade": 6,
+    "semester": 2,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 六年级下"
+  },
+  {
+    "word": "meter",
+    "phonetic": "/ˈmiːtər/",
+    "def": "米",
+    "grade": 6,
+    "semester": 2,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 六年级下"
+  },
+  {
+    "word": "than",
+    "phonetic": "/ðən; ðæn/",
+    "def": "比（用于形容词、副词的比较级之后）",
+    "grade": 6,
+    "semester": 2,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 六年级下"
+  },
+  {
+    "word": "both",
+    "phonetic": "/boʊθ/",
+    "def": "既…且…",
+    "grade": 6,
+    "semester": 2,
+    "unit": "Unit 1",
+    "source": "人教版小学英语 · 六年级下"
+  },
+  {
+    "word": "kilogram",
+    "phonetic": "/ˈkɪləɡræm/",
+    "def": "公斤",
+    "grade": 6,
+    "semester": 2,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 六年级下"
+  },
+  {
+    "word": "countryside",
+    "phonetic": "/ˈkʌntrisaɪd/",
+    "def": "农村，乡下",
+    "grade": 6,
+    "semester": 2,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 六年级下"
+  },
+  {
+    "word": "lower",
+    "phonetic": "/ˈloʊər/",
+    "def": "减弱，减少",
+    "grade": 6,
+    "semester": 2,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 六年级下"
+  },
+  {
+    "word": "shadow",
+    "phonetic": "/ˈʃædoʊ/",
+    "def": "阴影",
+    "grade": 6,
+    "semester": 2,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 六年级下"
+  },
+  {
+    "word": "smarter",
+    "phonetic": "/smɑːrtər/",
+    "def": "聪明的",
+    "grade": 6,
+    "semester": 2,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 六年级下"
+  },
+  {
+    "word": "become",
+    "phonetic": "/bɪˈkʌm/",
+    "def": "适合",
+    "grade": 6,
+    "semester": 2,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 六年级下"
+  },
+  {
+    "word": "cleaned",
+    "phonetic": "/kliːnd/",
+    "def": "打扫（clean的过去式）",
+    "grade": 6,
+    "semester": 2,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 六年级下"
+  },
+  {
+    "word": "stayed",
+    "phonetic": "/steɪd/",
+    "def": "停留，制止（stay的过去分词形式）",
+    "grade": 6,
+    "semester": 2,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 六年级下"
+  },
+  {
+    "word": "washed",
+    "phonetic": "/wɑːʃt/",
+    "def": "洗，洗涤（wash的过去分词）",
+    "grade": 6,
+    "semester": 2,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 六年级下"
+  },
+  {
+    "word": "watched",
+    "phonetic": "",
+    "def": "观察",
+    "grade": 6,
+    "semester": 2,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 六年级下"
+  },
+  {
+    "word": "had",
+    "phonetic": "/həd; əd; hæd/",
+    "def": "有",
+    "grade": 6,
+    "semester": 2,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 六年级下"
+  },
+  {
+    "word": "had a cold",
+    "phonetic": "",
+    "def": "vbl.伤风,感冒",
+    "grade": 6,
+    "semester": 2,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 六年级下"
+  },
+  {
+    "word": "slept",
+    "phonetic": "/slept/",
+    "def": "睡觉（sleep的过去式和过去分词）",
+    "grade": 6,
+    "semester": 2,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 六年级下"
+  },
+  {
+    "word": "read",
+    "phonetic": "/riːd/",
+    "def": "阅读",
+    "grade": 6,
+    "semester": 2,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 六年级下"
+  },
+  {
+    "word": "saw",
+    "phonetic": "/sɔː/",
+    "def": "锯子",
+    "grade": 6,
+    "semester": 2,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 六年级下"
+  },
+  {
+    "word": "last",
+    "phonetic": "/læst/",
+    "def": "末尾，最后",
+    "grade": 6,
+    "semester": 2,
+    "unit": "Unit 2",
+    "source": "人教版小学英语 · 六年级下"
+  },
+  {
+    "word": "yesterday",
+    "phonetic": "/ˈjestərdeɪ; ˈjestərdi/",
+    "def": "昨天",
+    "grade": 6,
+    "semester": 2,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 六年级下"
+  },
+  {
+    "word": "before",
+    "phonetic": "/bɪˈfɔːr/",
+    "def": "在…之前，先于",
+    "grade": 6,
+    "semester": 2,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 六年级下"
+  },
+  {
+    "word": "drank",
+    "phonetic": "/dræŋk/",
+    "def": "喝",
+    "grade": 6,
+    "semester": 2,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 六年级下"
+  },
+  {
+    "word": "show",
+    "phonetic": "/ʃoʊ/",
+    "def": "显示",
+    "grade": 6,
+    "semester": 2,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 六年级下"
+  },
+  {
+    "word": "magazine",
+    "phonetic": "/ˈmæɡəziːn/",
+    "def": "杂志",
+    "grade": 6,
+    "semester": 2,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 六年级下"
+  },
+  {
+    "word": "better",
+    "phonetic": "/ˈbetər/",
+    "def": "长辈",
+    "grade": 6,
+    "semester": 2,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 六年级下"
+  },
+  {
+    "word": "faster",
+    "phonetic": "/'fastə/",
+    "def": "更快的",
+    "grade": 6,
+    "semester": 2,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 六年级下"
+  },
+  {
+    "word": "hotel",
+    "phonetic": "/hoʊˈtel/",
+    "def": "旅馆，饭店",
+    "grade": 6,
+    "semester": 2,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 六年级下"
+  },
+  {
+    "word": "fixed",
+    "phonetic": "/fɪkst/",
+    "def": "确定的",
+    "grade": 6,
+    "semester": 2,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 六年级下"
+  },
+  {
+    "word": "broken",
+    "phonetic": "/ˈbroʊkən/",
+    "def": "折断",
+    "grade": 6,
+    "semester": 2,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 六年级下"
+  },
+  {
+    "word": "lamp",
+    "phonetic": "/læmp/",
+    "def": "灯",
+    "grade": 6,
+    "semester": 2,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 六年级下"
+  },
+  {
+    "word": "loud",
+    "phonetic": "/laʊd/",
+    "def": "大声的，高声的",
+    "grade": 6,
+    "semester": 2,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 六年级下"
+  },
+  {
+    "word": "enjoy",
+    "phonetic": "/ɪnˈdʒɔɪ/",
+    "def": "欣赏，享受",
+    "grade": 6,
+    "semester": 2,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 六年级下"
+  },
+  {
+    "word": "went",
+    "phonetic": "/went/",
+    "def": "去，过去（go的过去式）",
+    "grade": 6,
+    "semester": 2,
+    "unit": "Unit 3",
+    "source": "人教版小学英语 · 六年级下"
+  },
+  {
+    "word": "camp",
+    "phonetic": "/kæmp/",
+    "def": "露营",
+    "grade": 6,
+    "semester": 2,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 六年级下"
+  },
+  {
+    "word": "went camping",
+    "phonetic": "",
+    "def": "无",
+    "grade": 6,
+    "semester": 2,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 六年级下"
+  },
+  {
+    "word": "fish",
+    "phonetic": "/fɪʃ/",
+    "def": "鱼，鱼类",
+    "grade": 6,
+    "semester": 2,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 六年级下"
+  },
+  {
+    "word": "went fishing",
+    "phonetic": "",
+    "def": "无",
+    "grade": 6,
+    "semester": 2,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 六年级下"
+  },
+  {
+    "word": "rode",
+    "phonetic": "/roʊd/",
+    "def": "骑（ride的过去式）",
+    "grade": 6,
+    "semester": 2,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 六年级下"
+  },
+  {
+    "word": "ate",
+    "phonetic": "/eɪt/",
+    "def": "吃（eat的过去式）",
+    "grade": 6,
+    "semester": 2,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 六年级下"
+  },
+  {
+    "word": "took",
+    "phonetic": "/tʊk/",
+    "def": "拿",
+    "grade": 6,
+    "semester": 2,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 六年级下"
+  },
+  {
+    "word": "took pictures",
+    "phonetic": "",
+    "def": "vbl.照像,摄影",
+    "grade": 6,
+    "semester": 2,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 六年级下"
+  },
+  {
+    "word": "bought",
+    "phonetic": "/bɔːt/",
+    "def": "买（buy的过去式和过去分词）",
+    "grade": 6,
+    "semester": 2,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 六年级下"
+  },
+  {
+    "word": "gift",
+    "phonetic": "/ɡɪft/",
+    "def": "礼物",
+    "grade": 6,
+    "semester": 2,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 六年级下"
+  },
+  {
+    "word": "fell",
+    "phonetic": "/fel/",
+    "def": "[林] 一季所伐的木材",
+    "grade": 6,
+    "semester": 2,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 六年级下"
+  },
+  {
+    "word": "off",
+    "phonetic": "/ɔːf/",
+    "def": "离开",
+    "grade": 6,
+    "semester": 2,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 六年级下"
+  },
+  {
+    "word": "Labour Day",
+    "phonetic": "",
+    "def": "na.劳动节",
+    "grade": 6,
+    "semester": 2,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 六年级下"
+  },
+  {
+    "word": "mule",
+    "phonetic": "/mjuːl/",
+    "def": "骡",
+    "grade": 6,
+    "semester": 2,
+    "unit": "Unit 4",
+    "source": "人教版小学英语 · 六年级下"
+  },
+  {
+    "word": "Turpan",
+    "phonetic": "",
+    "def": "吐鲁番（新疆维吾尔自治区）（旧译Turfan）",
+    "grade": 6,
+    "semester": 2,
+    "unit": "Unit 5",
+    "source": "人教版小学英语 · 六年级下"
+  },
+  {
+    "word": "could",
+    "phonetic": "/kəd; kʊd/",
+    "def": "aux. 能够",
+    "grade": 6,
+    "semester": 2,
+    "unit": "Unit 5",
+    "source": "人教版小学英语 · 六年级下"
+  },
+  {
+    "word": "till",
+    "phonetic": "/tɪl/",
+    "def": "直到",
+    "grade": 6,
+    "semester": 2,
+    "unit": "Unit 5",
+    "source": "人教版小学英语 · 六年级下"
+  },
+  {
+    "word": "beach",
+    "phonetic": "/biːtʃ/",
+    "def": "海滩",
+    "grade": 6,
+    "semester": 2,
+    "unit": "Unit 5",
+    "source": "人教版小学英语 · 六年级下"
+  },
+  {
+    "word": "basket",
+    "phonetic": "/ˈbæskɪt/",
+    "def": "篮子",
+    "grade": 6,
+    "semester": 2,
+    "unit": "Unit 5",
+    "source": "人教版小学英语 · 六年级下"
+  },
+  {
+    "word": "part",
+    "phonetic": "/pɑːrt/",
+    "def": "部分",
+    "grade": 6,
+    "semester": 2,
+    "unit": "Unit 5",
+    "source": "人教版小学英语 · 六年级下"
+  },
+  {
+    "word": "licked",
+    "phonetic": "/lɪk/",
+    "def": "舔",
+    "grade": 6,
+    "semester": 2,
+    "unit": "Unit 5",
+    "source": "人教版小学英语 · 六年级下"
+  },
+  {
+    "word": "laughed",
+    "phonetic": "/læft/",
+    "def": "笑",
+    "grade": 6,
+    "semester": 2,
+    "unit": "Unit 5",
+    "source": "人教版小学英语 · 六年级下"
+  },
+  {
+    "word": "dining hall",
+    "phonetic": "/ˈdaɪnɪŋ hɔːl/",
+    "def": "na. 大餐厅",
+    "grade": 6,
+    "semester": 2,
+    "unit": "Unit 5",
+    "source": "人教版小学英语 · 六年级下"
+  },
+  {
+    "word": "ago",
+    "phonetic": "/əˈɡoʊ/",
+    "def": "以前的",
+    "grade": 6,
+    "semester": 2,
+    "unit": "Unit 5",
+    "source": "人教版小学英语 · 六年级下"
+  },
+  {
+    "word": "cycling",
+    "phonetic": "/ˈsaɪklɪŋ/",
+    "def": "骑脚踏车消遣",
+    "grade": 6,
+    "semester": 2,
+    "unit": "Unit 5",
+    "source": "人教版小学英语 · 六年级下"
+  },
+  {
+    "word": "go cycling",
+    "phonetic": "",
+    "def": "去骑自行车",
+    "grade": 6,
+    "semester": 2,
+    "unit": "Unit 5",
+    "source": "人教版小学英语 · 六年级下"
+  },
+  {
+    "word": "ice-skate",
+    "phonetic": "/ˈaɪs skeɪt/",
+    "def": "溜冰，滑冰",
+    "grade": 6,
+    "semester": 2,
+    "unit": "Unit 5",
+    "source": "人教版小学英语 · 六年级下"
+  },
+  {
+    "word": "badminton",
+    "phonetic": "/ˈbædmɪntən/",
+    "def": "羽毛球",
+    "grade": 6,
+    "semester": 2,
+    "unit": "Unit 6",
+    "source": "人教版小学英语 · 六年级下"
+  },
+  {
+    "word": "star",
+    "phonetic": "/stɑːr/",
+    "def": "星，恒星",
+    "grade": 6,
+    "semester": 2,
+    "unit": "Unit 6",
+    "source": "人教版小学英语 · 六年级下"
+  },
+  {
+    "word": "easy",
+    "phonetic": "/ˈiːzi/",
+    "def": "容易的",
+    "grade": 6,
+    "semester": 2,
+    "unit": "Unit 6",
+    "source": "人教版小学英语 · 六年级下"
+  },
+  {
+    "word": "look up",
+    "phonetic": "",
+    "def": "查找",
+    "grade": 6,
+    "semester": 2,
+    "unit": "Unit 6",
+    "source": "人教版小学英语 · 六年级下"
+  },
+  {
+    "word": "Internet",
+    "phonetic": "/ˈɪntərnet/",
+    "def": "因特网",
+    "grade": 6,
+    "semester": 2,
+    "unit": "Unit 6",
+    "source": "人教版小学英语 · 六年级下"
+  },
+  {
+    "word": "different",
+    "phonetic": "/ˈdɪfrənt/",
+    "def": "不同的",
+    "grade": 6,
+    "semester": 2,
+    "unit": "Unit 6",
+    "source": "人教版小学英语 · 六年级下"
+  },
+  {
+    "word": "active",
+    "phonetic": "/ˈæktɪv/",
+    "def": "主动语态",
+    "grade": 6,
+    "semester": 2,
+    "unit": "Unit 6",
+    "source": "人教版小学英语 · 六年级下"
+  },
+  {
+    "word": "race",
+    "phonetic": "/reɪs/",
+    "def": "属，种",
+    "grade": 6,
+    "semester": 2,
+    "unit": "Unit 6",
+    "source": "人教版小学英语 · 六年级下"
+  },
+  {
+    "word": "nothing",
+    "phonetic": "/ˈnʌθɪŋ/",
+    "def": "neg. 没什么",
+    "grade": 6,
+    "semester": 2,
+    "unit": "Unit 6",
+    "source": "人教版小学英语 · 六年级下"
+  },
+  {
+    "word": "thought",
+    "phonetic": "/θɔːt/",
+    "def": "思想",
+    "grade": 6,
+    "semester": 2,
+    "unit": "Unit 6",
+    "source": "人教版小学英语 · 六年级下"
+  },
+  {
+    "word": "felt",
+    "phonetic": "/felt/",
+    "def": "毡",
+    "grade": 6,
+    "semester": 2,
+    "unit": "Unit 6",
+    "source": "人教版小学英语 · 六年级下"
+  },
+  {
+    "word": "cheetah",
+    "phonetic": "/ˈtʃiːtə/",
+    "def": "[脊椎] 猎豹",
+    "grade": 6,
+    "semester": 2,
+    "unit": "Unit 6",
+    "source": "人教版小学英语 · 六年级下"
+  },
+  {
+    "word": "woke",
+    "phonetic": "/woʊk/",
+    "def": "唤醒",
+    "grade": 6,
+    "semester": 2,
+    "unit": "Unit 6",
+    "source": "人教版小学英语 · 六年级下"
+  },
+  {
+    "word": "dream",
+    "phonetic": "/driːm/",
+    "def": "梦想，愿望",
+    "grade": 6,
+    "semester": 2,
+    "unit": "Unit 6",
+    "source": "人教版小学英语 · 六年级下"
+  }
+];
