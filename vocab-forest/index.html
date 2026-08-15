@@ -244,8 +244,8 @@ nav button.on{color:var(--main); font-weight:700}
       <div class="row" style="justify-content:space-between; margin-top:10px">
         <span>开始方式</span>
         <select id="set-startmode" style="font-size:15px; padding:6px; border-radius:10px; border:1px solid #d5dbd9">
-          <option value="direct">直接做题（推荐）</option>
-          <option value="learnfirst">先认单词再做题</option>
+          <option value="learnfirst">先认单词再做题（推荐）</option>
+          <option value="direct">直接做题</option>
         </select>
       </div>
       <div style="height:10px"></div>
@@ -283,7 +283,7 @@ const KEY='vocab_forest_v1';
 let S=null;
 function todayStr(){const d=new Date();return d.getFullYear()+'-'+(d.getMonth()+1)+'-'+d.getDate();}
 function defaultState(){
-  return {learned:[], wrong:{}, known:[], daily:{}, settings:{perDay:20, mode:'interfill', startMode:'direct'}, firstDate:todayStr()};
+  return {learned:[], wrong:{}, known:[], daily:{}, settings:{perDay:20, mode:'interfill', startMode:'learnfirst'}, firstDate:todayStr()};
 }
 function load(){
   try{S=JSON.parse(localStorage.getItem(KEY))||defaultState();}catch(e){S=defaultState();}
@@ -291,8 +291,10 @@ function load(){
   if(S.settings && S.settings.spell!==undefined && !S.settings.mode){
     S.settings.mode = S.settings.spell ? 'interfill' : 'choice';
   }
-  if(!S.settings) S.settings={perDay:20, mode:'interfill', startMode:'direct'};
-  if(!S.settings.startMode) S.settings.startMode='direct';
+  if(!S.settings) S.settings={perDay:20, mode:'interfill', startMode:'learnfirst'};
+  if(!S.settings.startMode) S.settings.startMode='learnfirst';
+  if(S.settings.startMode==='direct' && S.settings.v!==2){ S.settings.startMode='learnfirst'; }
+  S.settings.v=2;
 }
 function save(){localStorage.setItem(KEY, JSON.stringify(S));}
 
@@ -620,7 +622,7 @@ function renderStats(){
   $('week-lab').textContent='最近14天 · 绿色=已完成（数字=当天新词数）';
   $('set-perday').value=S.settings.perDay;
   $('set-mode').value=S.settings.mode||'interfill';
-  $('set-startmode').value=S.settings.startMode||'direct';
+  $('set-startmode').value=S.settings.startMode||'learnfirst';
 }
 function bindSettings(){
   $('set-perday').onchange=e=>{S.settings.perDay=+e.target.value;save();};
