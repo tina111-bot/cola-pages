@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
-<title>单词森林 · 中考词汇训练</title>
+<title>单词森林 · 人教版初中词汇训练</title>
 <style>
 :root{
   --bg:#f4f7f6; --card:#ffffff; --ink:#1f2937; --sub:#6b7280;
@@ -120,7 +120,7 @@ nav button.on{color:var(--main); font-weight:700}
 
 <header>
   <h1>单词<em>森林</em></h1>
-  <div id="header-sub">中考词汇 · 1600</div>
+  <div id="header-sub">人教版初中词汇</div>
 </header>
 
 <main>
@@ -215,7 +215,7 @@ nav button.on{color:var(--main); font-weight:700}
     <div class="card">
       <h2>📈 词汇进度</h2>
       <div class="row" style="justify-content:space-between; margin-bottom:6px">
-        <span class="muted">总进度</span><span class="muted" id="pg-total">0 / 1600</span>
+        <span class="muted">总进度</span><span class="muted" id="pg-total">0 / 0</span>
       </div>
       <div class="bar"><i id="pg-bar" style="width:0%"></i></div>
       <div style="height:12px"></div>
@@ -275,11 +275,11 @@ async function loadWords(){
       '<p class="muted">请确认 wordlist.json 与页面在同一目录，并通过服务器访问（不要直接双击打开）。</p></div>');
     return;
   }
-  document.getElementById('header-sub').textContent = '中考词汇 · ' + WORDS.length;
+  document.getElementById('header-sub').textContent = '人教版初中 · ' + WORDS.length + ' 词';
   init();
 }
 /* ============ 状态 ============ */
-const KEY='vocab_forest_v1';
+const KEY='vocab_forest_v2';
 let S=null;
 function todayStr(){const d=new Date();return d.getFullYear()+'-'+(d.getMonth()+1)+'-'+d.getDate();}
 function defaultState(){
@@ -415,7 +415,7 @@ function openLearn(){
   if(i>=flow.newWords.length){flow.step='test';flow.testIdx=0;flow.testQ=buildQuiz(flow.newWords);go('test');openTest();return;}
   const w=flow.newWords[i];
   $('l-word').textContent=w.word; $('l-word2').textContent=w.word;
-  $('l-phon').textContent=w.phonetic||''; $('l-def').textContent=w.def; $('l-pos').textContent=w.pos||'';
+  $('l-phon').textContent=w.phonetic||''; $('l-def').textContent=w.def; $('l-pos').textContent=(w.pos?w.pos+' · ':'')+(w.unit||'');
   $('learn-progress').textContent=(i+1)+' / '+flow.newWords.length;
   $('learn-bar').style.width=Math.round((i+1)/flow.newWords.length*100)+'%';
   $('flip').classList.remove('flipped');
