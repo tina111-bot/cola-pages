@@ -297,6 +297,8 @@ function load(){
   S.settings.v=2;
 }
 function save(){localStorage.setItem(KEY, JSON.stringify(S));}
+function saveFlow(){localStorage.setItem(KEY+'_flow', JSON.stringify(flow));}
+function clearFlow(){localStorage.removeItem(KEY+'_flow');}
 
 /* ============ 工具 ============ */
 const $=id=>document.getElementById(id);
@@ -407,8 +409,8 @@ function startFlow(){
 }
 function continueFlow(){
   if(!flow)return startFlow();
-  if(flow.step==='learn'){flow.step='test'; flow.testIdx=0; flow.testQ=buildQuiz(flow.newWords); go('test'); openTest();}
-  else if(flow.step==='test'){finishDay();}
+  if(flow.step==='learn'){ go('learn'); openLearn(); }
+  else if(flow.step==='test'){ go('test'); openTest(); }
 }
 function openLearn(){
   const i=flow.learnIdx;
@@ -420,6 +422,7 @@ function openLearn(){
   $('learn-bar').style.width=Math.round((i+1)/flow.newWords.length*100)+'%';
   $('flip').classList.remove('flipped');
   speak(w.word);
+  saveFlow();
 }
 function bindLearn(){
   $('flip').onclick=()=>$('flip').classList.toggle('flipped');
@@ -495,6 +498,7 @@ function openTest(){
       answer(ok, q);
     });
   }
+  saveFlow();
 }
 function pickOptions(q){
   const set=new Set([q.dir==='en2zh'?q.w.def:q.w.word]);
@@ -536,7 +540,8 @@ function finishDay(){
   const t=todayStr();
   S.daily[t]=S.daily[t]||{done:false,newWords:0,reviewed:[]};
   S.daily[t].done=true; S.daily[t].newWords=flow.newWords.length;
-  save(); flow=null; go('home');
+  for(const w of flow.newWords){ if(!S.learned.includes(w.word)) S.learned.push(w.word); }
+  save(); flow=null; clearFlow(); go('home');
   const st=streakDays();
   $('today-title').textContent='✅ 完成！连续打卡 '+st+' 天';
   $('ring').style.setProperty('--p',100);$('ring-pct').textContent='100%';
@@ -642,12 +647,15 @@ function bindSettings(){
   $('set-perday').onchange=e=>{S.settings.perDay=+e.target.value;save();};
   $('set-mode').onchange=e=>{S.settings.mode=e.target.value;save();};
   $('set-startmode').onchange=e=>{S.settings.startMode=e.target.value;save();};
-  $('btn-reset').onclick=()=>{if(confirm('确定要清空所有学习记录吗？')){localStorage.removeItem(KEY);location.reload();}};
+  $('btn-reset').onclick=()=>{if(confirm('确定要清空所有学习记录吗？')){localStorage.removeItem(KEY);clearFlow();location.reload();}};
 }
 
 /* ============ 初始化 ============ */
 function init(){
-  load(); bindSettings(); updateWrongDot();
+  load();
+  try{ flow=JSON.parse(localStorage.getItem(KEY+'_flow'))||null; }catch(e){ flow=null; }
+  if(S.daily[todayStr()]?.done){ flow=null; clearFlow(); }
+  bindSettings(); updateWrongDot();
   document.querySelectorAll('#tabbar button').forEach(b=>b.onclick=()=>go(b.dataset.page));
   bindLearn();
   go('home');
