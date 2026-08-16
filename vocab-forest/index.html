@@ -478,8 +478,8 @@ function openTest(){
     $('q-submit').onclick=()=>{
       const val=$('q-input').value.trim();
       if(!val)return;
-      const ok=cnMatch(val, q.w.def);
-      answer(ok, q, val);
+      if(cnMatch(val, q.w.def)){ answer(true, q, val); }
+      else{ askSelfCheck(q, val); }
     };
     $('q-input').onkeydown=e=>{if(e.key==='Enter')$('q-submit').click();};
   }else{
@@ -505,6 +505,20 @@ function pickOptions(q){
     set.add(q.dir==='en2zh'?r.def:r.word);
   }
   return shuffle([...set]);
+}
+function askSelfCheck(q, input){
+  const card=$('test-card');
+  const box=document.createElement('div');
+  box.className='selfcheck';
+  box.innerHTML='<div class="fb no">标准答案：'+q.w.def+'（你写了：'+input+'）</div>'+
+    '<div style="margin-top:6px"><span>意思答对了吗？</span> '+
+    '<button class="btn btn-soft" id="sc-yes">✓ 算我对</button> '+
+    '<button class="btn btn-soft" id="sc-no">✗ 算我错</button></div>';
+  card.appendChild(box);
+  $('q-input').disabled=true; $('q-submit').disabled=true;
+  const done=(ok)=>{ box.remove(); answer(ok, q, input); };
+  $('sc-yes').onclick=()=>done(true);
+  $('sc-no').onclick=()=>done(false);
 }
 function answer(ok, q, input){
   if(ok){flow.correct++;markKnown(q.w.word);fb(true,q);}
