@@ -340,10 +340,11 @@ function isLearned(w){return (S.learned[activeGrade()]||[]).includes(w);}
 function isWrong(w){return !!S.wrong[w];}
 function dueReviewWords(){ // 间隔复习：错误后1/3/7天
   const now=Date.now(), out=[];
+  const todayRec=S.daily[todayStr()]||{reviewed:[]};
   for(const w in S.wrong){
     const rec=S.wrong[w];
     const days=[1,3,7][Math.min(rec.reviewed||0,2)];
-    if(now - rec.last >= days*86400000 && !S.daily[todayStr()].reviewed?.includes(w)) out.push(w);
+    if(now - rec.last >= days*86400000 && !(todayRec.reviewed||[]).includes(w)) out.push(w);
   }
   return out;
 }
