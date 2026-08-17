@@ -235,6 +235,16 @@ nav button.on{color:var(--main); font-weight:700}
         </select>
       </div>
       <div class="row" style="justify-content:space-between; margin-top:10px">
+        <span>学习范围</span>
+        <select id="set-grade" style="font-size:15px; padding:6px; border-radius:10px; border:1px solid #d5dbd9">
+          <option value="all">全部（按单元顺序）</option>
+          <option value="7">初一（七上·七下）</option>
+          <option value="8">初二（八上·八下）</option>
+          <option value="9">初三（九年级全）</option>
+        </select>
+      </div>
+      <div class="muted" style="font-size:12px; margin-top:6px">每个年级的进度分开记，切换后从该年级自己的进度继续。</div>
+      <div class="row" style="justify-content:space-between; margin-top:10px">
         <span>训练方式</span>
         <select id="set-mode" style="font-size:15px; padding:6px; border-radius:10px; border:1px solid #d5dbd9">
           <option value="interfill">中英互填（推荐）</option>
@@ -283,7 +293,7 @@ const KEY='vocab_forest_v2';
 let S=null;
 function todayStr(){const d=new Date();return d.getFullYear()+'-'+(d.getMonth()+1)+'-'+d.getDate();}
 function defaultState(){
-  return {learned:[], wrong:{}, known:[], daily:{}, settings:{perDay:20, mode:'interfill', startMode:'learnfirst'}, firstDate:todayStr()};
+  return {learned:{all:[],'7':[],'8':[],'9':[]}, wrong:{}, known:[], daily:{}, settings:{perDay:20, mode:'interfill', startMode:'learnfirst', grade:'all'}, firstDate:todayStr()};
 }
 function load(){
   try{S=JSON.parse(localStorage.getItem(KEY))||defaultState();}catch(e){S=defaultState();}
@@ -295,6 +305,11 @@ function load(){
   if(!S.settings.startMode) S.settings.startMode='learnfirst';
   if(S.settings.startMode==='direct' && S.settings.v!==2){ S.settings.startMode='learnfirst'; }
   S.settings.v=2;
+  // 年级筛选迁移：learned 从数组 → 按年级分桶
+  if(!S.settings.grade) S.settings.grade='all';
+  if(Array.isArray(S.learned)){ S.learned={all:S.learned,'7':[],'8':[],'9':[]}; }
+  if(!S.learned || typeof S.learned!=='object') S.learned={all:[],'7':[],'8':[],'9':[]};
+  for(const g of ['all','7','8','9']) if(!Array.isArray(S.learned[g])) S.learned[g]=[];
 }
 function save(){localStorage.setItem(KEY, JSON.stringify(S));}
 function saveFlow(){localStorage.setItem(KEY+'_flow', JSON.stringify(flow));}
@@ -314,11 +329,14 @@ function streakDays(){
   }
   return n;
 }
-function todayNew(){ // 今日新词：从 learned 之后按顺序取 perDay 个
-  const idx=S.learned.length;
-  return WORDS.slice(idx, idx+S.settings.perDay);
+function activeGrade(){ return S.settings.grade||'all'; }
+function gradeWords(){ const g=activeGrade(); return g==='all'? WORDS : WORDS.filter(w=>String(w.grade)===g); }
+function todayNew(){ // 今日新词：当前年级范围内，从已学之后按顺序取 perDay 个
+  const list=gradeWords();
+  const idx=(S.learned[activeGrade()]||[]).length;
+  return list.slice(idx, idx+S.settings.perDay);
 }
-function isLearned(w){return S.learned.includes(w);}
+function isLearned(w){return (S.learned[activeGrade()]||[]).includes(w);}
 function isWrong(w){return !!S.wrong[w];}
 function dueReviewWords(){ // 间隔复习：错误后1/3/7天
   const now=Date.now(), out=[];
@@ -374,11 +392,12 @@ function renderHome(){
   bind('btn-start', startFlow); bind('btn-continue', continueFlow);
   bind('btn-review-due', ()=>{reviewFlow(dueReviewWords());});
   bind('btn-extra', ()=>{ if(done){S.daily[todayStr()].done=false; save();} startFlow(); });
-  // 统计
-  $('st-total').textContent=WORDS.length;
-  $('st-learned').textContent=S.learned.length;
-  $('st-known').textContent=Object.keys(S.known).length;
-  $('st-wrong').textContent=Object.keys(S.wrong).length;
+  // 统计（当前年级范围）
+  const gList=gradeWords();
+  $('st-total').textContent=gList.length;
+  $('st-learned').textContent=(S.learned[activeGrade()]||[]).length;
+  $('st-known').textContent=gList.filter(w=>S.known[w.word]).length;
+  $('st-wrong').textContent=gList.filter(w=>S.wrong[w.word]).length;
   $('st-streak').textContent=streakDays();
   const today=S.daily[todayStr()];
   $('st-today').textContent=today? (today.newWords||0):0;
@@ -540,7 +559,8 @@ function finishDay(){
   const t=todayStr();
   S.daily[t]=S.daily[t]||{done:false,newWords:0,reviewed:[]};
   S.daily[t].done=true; S.daily[t].newWords=flow.newWords.length;
-  for(const w of flow.newWords){ if(!S.learned.includes(w.word)) S.learned.push(w.word); }
+  const g=activeGrade(); const arr=S.learned[g]||(S.learned[g]=[]);
+  for(const w of flow.newWords){ if(!arr.includes(w.word)) arr.push(w.word); }
   save(); flow=null; clearFlow(); go('home');
   const st=streakDays();
   $('today-title').textContent='✅ 完成！连续打卡 '+st+' 天';
@@ -618,14 +638,16 @@ function updateWrongDot(){
 
 /* ============ 统计页 ============ */
 function renderStats(){
-  const knownN=Object.keys(S.known).length, wrongN=Object.keys(S.wrong).length;
-  const total=WORDS.length;
-  $('pg-total').textContent=S.learned.length+' / '+total;
-  $('pg-bar').style.width=Math.round(S.learned.length/total*100)+'%';
-  $('pg-learned').textContent=S.learned.length;
+  const list=gradeWords();
+  const knownN=list.filter(w=>S.known[w.word]).length, wrongN=list.filter(w=>S.wrong[w.word]).length;
+  const total=list.length;
+  const learnedN=(S.learned[activeGrade()]||[]).length;
+  $('pg-total').textContent=learnedN+' / '+total;
+  $('pg-bar').style.width=Math.round(total?learnedN/total*100:0)+'%';
+  $('pg-learned').textContent=learnedN;
   $('pg-known').textContent=knownN;
   $('pg-wrong').textContent=wrongN;
-  $('pg-rate').textContent=(S.learned.length? Math.round(knownN/Math.max(S.learned.length,1)*100):0)+'%';
+  $('pg-rate').textContent=(learnedN? Math.round(knownN/Math.max(learnedN,1)*100):0)+'%';
   // 最近14天
   const grid=$('week-grid'); grid.innerHTML='';
   const d=new Date();
@@ -642,11 +664,13 @@ function renderStats(){
   $('set-perday').value=S.settings.perDay;
   $('set-mode').value=S.settings.mode||'interfill';
   $('set-startmode').value=S.settings.startMode||'learnfirst';
+  $('set-grade').value=S.settings.grade||'all';
 }
 function bindSettings(){
   $('set-perday').onchange=e=>{S.settings.perDay=+e.target.value;save();};
   $('set-mode').onchange=e=>{S.settings.mode=e.target.value;save();};
   $('set-startmode').onchange=e=>{S.settings.startMode=e.target.value;save();};
+  $('set-grade').onchange=e=>{S.settings.grade=e.target.value; flow=null; clearFlow(); save(); render('stats');};
   $('btn-reset').onclick=()=>{if(confirm('确定要清空所有学习记录吗？')){localStorage.removeItem(KEY);clearFlow();location.reload();}};
 }
 
