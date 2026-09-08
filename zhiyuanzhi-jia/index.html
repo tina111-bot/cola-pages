@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>志愿者之家 · 濮家社区红十字会</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { background:#e9e4dc; font-family:"Microsoft YaHei","PingFang SC",sans-serif; color:#2b2b2b; }
+  .toolbar { position:sticky; top:0; z-index:9; display:flex; gap:10px; align-items:center;
+    background:#fff; padding:10px 16px; border-bottom:1px solid #ddd; font-size:14px; }
+  .toolbar button { border:1px solid #9e1b32; background:#fff; color:#9e1b32; padding:6px 14px;
+    border-radius:6px; cursor:pointer; font-size:14px; }
+  .toolbar button:hover { background:#9e1b32; color:#fff; }
+  .toolbar .hint { color:#888; margin-left:8px; }
+  .toolbar .on { background:#9e1b32; color:#fff; }
+  .editbar { display:none; background:#fdf1e7; color:#b3541c; font-size:13px; text-align:center; padding:5px; }
+  body.editing .editbar { display:block; }
+  body.editing .ed { outline:1px dashed #c98a5a; outline-offset:2px; cursor:text; }
+
+  .poster { width:1190px; margin:18px auto 30px; background:#fff; box-shadow:0 3px 14px rgba(0,0,0,.12);
+    padding:0 0 0 0; }
+  .head { background:#9e1b32; color:#fff; padding:18px 34px; display:flex; align-items:center; gap:18px; }
+  .head img { width:56px; height:56px; border-radius:8px; background:#fff; object-fit:contain; padding:3px; }
+  .head .rc { width:56px; height:56px; border-radius:8px; background:#fff; display:flex; align-items:center; justify-content:center; }
+  .head h1 { font-size:30px; letter-spacing:6px; font-weight:700; }
+  .head .sub { font-size:13px; opacity:.85; margin-top:4px; letter-spacing:1px; }
+  .head .sp { flex:1; }
+  .tag { font-size:12px; border:1px solid rgba(255,255,255,.6); border-radius:99px; padding:3px 12px; }
+
+  .zone-title { display:flex; align-items:center; gap:8px; margin:0 0 10px; }
+  .zone-title b { background:#9e1b32; color:#fff; font-size:13px; padding:2px 10px; border-radius:4px; letter-spacing:2px; }
+  .zone-title span { font-size:15px; font-weight:700; color:#4a2430; }
+  .zone-title i { font-size:12px; color:#999; font-style:normal; }
+
+  .grid { display:grid; grid-template-columns:460px 1fr; gap:18px; padding:20px 34px 6px; }
+  .card { border:1px solid #eadfd5; border-radius:10px; padding:14px 16px; background:#fffdf9; }
+  .card + .card { margin-top:14px; }
+
+  /* 组织架构树 */
+  .tree { text-align:center; padding:6px 0 2px; }
+  .tnode { display:inline-block; border-radius:8px; padding:9px 18px; font-weight:700; }
+  .t1 { background:#4a2430; color:#fff; font-size:17px; letter-spacing:3px; }
+  .t2 { background:#9e1b32; color:#fff; font-size:16px; letter-spacing:2px; }
+  .t3 { background:#f7e9ec; color:#9e1b32; font-size:15px; border:1.5px solid #9e1b32; }
+  .tsub { font-size:11.5px; font-weight:400; opacity:.85; margin-top:2px; letter-spacing:0; }
+  .stem { width:2px; height:14px; background:#c9a2ad; margin:0 auto; }
+  .teams { display:grid; grid-template-columns:1fr 1fr 1fr; gap:8px; margin-top:2px; }
+  .team { background:#fff; border:1px solid #e5cdd4; border-top:3px solid #9e1b32; border-radius:8px; padding:8px 6px; }
+  .team b { color:#9e1b32; font-size:13.5px; display:block; margin-bottom:4px; }
+  .team p { font-size:11.5px; color:#555; line-height:1.5; text-align:left; }
+  .note { font-size:11px; color:#b3541c; margin-top:8px; text-align:left; }
+
+  ul.bl { list-style:none; }
+  ul.bl li { font-size:13px; line-height:1.65; padding-left:16px; position:relative; margin-bottom:4px; }
+  ul.bl li::before { content:""; width:6px; height:6px; background:#9e1b32; border-radius:1px; position:absolute; left:2px; top:9px; }
+
+  table.act { width:100%; border-collapse:collapse; }
+  table.act th { background:#9e1b32; color:#fff; font-size:13px; padding:7px 6px; font-weight:600; }
+  table.act td { border-bottom:1px solid #f0e4e7; font-size:12.5px; padding:7px 6px; line-height:1.45; vertical-align:top; }
+  table.act td.who { font-weight:700; color:#9e1b32; white-space:nowrap; }
+  table.act tr:nth-child(even) td { background:#fdf8f5; }
+
+  .mech { display:flex; gap:8px; flex-wrap:wrap; }
+  .mech span { background:#f7e9ec; color:#7a1528; font-size:12.5px; padding:5px 11px; border-radius:99px; }
+  .mech i { font-style:normal; color:#999; font-size:11.5px; align-self:center; }
+
+  .nums { display:grid; grid-template-columns:repeat(4,1fr); gap:12px; padding:14px 34px; }
+  .num { background:#9e1b32; color:#fff; border-radius:10px; text-align:center; padding:10px 4px; }
+  .num b { font-size:21px; display:block; }
+  .num span { font-size:12px; opacity:.85; }
+
+  .foot { display:flex; justify-content:space-between; align-items:center; border-top:2px solid #9e1b32;
+    padding:10px 34px 14px; font-size:13px; color:#4a2430; }
+  .foot em { color:#9e1b32; font-style:normal; font-weight:700; letter-spacing:1px; }
+
+  @media print {
+    body { background:#fff; }
+    .toolbar, .editbar { display:none !important; }
+    .poster { width:auto; margin:0; box-shadow:none; }
+    @page { size:A4 landscape; margin:6mm; }
+    * { -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+  }
+</style>
+</head>
+<body>
+<div class="toolbar">
+  <button id="btnEdit" onclick="toggleEdit()">✏️ 编辑模式</button>
+  <button onclick="saveFile()">💾 保存修改版</button>
+  <button onclick="window.print()">🖨️ 打印 / 导出PDF</button>
+  <span class="hint">编辑模式：点按钮后，虚线框里的文字直接在页面上改；改完点「保存修改版」下载新文件。</span>
+</div>
+<div class="editbar">编辑模式已开启 —— 直接点带虚线的文字修改，改完记得点「保存修改版」，否则关掉页面就丢了。</div>
+
+<div class="poster" id="poster">
+  <div class="head">
+    <img src="data:image/png;base64,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" alt="社区logo">
+    <div>
+      <h1>志愿者之家</h1>
+      <div class="sub">上城区闸弄口街道濮家社区红十字会 · 组织与运行</div>
+    </div>
+    <div class="sp"></div>
+    <span class="tag">党建带红建 · 组织嵌网格 · 服务融日常</span>
+    <div class="rc"><svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg" style="width:38px;height:38px"><rect x="16.5" y="3" width="7" height="34" rx="0.5" fill="#c8102e"/><rect x="3" y="16.5" width="34" height="7" rx="0.5" fill="#c8102e"/></svg></div>
+  </div>
+
+  <div class="grid">
+    <div>
+      <div class="card">
+        <div class="zone-title"><b>A 区</b><span>组织架构</span><i>层级即逻辑：党委把方向，红会做谋划，志愿者在一线</i></div>
+        <div class="tree">
+          <div class="tnode t1 ed">社区党委<div class="tsub ed">把方向 · 给资源 · 联建共建</div></div>
+          <div class="stem"></div>
+          <div class="tnode t2 ed">社区红十字会<div class="tsub ed">2017年建会 · 年度项目清单 · 阵地 · 资金 · 表彰</div></div>
+          <div class="stem"></div>
+          <div class="tnode t3 ed">志愿者之家<span style="font-weight:400">（固定服务队58人【口径按台账定】）</span></div>
+          <div class="stem"></div>
+          <div class="teams">
+            <div class="team"><b class="ed">急救侠队</b><p class="ed">沿街商铺老板、网格员、楼道长；AED点位值守、街面突发先期处置</p></div>
+            <div class="team"><b class="ed">关爱帮帮队</b><p class="ed">独居老人走访、凉茶摊值守、应急避险引导</p></div>
+            <div class="team"><b class="ed">宣传播种队</b><p class="ed">"三献"宣传、信息稿、校园联动、义卖组织</p></div>
+          </div>
+          <div class="note ed">※ 三支队伍名称请按实际名单替换，没有分队的就合并写成"红十字志愿服务队"，不新造名目。</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="zone-title"><b>D 角</b><span>运行机制</span><i>加分项：有实据再挂，没跑过整块删</i></div>
+        <div class="mech">
+          <span class="ed">日碰头</span><span class="ed">周碰头</span><span class="ed">月度主题日</span><span class="ed">半年度小结</span><span class="ed">全年交流表彰</span>
+          <i>【按实际执行勾选删改】</i>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div class="card">
+        <div class="zone-title"><b>B 区</b><span>培训 · 输入</span><i>红会对志愿者：先入家门，再上讲台</i></div>
+        <ul class="bl">
+          <li class="ed">师资从哪来：省、市、区红会师资下沉，列入党群联建年度清单的"应急救护进社区"</li>
+          <li class="ed">训什么：救护员取证、AED 使用、防灾避险、"三献"知识</li>
+          <li class="ed">谁参加：新注册志愿者上岗第一课、骨干进阶取证</li>
+          <li class="ed">照片位：6月急救党员固定活动日、志愿者课堂【替换为实拍照片】</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <div class="zone-title"><b>C 区</b><span>活动 · 输出</span><i>志愿者对居民：按服务对象排，不按时间排</i></div>
+        <table class="act">
+          <tr><th style="width:64px">服务谁</th><th>干什么</th><th style="width:150px">常态安排</th></tr>
+          <tr><td class="who">救急</td><td class="ed">AED点位值守、街面突发先期处置</td><td class="ed">常态【按实际排班填】</td></tr>
+          <tr><td class="who">救老</td><td class="ed">独居老人走访、夏日凉茶＋防中暑提醒</td><td class="ed">网格周访＋夏季驻摊</td></tr>
+          <tr><td class="who">救小</td><td class="ed">护学路安全引导、防溺水、急救第一课</td><td class="ed">学期＋暑假【待核】</td></tr>
+          <tr><td class="who">救难</td><td class="ed">募捐众筹、义卖组织、帮办登记</td><td class="ed">5·8、99公益日等节点</td></tr>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div class="nums">
+    <div class="num"><b class="ed">【待填】</b><span>注册志愿者（人）</span></div>
+    <div class="num"><b class="ed">58</b><span>固定服务队（人）</span></div>
+    <div class="num"><b class="ed">928</b><span>持证救护员（名，与大屏口径一致）</span></div>
+    <div class="num"><b class="ed">【无台账则删此行】</b><span>累计服务时长（小时）</span></div>
+  </div>
+
+  <div class="foot">
+    <span>会员是认可，志愿者是行动——<em>从会员到志愿者，中间只隔一次培训。</em></span>
+    <span style="color:#999;font-size:11px">濮家社区红十字会 · 2026.09【定稿后改日期】</span>
+  </div>
+</div>
+
+<script>
+let editing = false;
+function toggleEdit() {
+  editing = !editing;
+  document.body.classList.toggle('editing', editing);
+  document.querySelectorAll('.ed').forEach(e => { e.contentEditable = editing; });
+  document.getElementById('btnEdit').classList.toggle('on', editing);
+  document.getElementById('btnEdit').textContent = editing ? '✅ 完成编辑' : '✏️ 编辑模式';
+}
+function saveFile() {
+  if (editing) toggleEdit();
+  const d = document.documentElement.cloneNode(true);
+  d.querySelectorAll('[contenteditable]').forEach(e => e.removeAttribute('contenteditable'));
+  const html = '<!DOCTYPE html>\n' + d.outerHTML;
+  const t = new Date();
+  const p = n => String(n).padStart(2, '0');
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(new Blob([html], { type: 'text/html;charset=utf-8' }));
+  a.download = '志愿者之家展板-' + t.getFullYear() + p(t.getMonth() + 1) + p(t.getDate()) + '-' + p(t.getHours()) + p(t.getMinutes()) + '.html';
+  a.click();
+  URL.revokeObjectURL(a.href);
+}
+</script>
+</body>
+</html>
